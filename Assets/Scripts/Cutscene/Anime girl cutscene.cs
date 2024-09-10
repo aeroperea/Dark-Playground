@@ -58,15 +58,18 @@ public class Animegirlcutscene : MonoBehaviour
 
     IEnumerator CutScene()
     {
+        // //turn on the cutscene camera
         // mainCamera.gameObject.SetActive(false);
         // cutsceneCamera.gameObject.SetActive(true);
 
+        // //player walks up
         // playerT.position = playerStartPlacement.position;
         // playerT.rotation = playerStartPlacement.rotation;
         // playerController.DeactivateControls();
+        // //animated camera pans to something
         // animatedCamera.SetTargetTransform(cTarget1);
 
-
+        // //wauit for player to get there and animate him
         // float startTime = Time.time;
         // Vector3 startPosition = playerT.position;
         // float speed = 0f;
@@ -78,10 +81,12 @@ public class Animegirlcutscene : MonoBehaviour
         //     playerAnimator.SetFloat("speedZ", speed);
         //     yield return null;
         // }
-
+        // //stop doing the walk u dummy
         // playerAnimator.SetFloat("speedZ", 0);
 
-        // // player turns around to look at dandid
+        // //camera switches to other cam which is a close up of the anime girl face turning around 
+
+        // // player turns around to look at dandid... wth i mean anime girl turns around and looks at player
         // Quaternion initialRotation = animeGirl.rotation;
         // Quaternion targetRotation = Quaternion.Euler(0, initialRotation.eulerAngles.y + 180, 0);
         // float rotationSpeed = 1f; // Speed of rotation
@@ -92,6 +97,20 @@ public class Animegirlcutscene : MonoBehaviour
         //     animeGirl.rotation = Quaternion.Lerp(initialRotation, targetRotation, rotationProgress);
         //     yield return null;
         // }
+
+        // //camera switch to wide angle of anime girl using that original camera we just used before by placing it at the wide angle camera location and rotation
+
+        // //anime girl talks and says stufff using the audio evenelope thingy
+        
+
+        // // player guy talks too using his regular player voice thing
+
+        // //they talk some more different camera angle and some panning using animated camera component
+
+        // //a quest is given to get that pictujre
+
+
+
     yield return null;
 
 
