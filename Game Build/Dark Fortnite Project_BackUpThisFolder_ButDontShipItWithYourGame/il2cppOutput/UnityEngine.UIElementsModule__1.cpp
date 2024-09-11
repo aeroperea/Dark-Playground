@@ -588,7 +588,6 @@ IL2CPP_EXTERN_C RuntimeClass* List_1_tBDD12EAD3C5C46706730C230F223EE020C6822D6_i
 IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MultiColumnCollectionHeader_t0B041BD57A14950E8C33DCD854F3A3C2C3DA706D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MultiColumnController_t25BFE9B50BC0D69925EC7EEE090F256FFE1244B6_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ObjectListPool_1_tE76B8FE823DEE80A5482089E5541B863AF4D64D1_il2cpp_TypeInfo_var;
@@ -5624,8 +5623,6 @@ inline Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C* UQueryExtensions_Q_TisT
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* VisualElement_get_userData_mB304DD064D255F64BB5A2EBC9233E2468B79ECE4 (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ReusableCollectionItem_get_index_m39FCB0A8975CC57CBF964AB494B171CCA507CCB0_inline (ReusableCollectionItem_t58A07E0E19A545B24DBE7711A46490EF5E239086* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MultiColumnController_t25BFE9B50BC0D69925EC7EEE090F256FFE1244B6* MultiColumnTreeViewController_get_columnController_m9B69A4909AFEDA14CFD76E9B2EFC91D808E01CCD_inline (MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MultiColumnController_GetSortedIndex_m104FC9A44450C3F1DF73D80D33F8788636715050 (MultiColumnController_t25BFE9B50BC0D69925EC7EEE090F256FFE1244B6* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BaseTreeViewController_IsViewDataKeyEnabled_mBCFCC117A8C17FCFBEA5B987D087148602F9E907 (BaseTreeViewController_t8359BFF7DA01FF2425D81CB17628B4B43AC6E5C0* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BaseTreeView_t4B72EA959CB8F22C78269844A43D51C4AB360DD7* BaseTreeViewController_get_baseTreeView_m0ADC79785331F5C71B1B33A39473441A99F64CA6 (BaseTreeViewController_t8359BFF7DA01FF2425D81CB17628B4B43AC6E5C0* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* BaseTreeView_get_expandedItemIds_mA308EA9D469B853BC0AFE25D6081B5DE390E712B_inline (BaseTreeView_t4B72EA959CB8F22C78269844A43D51C4AB360DD7* __this, const RuntimeMethod* method) ;
@@ -5821,6 +5818,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MultiColumnCollectionHeader_t0B04
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Columns_t487EAF3B634F6D919D58F1927099A8883964831B* MultiColumnCollectionHeader_get_columns_mCD478DC5065BA9B43AD13D998169055EAF1C3655_inline (MultiColumnCollectionHeader_t0B041BD57A14950E8C33DCD854F3A3C2C3DA706D* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReusableMultiColumnListViewItem_Init_mED228A36A9A033ED94BCFCF974118EB0ACE89CF0 (ReusableMultiColumnListViewItem_tCABA7B853B8B05AB223ADA86EB2FEFB2FDCC9A3A* __this, VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___0_container, Columns_t487EAF3B634F6D919D58F1927099A8883964831B* ___1_columns, bool ___2_usesAnimatedDrag, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseListViewController_InvokeMakeItem_m089EE4090EE8218DFCC6E21931E8639FAE2300F3 (BaseListViewController_t379A411BBBFADC12829E43420476B1EA096B092E* __this, ReusableCollectionItem_t58A07E0E19A545B24DBE7711A46490EF5E239086* ___0_reusableItem, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MultiColumnController_GetSortedIndex_m104FC9A44450C3F1DF73D80D33F8788636715050 (MultiColumnController_t25BFE9B50BC0D69925EC7EEE090F256FFE1244B6* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseListViewController_InvokeBindItem_mE5571623595D22B4E79F7CD9C80FEDEE1FFE1962 (BaseListViewController_t379A411BBBFADC12829E43420476B1EA096B092E* __this, ReusableCollectionItem_t58A07E0E19A545B24DBE7711A46490EF5E239086* ___0_reusableItem, int32_t ___1_index, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool MultiColumnCollectionHeader_get_sortingEnabled_m7CEDC3823FD83A515F3B5E7B7CAEF9A9A172E4AE_inline (MultiColumnCollectionHeader_t0B041BD57A14950E8C33DCD854F3A3C2C3DA706D* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* MultiColumnCollectionHeader_get_sortedColumnReadonly_m2029C7FA8EC490D3DB67282FD8568C628EC93638_inline (MultiColumnCollectionHeader_t0B041BD57A14950E8C33DCD854F3A3C2C3DA706D* __this, const RuntimeMethod* method) ;
@@ -16211,7 +16209,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseTreeViewController_OnItemPointerUp_m
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mCC0E71080DE343C1A527526A1AC2DBEC355CEA6C_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PointerEventBase_1_get_modifiers_m3DC8162B17BCC9798C05E8AAABF915B1866A1E7F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ReusableTreeViewItem_tB602EA1975446F78F764D2A40DE200C9D8418B3F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA_RuntimeMethod_var);
@@ -16222,37 +16219,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseTreeViewController_OnItemPointerUp_m
 	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* V_0 = NULL;
 	Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C* V_1 = NULL;
 	int32_t V_2 = 0;
-	MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC* V_3 = NULL;
+	bool V_3 = false;
 	bool V_4 = false;
 	bool V_5 = false;
 	bool V_6 = false;
-	bool V_7 = false;
-	bool V_8 = false;
-	int32_t V_9 = 0;
-	HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* V_10 = NULL;
+	int32_t V_7 = 0;
+	HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* V_8 = NULL;
+	RuntimeObject* V_9 = NULL;
+	bool V_10 = false;
 	RuntimeObject* V_11 = NULL;
-	bool V_12 = false;
-	RuntimeObject* V_13 = NULL;
-	int32_t V_14 = 0;
+	int32_t V_12 = 0;
+	bool V_13 = false;
+	bool V_14 = false;
 	bool V_15 = false;
-	bool V_16 = false;
-	bool V_17 = false;
-	HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704 V_18;
-	memset((&V_18), 0, sizeof(V_18));
+	HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704 V_16;
+	memset((&V_16), 0, sizeof(V_16));
 	{
 		PointerUpEvent_tCE779E8B94675B6A2758B82F6A84771CB26913D9* L_0 = ___0_evt;
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = PointerEventBase_1_get_modifiers_m3DC8162B17BCC9798C05E8AAABF915B1866A1E7F_inline(L_0, PointerEventBase_1_get_modifiers_m3DC8162B17BCC9798C05E8AAABF915B1866A1E7F_RuntimeMethod_var);
-		V_5 = (bool)((((int32_t)((int32_t)((int32_t)L_1&4))) == ((int32_t)0))? 1 : 0);
-		bool L_2 = V_5;
+		V_4 = (bool)((((int32_t)((int32_t)((int32_t)L_1&4))) == ((int32_t)0))? 1 : 0);
+		bool L_2 = V_4;
 		if (!L_2)
 		{
 			goto IL_0017;
 		}
 	}
 	{
-		goto IL_01b2;
+		goto IL_018d;
 	}
 
 IL_0017:
@@ -16277,131 +16272,108 @@ IL_0017:
 		int32_t L_10;
 		L_10 = ReusableCollectionItem_get_index_m39FCB0A8975CC57CBF964AB494B171CCA507CCB0_inline(((ReusableTreeViewItem_tB602EA1975446F78F764D2A40DE200C9D8418B3F*)CastclassClass((RuntimeObject*)L_9, ReusableTreeViewItem_tB602EA1975446F78F764D2A40DE200C9D8418B3F_il2cpp_TypeInfo_var)), NULL);
 		V_2 = L_10;
-		V_3 = ((MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC*)IsInstClass((RuntimeObject*)__this, MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC_il2cpp_TypeInfo_var));
-		MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC* L_11 = V_3;
-		V_6 = (bool)((!(((RuntimeObject*)(MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC*)L_11) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
-		bool L_12 = V_6;
-		if (!L_12)
+		int32_t L_11 = V_2;
+		bool L_12;
+		L_12 = BaseTreeViewController_HasChildrenByIndex_m9318EA9496370F8F2E68D7718F5ED56C3B7BA796(__this, L_11, NULL);
+		V_5 = (bool)((((int32_t)L_12) == ((int32_t)0))? 1 : 0);
+		bool L_13 = V_5;
+		if (!L_13)
 		{
-			goto IL_0061;
+			goto IL_0056;
 		}
 	}
 	{
-		MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC* L_13 = V_3;
-		NullCheck(L_13);
-		MultiColumnController_t25BFE9B50BC0D69925EC7EEE090F256FFE1244B6* L_14;
-		L_14 = MultiColumnTreeViewController_get_columnController_m9B69A4909AFEDA14CFD76E9B2EFC91D808E01CCD_inline(L_13, NULL);
-		int32_t L_15 = V_2;
-		NullCheck(L_14);
-		int32_t L_16;
-		L_16 = MultiColumnController_GetSortedIndex_m104FC9A44450C3F1DF73D80D33F8788636715050(L_14, L_15, NULL);
-		V_2 = L_16;
+		goto IL_018d;
 	}
 
-IL_0061:
+IL_0056:
 	{
-		int32_t L_17 = V_2;
-		bool L_18;
-		L_18 = BaseTreeViewController_HasChildrenByIndex_m9318EA9496370F8F2E68D7718F5ED56C3B7BA796(__this, L_17, NULL);
-		V_7 = (bool)((((int32_t)L_18) == ((int32_t)0))? 1 : 0);
-		bool L_19 = V_7;
-		if (!L_19)
+		int32_t L_14 = V_2;
+		bool L_15;
+		L_15 = BaseTreeViewController_IsExpandedByIndex_m0F1678DE8EF19BB43918C865B80224FD35ABFD66(__this, L_14, NULL);
+		V_3 = L_15;
+		bool L_16;
+		L_16 = BaseTreeViewController_IsViewDataKeyEnabled_mBCFCC117A8C17FCFBEA5B987D087148602F9E907(__this, NULL);
+		V_6 = L_16;
+		bool L_17 = V_6;
+		if (!L_17)
 		{
-			goto IL_0076;
+			goto IL_0125;
 		}
 	}
 	{
-		goto IL_01b2;
-	}
-
-IL_0076:
-	{
-		int32_t L_20 = V_2;
-		bool L_21;
-		L_21 = BaseTreeViewController_IsExpandedByIndex_m0F1678DE8EF19BB43918C865B80224FD35ABFD66(__this, L_20, NULL);
-		V_4 = L_21;
-		bool L_22;
-		L_22 = BaseTreeViewController_IsViewDataKeyEnabled_mBCFCC117A8C17FCFBEA5B987D087148602F9E907(__this, NULL);
+		int32_t L_18 = V_2;
+		int32_t L_19;
+		L_19 = VirtualFuncInvoker1< int32_t, int32_t >::Invoke(12, __this, L_18);
+		V_7 = L_19;
+		BaseTreeView_t4B72EA959CB8F22C78269844A43D51C4AB360DD7* L_20;
+		L_20 = BaseTreeViewController_get_baseTreeView_m0ADC79785331F5C71B1B33A39473441A99F64CA6(__this, NULL);
+		NullCheck(L_20);
+		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_21;
+		L_21 = BaseTreeView_get_expandedItemIds_mA308EA9D469B853BC0AFE25D6081B5DE390E712B_inline(L_20, NULL);
+		HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* L_22 = (HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2*)il2cpp_codegen_object_new(HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2_il2cpp_TypeInfo_var);
+		HashSet_1__ctor_m3F29A5426149F521CEE6900B9A4097810124ED8E(L_22, L_21, HashSet_1__ctor_m3F29A5426149F521CEE6900B9A4097810124ED8E_RuntimeMethod_var);
 		V_8 = L_22;
-		bool L_23 = V_8;
-		if (!L_23)
+		bool L_23 = V_3;
+		V_10 = L_23;
+		bool L_24 = V_10;
+		if (!L_24)
 		{
-			goto IL_0148;
+			goto IL_009c;
 		}
 	}
 	{
-		int32_t L_24 = V_2;
-		int32_t L_25;
-		L_25 = VirtualFuncInvoker1< int32_t, int32_t >::Invoke(12, __this, L_24);
-		V_9 = L_25;
-		BaseTreeView_t4B72EA959CB8F22C78269844A43D51C4AB360DD7* L_26;
-		L_26 = BaseTreeViewController_get_baseTreeView_m0ADC79785331F5C71B1B33A39473441A99F64CA6(__this, NULL);
-		NullCheck(L_26);
-		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_27;
-		L_27 = BaseTreeView_get_expandedItemIds_mA308EA9D469B853BC0AFE25D6081B5DE390E712B_inline(L_26, NULL);
-		HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* L_28 = (HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2*)il2cpp_codegen_object_new(HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2_il2cpp_TypeInfo_var);
-		HashSet_1__ctor_m3F29A5426149F521CEE6900B9A4097810124ED8E(L_28, L_27, HashSet_1__ctor_m3F29A5426149F521CEE6900B9A4097810124ED8E_RuntimeMethod_var);
-		V_10 = L_28;
-		bool L_29 = V_4;
-		V_12 = L_29;
-		bool L_30 = V_12;
-		if (!L_30)
-		{
-			goto IL_00be;
-		}
-	}
-	{
-		HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* L_31 = V_10;
-		int32_t L_32 = V_9;
-		NullCheck(L_31);
-		bool L_33;
-		L_33 = HashSet_1_Remove_mF4C8539185EBCAAE0803DF227E006B701007DD65(L_31, L_32, HashSet_1_Remove_mF4C8539185EBCAAE0803DF227E006B701007DD65_RuntimeMethod_var);
-		goto IL_00c8;
+		HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* L_25 = V_8;
+		int32_t L_26 = V_7;
+		NullCheck(L_25);
+		bool L_27;
+		L_27 = HashSet_1_Remove_mF4C8539185EBCAAE0803DF227E006B701007DD65(L_25, L_26, HashSet_1_Remove_mF4C8539185EBCAAE0803DF227E006B701007DD65_RuntimeMethod_var);
+		goto IL_00a6;
 	}
 
-IL_00be:
+IL_009c:
 	{
-		HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* L_34 = V_10;
-		int32_t L_35 = V_9;
+		HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* L_28 = V_8;
+		int32_t L_29 = V_7;
+		NullCheck(L_28);
+		bool L_30;
+		L_30 = HashSet_1_Add_m9B0DD9902395EE95D3DC522264BE1EBBBD3513EB(L_28, L_29, HashSet_1_Add_m9B0DD9902395EE95D3DC522264BE1EBBBD3513EB_RuntimeMethod_var);
+	}
+
+IL_00a6:
+	{
+		int32_t L_31 = V_2;
+		RuntimeObject* L_32;
+		L_32 = BaseTreeViewController_GetChildrenIdsByIndex_mAA7B7E75FE5834B8C0DD719AB95094ACFBECF8F4(__this, L_31, NULL);
+		V_9 = L_32;
+		RuntimeObject* L_33 = V_9;
+		RuntimeObject* L_34;
+		L_34 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24, __this, L_33);
 		NullCheck(L_34);
-		bool L_36;
-		L_36 = HashSet_1_Add_m9B0DD9902395EE95D3DC522264BE1EBBBD3513EB(L_34, L_35, HashSet_1_Add_m9B0DD9902395EE95D3DC522264BE1EBBBD3513EB_RuntimeMethod_var);
-	}
-
-IL_00c8:
-	{
-		int32_t L_37 = V_2;
-		RuntimeObject* L_38;
-		L_38 = BaseTreeViewController_GetChildrenIdsByIndex_mAA7B7E75FE5834B8C0DD719AB95094ACFBECF8F4(__this, L_37, NULL);
-		V_11 = L_38;
-		RuntimeObject* L_39 = V_11;
-		RuntimeObject* L_40;
-		L_40 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(24, __this, L_39);
-		NullCheck(L_40);
-		RuntimeObject* L_41;
-		L_41 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IEnumerable_1_tCE758D940790D6D0D56B457E522C195F8C413AF2_il2cpp_TypeInfo_var, L_40);
-		V_13 = L_41;
+		RuntimeObject* L_35;
+		L_35 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IEnumerable_1_tCE758D940790D6D0D56B457E522C195F8C413AF2_il2cpp_TypeInfo_var, L_34);
+		V_11 = L_35;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0127:
+FINALLY_0104:
 			{
 				{
-					RuntimeObject* L_42 = V_13;
-					if (!L_42)
+					RuntimeObject* L_36 = V_11;
+					if (!L_36)
 					{
-						goto IL_0133;
+						goto IL_0110;
 					}
 				}
 				{
-					RuntimeObject* L_43 = V_13;
-					NullCheck(L_43);
-					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_43);
+					RuntimeObject* L_37 = V_11;
+					NullCheck(L_37);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_37);
 				}
 
-IL_0133:
+IL_0110:
 				{
 					return;
 				}
@@ -16410,74 +16382,74 @@ IL_0133:
 		try
 		{
 			{
-				goto IL_011c_1;
+				goto IL_00f9_1;
 			}
 
-IL_00e3_1:
+IL_00c1_1:
 			{
-				RuntimeObject* L_44 = V_13;
-				NullCheck(L_44);
-				int32_t L_45;
-				L_45 = InterfaceFuncInvoker0< int32_t >::Invoke(0, IEnumerator_1_tD6A90A7446DA8E6CF865EDFBBF18C1200BB6D452_il2cpp_TypeInfo_var, L_44);
-				V_14 = L_45;
-				int32_t L_46 = V_14;
+				RuntimeObject* L_38 = V_11;
+				NullCheck(L_38);
+				int32_t L_39;
+				L_39 = InterfaceFuncInvoker0< int32_t >::Invoke(0, IEnumerator_1_tD6A90A7446DA8E6CF865EDFBBF18C1200BB6D452_il2cpp_TypeInfo_var, L_38);
+				V_12 = L_39;
+				int32_t L_40 = V_12;
+				bool L_41;
+				L_41 = VirtualFuncInvoker1< bool, int32_t >::Invoke(28, __this, L_40);
+				V_13 = L_41;
+				bool L_42 = V_13;
+				if (!L_42)
+				{
+					goto IL_00f8_1;
+				}
+			}
+			{
+				bool L_43 = V_3;
+				V_14 = L_43;
+				bool L_44 = V_14;
+				if (!L_44)
+				{
+					goto IL_00ed_1;
+				}
+			}
+			{
+				HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* L_45 = V_8;
+				int32_t L_46 = V_12;
+				NullCheck(L_45);
 				bool L_47;
-				L_47 = VirtualFuncInvoker1< bool, int32_t >::Invoke(28, __this, L_46);
-				V_15 = L_47;
-				bool L_48 = V_15;
-				if (!L_48)
-				{
-					goto IL_011b_1;
-				}
+				L_47 = HashSet_1_Remove_mF4C8539185EBCAAE0803DF227E006B701007DD65(L_45, L_46, HashSet_1_Remove_mF4C8539185EBCAAE0803DF227E006B701007DD65_RuntimeMethod_var);
+				goto IL_00f7_1;
 			}
+
+IL_00ed_1:
 			{
-				bool L_49 = V_4;
-				V_16 = L_49;
-				bool L_50 = V_16;
-				if (!L_50)
-				{
-					goto IL_0110_1;
-				}
+				HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* L_48 = V_8;
+				int32_t L_49 = V_12;
+				NullCheck(L_48);
+				bool L_50;
+				L_50 = HashSet_1_Add_m9B0DD9902395EE95D3DC522264BE1EBBBD3513EB(L_48, L_49, HashSet_1_Add_m9B0DD9902395EE95D3DC522264BE1EBBBD3513EB_RuntimeMethod_var);
 			}
+
+IL_00f7_1:
 			{
-				HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* L_51 = V_10;
-				int32_t L_52 = V_14;
+			}
+
+IL_00f8_1:
+			{
+			}
+
+IL_00f9_1:
+			{
+				RuntimeObject* L_51 = V_11;
 				NullCheck(L_51);
-				bool L_53;
-				L_53 = HashSet_1_Remove_mF4C8539185EBCAAE0803DF227E006B701007DD65(L_51, L_52, HashSet_1_Remove_mF4C8539185EBCAAE0803DF227E006B701007DD65_RuntimeMethod_var);
-				goto IL_011a_1;
-			}
-
-IL_0110_1:
-			{
-				HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* L_54 = V_10;
-				int32_t L_55 = V_14;
-				NullCheck(L_54);
-				bool L_56;
-				L_56 = HashSet_1_Add_m9B0DD9902395EE95D3DC522264BE1EBBBD3513EB(L_54, L_55, HashSet_1_Add_m9B0DD9902395EE95D3DC522264BE1EBBBD3513EB_RuntimeMethod_var);
-			}
-
-IL_011a_1:
-			{
-			}
-
-IL_011b_1:
-			{
-			}
-
-IL_011c_1:
-			{
-				RuntimeObject* L_57 = V_13;
-				NullCheck(L_57);
-				bool L_58;
-				L_58 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_57);
-				if (L_58)
+				bool L_52;
+				L_52 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_51);
+				if (L_52)
 				{
-					goto IL_00e3_1;
+					goto IL_00c1_1;
 				}
 			}
 			{
-				goto IL_0134;
+				goto IL_0111;
 			}
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -16486,67 +16458,67 @@ IL_011c_1:
 		}
 	}
 
-IL_0134:
+IL_0111:
 	{
-		BaseTreeView_t4B72EA959CB8F22C78269844A43D51C4AB360DD7* L_59;
-		L_59 = BaseTreeViewController_get_baseTreeView_m0ADC79785331F5C71B1B33A39473441A99F64CA6(__this, NULL);
-		HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* L_60 = V_10;
-		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_61 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
-		List_1__ctor_mCC0E71080DE343C1A527526A1AC2DBEC355CEA6C(L_61, L_60, List_1__ctor_mCC0E71080DE343C1A527526A1AC2DBEC355CEA6C_RuntimeMethod_var);
-		NullCheck(L_59);
-		BaseTreeView_set_expandedItemIds_m43C10938A0A478F080145817ECB56BBCB5F3E488_inline(L_59, L_61, NULL);
+		BaseTreeView_t4B72EA959CB8F22C78269844A43D51C4AB360DD7* L_53;
+		L_53 = BaseTreeViewController_get_baseTreeView_m0ADC79785331F5C71B1B33A39473441A99F64CA6(__this, NULL);
+		HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* L_54 = V_8;
+		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_55 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
+		List_1__ctor_mCC0E71080DE343C1A527526A1AC2DBEC355CEA6C(L_55, L_54, List_1__ctor_mCC0E71080DE343C1A527526A1AC2DBEC355CEA6C_RuntimeMethod_var);
+		NullCheck(L_53);
+		BaseTreeView_set_expandedItemIds_m43C10938A0A478F080145817ECB56BBCB5F3E488_inline(L_53, L_55, NULL);
 	}
 
-IL_0148:
+IL_0125:
 	{
-		bool L_62 = V_4;
-		V_17 = L_62;
-		bool L_63 = V_17;
-		if (!L_63)
+		bool L_56 = V_3;
+		V_15 = L_56;
+		bool L_57 = V_15;
+		if (!L_57)
 		{
-			goto IL_016b;
+			goto IL_0147;
 		}
 	}
 	{
-		HierarchyViewModel_t818D495B7E4AFC2E498598998847F9779E0DA317* L_64 = __this->___m_HierarchyViewModel;
-		int32_t L_65 = V_2;
-		HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704 L_66;
-		L_66 = BaseTreeViewController_GetHierarchyNodeByIndex_m8C7192B3DE19BD5C3EA593903C41BC96912B4509(__this, L_65, NULL);
-		V_18 = L_66;
-		NullCheck(L_64);
-		HierarchyViewModel_ClearFlags_m01130A019C62F03552920060C386E9C002B3CE61(L_64, (&V_18), 1, (bool)1, NULL);
-		goto IL_0184;
+		HierarchyViewModel_t818D495B7E4AFC2E498598998847F9779E0DA317* L_58 = __this->___m_HierarchyViewModel;
+		int32_t L_59 = V_2;
+		HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704 L_60;
+		L_60 = BaseTreeViewController_GetHierarchyNodeByIndex_m8C7192B3DE19BD5C3EA593903C41BC96912B4509(__this, L_59, NULL);
+		V_16 = L_60;
+		NullCheck(L_58);
+		HierarchyViewModel_ClearFlags_m01130A019C62F03552920060C386E9C002B3CE61(L_58, (&V_16), 1, (bool)1, NULL);
+		goto IL_0160;
 	}
 
-IL_016b:
+IL_0147:
 	{
-		HierarchyViewModel_t818D495B7E4AFC2E498598998847F9779E0DA317* L_67 = __this->___m_HierarchyViewModel;
-		int32_t L_68 = V_2;
-		HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704 L_69;
-		L_69 = BaseTreeViewController_GetHierarchyNodeByIndex_m8C7192B3DE19BD5C3EA593903C41BC96912B4509(__this, L_68, NULL);
-		V_18 = L_69;
-		NullCheck(L_67);
-		HierarchyViewModel_SetFlags_m8ACF05C9B80E2A614E35FEBBB5CC796328BFDEAC(L_67, (&V_18), 1, (bool)1, NULL);
+		HierarchyViewModel_t818D495B7E4AFC2E498598998847F9779E0DA317* L_61 = __this->___m_HierarchyViewModel;
+		int32_t L_62 = V_2;
+		HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704 L_63;
+		L_63 = BaseTreeViewController_GetHierarchyNodeByIndex_m8C7192B3DE19BD5C3EA593903C41BC96912B4509(__this, L_62, NULL);
+		V_16 = L_63;
+		NullCheck(L_61);
+		HierarchyViewModel_SetFlags_m8ACF05C9B80E2A614E35FEBBB5CC796328BFDEAC(L_61, (&V_16), 1, (bool)1, NULL);
 	}
 
-IL_0184:
+IL_0160:
 	{
 		BaseTreeViewController_UpdateHierarchy_mD019DDA89C5827CCC85CC2BBB81F1157F54BF6ED(__this, NULL);
-		BaseTreeView_t4B72EA959CB8F22C78269844A43D51C4AB360DD7* L_70;
-		L_70 = BaseTreeViewController_get_baseTreeView_m0ADC79785331F5C71B1B33A39473441A99F64CA6(__this, NULL);
-		NullCheck(L_70);
-		BaseVerticalCollectionView_RefreshItems_m53943EBC70FFE5C66EE6A7FEF5ECA33DE80AC0D6(L_70, NULL);
-		int32_t L_71 = V_2;
-		int32_t L_72;
-		L_72 = VirtualFuncInvoker1< int32_t, int32_t >::Invoke(12, __this, L_71);
-		bool L_73 = V_4;
-		BaseTreeViewController_RaiseItemExpandedChanged_m5749FDCAC0BE92544063607BD667AE1BB2AA8FC5(__this, L_72, (bool)((((int32_t)L_73) == ((int32_t)0))? 1 : 0), (bool)1, NULL);
-		PointerUpEvent_tCE779E8B94675B6A2758B82F6A84771CB26913D9* L_74 = ___0_evt;
-		NullCheck(L_74);
-		EventBase_StopPropagation_mEFC7E5AB7164157065FF19064A6ADCBB0D8AF6FB(L_74, NULL);
+		BaseTreeView_t4B72EA959CB8F22C78269844A43D51C4AB360DD7* L_64;
+		L_64 = BaseTreeViewController_get_baseTreeView_m0ADC79785331F5C71B1B33A39473441A99F64CA6(__this, NULL);
+		NullCheck(L_64);
+		BaseVerticalCollectionView_RefreshItems_m53943EBC70FFE5C66EE6A7FEF5ECA33DE80AC0D6(L_64, NULL);
+		int32_t L_65 = V_2;
+		int32_t L_66;
+		L_66 = VirtualFuncInvoker1< int32_t, int32_t >::Invoke(12, __this, L_65);
+		bool L_67 = V_3;
+		BaseTreeViewController_RaiseItemExpandedChanged_m5749FDCAC0BE92544063607BD667AE1BB2AA8FC5(__this, L_66, (bool)((((int32_t)L_67) == ((int32_t)0))? 1 : 0), (bool)1, NULL);
+		PointerUpEvent_tCE779E8B94675B6A2758B82F6A84771CB26913D9* L_68 = ___0_evt;
+		NullCheck(L_68);
+		EventBase_StopPropagation_mEFC7E5AB7164157065FF19064A6ADCBB0D8AF6FB(L_68, NULL);
 	}
 
-IL_01b2:
+IL_018d:
 	{
 		return;
 	}
@@ -16605,17 +16577,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseTreeViewController_OnToggleValueChan
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ReusableTreeViewItem_tB602EA1975446F78F764D2A40DE200C9D8418B3F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C* V_0 = NULL;
 	int32_t V_1 = 0;
-	MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC* V_2 = NULL;
+	bool V_2 = false;
 	bool V_3 = false;
-	bool V_4 = false;
-	bool V_5 = false;
 	{
 		ChangeEvent_1_t2AA4161DCA648D276CFE726DD08B0D55FA799D4B* L_0 = ___0_evt;
 		NullCheck(L_0);
@@ -16630,65 +16599,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseTreeViewController_OnToggleValueChan
 		int32_t L_4;
 		L_4 = ReusableCollectionItem_get_index_m39FCB0A8975CC57CBF964AB494B171CCA507CCB0_inline(((ReusableTreeViewItem_tB602EA1975446F78F764D2A40DE200C9D8418B3F*)CastclassClass((RuntimeObject*)L_3, ReusableTreeViewItem_tB602EA1975446F78F764D2A40DE200C9D8418B3F_il2cpp_TypeInfo_var)), NULL);
 		V_1 = L_4;
-		V_2 = ((MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC*)IsInstClass((RuntimeObject*)__this, MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC_il2cpp_TypeInfo_var));
-		MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC* L_5 = V_2;
-		V_4 = (bool)((!(((RuntimeObject*)(MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC*)L_5) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
-		bool L_6 = V_4;
-		if (!L_6)
+		int32_t L_5 = V_1;
+		bool L_6;
+		L_6 = BaseTreeViewController_IsExpandedByIndex_m0F1678DE8EF19BB43918C865B80224FD35ABFD66(__this, L_5, NULL);
+		V_2 = L_6;
+		bool L_7 = V_2;
+		V_3 = L_7;
+		bool L_8 = V_3;
+		if (!L_8)
 		{
-			goto IL_003e;
+			goto IL_0037;
 		}
 	}
 	{
-		MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC* L_7 = V_2;
-		NullCheck(L_7);
-		MultiColumnController_t25BFE9B50BC0D69925EC7EEE090F256FFE1244B6* L_8;
-		L_8 = MultiColumnTreeViewController_get_columnController_m9B69A4909AFEDA14CFD76E9B2EFC91D808E01CCD_inline(L_7, NULL);
 		int32_t L_9 = V_1;
-		NullCheck(L_8);
-		int32_t L_10;
-		L_10 = MultiColumnController_GetSortedIndex_m104FC9A44450C3F1DF73D80D33F8788636715050(L_8, L_9, NULL);
-		V_1 = L_10;
+		BaseTreeViewController_CollapseItemByIndex_m52F49FAF0E4C1638A55A02AE334BB4C48656D772(__this, L_9, (bool)0, (bool)1, NULL);
+		goto IL_0041;
 	}
 
-IL_003e:
+IL_0037:
 	{
-		int32_t L_11 = V_1;
-		bool L_12;
-		L_12 = BaseTreeViewController_IsExpandedByIndex_m0F1678DE8EF19BB43918C865B80224FD35ABFD66(__this, L_11, NULL);
-		V_3 = L_12;
-		bool L_13 = V_3;
-		V_5 = L_13;
-		bool L_14 = V_5;
-		if (!L_14)
-		{
-			goto IL_0059;
-		}
-	}
-	{
-		int32_t L_15 = V_1;
-		BaseTreeViewController_CollapseItemByIndex_m52F49FAF0E4C1638A55A02AE334BB4C48656D772(__this, L_15, (bool)0, (bool)1, NULL);
-		goto IL_0063;
+		int32_t L_10 = V_1;
+		BaseTreeViewController_ExpandItemByIndex_mA43B8D0F4B73B079804BA6AE769FA664058B6C54(__this, L_10, (bool)0, (bool)1, NULL);
 	}
 
-IL_0059:
+IL_0041:
 	{
-		int32_t L_16 = V_1;
-		BaseTreeViewController_ExpandItemByIndex_mA43B8D0F4B73B079804BA6AE769FA664058B6C54(__this, L_16, (bool)0, (bool)1, NULL);
-	}
-
-IL_0063:
-	{
-		BaseTreeView_t4B72EA959CB8F22C78269844A43D51C4AB360DD7* L_17;
-		L_17 = BaseTreeViewController_get_baseTreeView_m0ADC79785331F5C71B1B33A39473441A99F64CA6(__this, NULL);
-		NullCheck(L_17);
-		ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* L_18;
-		L_18 = BaseVerticalCollectionView_get_scrollView_mB4F44C6276CC57A0D8AD030F3C396650532E83CC_inline(L_17, NULL);
-		NullCheck(L_18);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_19;
-		L_19 = VirtualFuncInvoker0< VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* >::Invoke(135, L_18);
-		NullCheck(L_19);
-		VirtualActionInvoker0::Invoke(19, L_19);
+		BaseTreeView_t4B72EA959CB8F22C78269844A43D51C4AB360DD7* L_11;
+		L_11 = BaseTreeViewController_get_baseTreeView_m0ADC79785331F5C71B1B33A39473441A99F64CA6(__this, NULL);
+		NullCheck(L_11);
+		ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* L_12;
+		L_12 = BaseVerticalCollectionView_get_scrollView_mB4F44C6276CC57A0D8AD030F3C396650532E83CC_inline(L_11, NULL);
+		NullCheck(L_12);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_13;
+		L_13 = VirtualFuncInvoker0< VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* >::Invoke(135, L_12);
+		NullCheck(L_13);
+		VirtualActionInvoker0::Invoke(19, L_13);
 		return;
 	}
 }
@@ -30964,13 +30910,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ReusableCollectionItem_ge
 {
 	{
 		int32_t L_0 = __this->___U3CindexU3Ek__BackingField;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MultiColumnController_t25BFE9B50BC0D69925EC7EEE090F256FFE1244B6* MultiColumnTreeViewController_get_columnController_m9B69A4909AFEDA14CFD76E9B2EFC91D808E01CCD_inline (MultiColumnTreeViewController_t9FFDEDF1F2C2F5476271370488740DB7A8C70BAC* __this, const RuntimeMethod* method) 
-{
-	{
-		MultiColumnController_t25BFE9B50BC0D69925EC7EEE090F256FFE1244B6* L_0 = __this->___m_ColumnController;
 		return L_0;
 	}
 }

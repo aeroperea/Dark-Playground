@@ -6533,6 +6533,7 @@ struct NativePassData_tC0F1669A8ED49F7203325B91DF9C473D65AA9CD2
 	FixedAttachmentArray_1_t097F263B4BA144B4ACC3DC76BEBD68D2B99E582C ___fragments;
 	FixedAttachmentArray_1_tEFFF2A913823035718F09AB3C6DD33263A082714 ___attachments;
 	int32_t ___firstGraphPass;
+	int32_t ___lastGraphPass;
 	int32_t ___numGraphPasses;
 	int32_t ___firstNativeSubPass;
 	int32_t ___numNativeSubPasses;
@@ -6551,6 +6552,7 @@ struct NativePassData_tC0F1669A8ED49F7203325B91DF9C473D65AA9CD2_marshaled_pinvok
 	FixedAttachmentArray_1_t097F263B4BA144B4ACC3DC76BEBD68D2B99E582C ___fragments;
 	FixedAttachmentArray_1_tEFFF2A913823035718F09AB3C6DD33263A082714 ___attachments;
 	int32_t ___firstGraphPass;
+	int32_t ___lastGraphPass;
 	int32_t ___numGraphPasses;
 	int32_t ___firstNativeSubPass;
 	int32_t ___numNativeSubPasses;
@@ -6569,6 +6571,7 @@ struct NativePassData_tC0F1669A8ED49F7203325B91DF9C473D65AA9CD2_marshaled_com
 	FixedAttachmentArray_1_t097F263B4BA144B4ACC3DC76BEBD68D2B99E582C ___fragments;
 	FixedAttachmentArray_1_tEFFF2A913823035718F09AB3C6DD33263A082714 ___attachments;
 	int32_t ___firstGraphPass;
+	int32_t ___lastGraphPass;
 	int32_t ___numGraphPasses;
 	int32_t ___firstNativeSubPass;
 	int32_t ___numNativeSubPasses;

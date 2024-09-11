@@ -23895,10 +23895,9 @@ struct CopyDepthPassData_t787FC1CA815D76F74C1FD3B3C7C07A91E3D9FA17  : public Run
 struct CopyXRDepthPassData_tAEC291348F581EA8D93520446E7E31C7EDF3343C  : public RuntimeObject
 {
 	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___copyDepth;
-	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___viewport;
 	TextureHandle_t680ABA3F8B50859351BA5DD66220084F87F37388 ___depthBuffer;
 	TextureHandle_t680ABA3F8B50859351BA5DD66220084F87F37388 ___output;
-	float ___dynamicResolutionScale;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___blitScaleBias;
 	bool ___flipY;
 };
 struct CustomPostProcessData_t04CDD8F397FCFAA5A6305B02D57B6647AF592DA2  : public RuntimeObject
@@ -24986,6 +24985,7 @@ struct SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D  : publi
 	int32_t ___finalTargetFace;
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___finalViewport;
 	TextureHandle_t680ABA3F8B50859351BA5DD66220084F87F37388 ___depthBuffer;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___blitScaleBias;
 	bool ___flipY;
 };
 struct SetGlobalColorPassData_t287783F2150A5C36F9EF4B74D740DAF83C34FBE7  : public RuntimeObject
@@ -32647,12 +32647,12 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable289[13] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable290[1] = 
 {
 	static_cast<int32_t>(offsetof(UpdateParentExposureData_tCDC7803E0CE68794F58574DB9C46B884B53C8E9D, ___textures)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable291[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable291[8] = 
 {
-	static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___copyDepth)),static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___copyDepthMaterial)),static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___finalTarget)),static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___finalTargetFace)),static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___finalViewport)),static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___depthBuffer)),static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___flipY)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable292[6] = 
+	static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___copyDepth)),static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___copyDepthMaterial)),static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___finalTarget)),static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___finalTargetFace)),static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___finalViewport)),static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___depthBuffer)),static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___blitScaleBias)),static_cast<int32_t>(offsetof(SetFinalTargetPassData_tDA5861835D32B8C6602439A2D057DD478018EF8D, ___flipY)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable292[5] = 
 {
-	static_cast<int32_t>(offsetof(CopyXRDepthPassData_tAEC291348F581EA8D93520446E7E31C7EDF3343C, ___copyDepth)),static_cast<int32_t>(offsetof(CopyXRDepthPassData_tAEC291348F581EA8D93520446E7E31C7EDF3343C, ___viewport)),static_cast<int32_t>(offsetof(CopyXRDepthPassData_tAEC291348F581EA8D93520446E7E31C7EDF3343C, ___depthBuffer)),static_cast<int32_t>(offsetof(CopyXRDepthPassData_tAEC291348F581EA8D93520446E7E31C7EDF3343C, ___output)),static_cast<int32_t>(offsetof(CopyXRDepthPassData_tAEC291348F581EA8D93520446E7E31C7EDF3343C, ___dynamicResolutionScale)),static_cast<int32_t>(offsetof(CopyXRDepthPassData_tAEC291348F581EA8D93520446E7E31C7EDF3343C, ___flipY)),};
+	static_cast<int32_t>(offsetof(CopyXRDepthPassData_tAEC291348F581EA8D93520446E7E31C7EDF3343C, ___copyDepth)),static_cast<int32_t>(offsetof(CopyXRDepthPassData_tAEC291348F581EA8D93520446E7E31C7EDF3343C, ___depthBuffer)),static_cast<int32_t>(offsetof(CopyXRDepthPassData_tAEC291348F581EA8D93520446E7E31C7EDF3343C, ___output)),static_cast<int32_t>(offsetof(CopyXRDepthPassData_tAEC291348F581EA8D93520446E7E31C7EDF3343C, ___blitScaleBias)),static_cast<int32_t>(offsetof(CopyXRDepthPassData_tAEC291348F581EA8D93520446E7E31C7EDF3343C, ___flipY)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable293[8] = 
 {
 	static_cast<int32_t>(offsetof(ForwardPassData_tD312FC3D48A8F9E3CC4BAD789E06D3C9B35233F6, ___rendererList)),static_cast<int32_t>(offsetof(ForwardPassData_tD312FC3D48A8F9E3CC4BAD789E06D3C9B35233F6, ___lightListTile)),static_cast<int32_t>(offsetof(ForwardPassData_tD312FC3D48A8F9E3CC4BAD789E06D3C9B35233F6, ___lightListCluster)),static_cast<int32_t>(offsetof(ForwardPassData_tD312FC3D48A8F9E3CC4BAD789E06D3C9B35233F6, ___perVoxelOffset)),static_cast<int32_t>(offsetof(ForwardPassData_tD312FC3D48A8F9E3CC4BAD789E06D3C9B35233F6, ___perTileLogBaseTweak)),static_cast<int32_t>(offsetof(ForwardPassData_tD312FC3D48A8F9E3CC4BAD789E06D3C9B35233F6, ___thicknessTextureArray)),static_cast<int32_t>(offsetof(ForwardPassData_tD312FC3D48A8F9E3CC4BAD789E06D3C9B35233F6, ___thicknessReindexMap)),static_cast<int32_t>(offsetof(ForwardPassData_tD312FC3D48A8F9E3CC4BAD789E06D3C9B35233F6, ___frameSettings)),};

@@ -14296,8 +14296,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DropItemBehaviour_OscilateUpAn
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DropItemBehaviour__ctor_m080ADC60E3B415E2AEC7A04F43F3A30D1F5B1214 (DropItemBehaviour_t068D6C681387AD9A144F326398B4973797E2BD19* __this, const RuntimeMethod* method) 
 {
 	{
-		__this->___upForce = (10.0f);
-		__this->___sideForceMax = (5.0f);
+		__this->___upForce = (5.0f);
+		__this->___sideForceMax = (3.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}

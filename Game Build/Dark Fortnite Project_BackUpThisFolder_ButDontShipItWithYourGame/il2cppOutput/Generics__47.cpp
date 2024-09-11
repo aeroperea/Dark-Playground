@@ -6705,6 +6705,7 @@ struct BaseSlider_1_t72796443D058B00401238104911BE7078A9FD0BA_StaticFields
 	String_t* ___draggerBorderUssClassName;
 	String_t* ___textFieldClassName;
 	String_t* ___fillUssClassName;
+	String_t* ___movableUssClassName;
 };
 struct Slider_t5891706383A14955E3FAD68A79829F3234681652_StaticFields
 {

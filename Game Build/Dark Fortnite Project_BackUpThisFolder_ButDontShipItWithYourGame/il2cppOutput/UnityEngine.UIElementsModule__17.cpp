@@ -225,6 +225,7 @@ struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377;
 struct EventCallbackRegistry_tE18297C3F7E535BD82EDA83EC6D6DAA386226B85;
 struct EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82;
 struct Exception_t;
+struct ExceptionDispatchInfo_tD7AF19E75FEC22F4A8329FD1E9EDF96615CB2757;
 struct Font_tC95270EA3198038970422D78B74A7F2E218A96B6;
 struct FontAsset_t61A6446D934E582651044E33D250EA8D306AB958;
 struct HierarchyTraversal_t89B1D4664C1C066FEED9B372488A3F751CB6FE7D;
@@ -698,7 +699,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* LayoutList_1_get_Count_mB0A8E352B208CE90353
 IL2CPP_EXTERN_C const RuntimeMethod* LayoutList_1_get_IsCreated_mA18F6311ADEC75EB42B21A662702DF149F7DB21D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* LayoutList_1_get_Item_mD7EF16E722E0156D5C69A2B4E0208ACD9236F9E1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* LayoutNode_RemoveAt_mC4AEF30DC2348C38037F379E3E3338C4920F794C_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* LayoutProcessorNative_UnityEngine_UIElements_Layout_ILayoutProcessor_CalculateLayout_m7AA93914D1D0C69848F4496D62E9870D5FA5DB5D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m084F52E7C436446A23080F15F803212491693F6B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m7C7A048F90169875B568D38864EE6067C8394824_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mBC927C49C3CB994476517CF74BC9F59718035172_RuntimeMethod_var;
@@ -943,6 +943,11 @@ struct CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4  : public 
 };
 struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377  : public RuntimeObject
 {
+};
+struct ExceptionDispatchInfo_tD7AF19E75FEC22F4A8329FD1E9EDF96615CB2757  : public RuntimeObject
+{
+	Exception_t* ___m_Exception;
+	RuntimeObject* ___m_stackTrace;
 };
 struct HierarchyTraversal_t89B1D4664C1C066FEED9B372488A3F751CB6FE7D  : public RuntimeObject
 {
@@ -4078,6 +4083,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool IntPtr_op_Inequality_m90EFC9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC GCHandle_FromIntPtr_mA7848A4285D007CADC52B6272DB243C8FDFD5FAC (intptr_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* GCHandle_get_Target_m481F9508DA5E384D33CD1F4450060DC56BBD4CD5_inline (GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GCHandle_Free_m1320A260E487EB1EA6D95F9E54BFFCB5A4EF83A3 (GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ExceptionDispatchInfo_tD7AF19E75FEC22F4A8329FD1E9EDF96615CB2757* ExceptionDispatchInfo_Capture_mC1C1C30D83DC04B2B7813DFCB67D07CCD4909803 (Exception_t* ___0_source, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExceptionDispatchInfo_Throw_m06F398E346AE94C1CCEB636763A8CB26511F6330 (ExceptionDispatchInfo_tD7AF19E75FEC22F4A8329FD1E9EDF96615CB2757* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LayoutState_t8B0A6E7C91052C03279882FE8495C4F96C4983E7 LayoutState_get_Default_m68C4325DC936858EC390569B3233797508A962BE (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Hierarchy_t4CF226F0EDE9C117C51C505730FC80641B1F1677 VisualElement_get_hierarchy_m2E897DE4CFD349E65CFA38EFF6BAAFECE2F4E3E4_inline (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* Hierarchy_get_Item_mBA5811C28D9E7FA48D0F10603A95F8CF248C3467 (Hierarchy_t4CF226F0EDE9C117C51C505730FC80641B1F1677* __this, int32_t ___0_key, const RuntimeMethod* method) ;
@@ -14660,6 +14667,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LayoutState_t8B0A6E7C91052C03279882FE8495C4F9
 #endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutProcessorNative_UnityEngine_UIElements_Layout_ILayoutProcessor_CalculateLayout_m7AA93914D1D0C69848F4496D62E9870D5FA5DB5D (LayoutProcessorNative_t7E99A289B223D032A327E9FE9B88E587932363A5* __this, LayoutNode_tADF081B0F16F76B66459DE38F3AD8EC098F22CBE ___0_node, float ___1_parentWidth, float ___2_parentHeight, int32_t ___3_parentDirection, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
 	intptr_t V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	intptr_t V_1;
@@ -14672,6 +14685,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutProcessorNative_UnityEngine_UIElem
 	GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC V_6;
 	memset((&V_6), 0, sizeof(V_6));
 	Exception_t* V_7 = NULL;
+	ExceptionDispatchInfo_tD7AF19E75FEC22F4A8329FD1E9EDF96615CB2757* V_8 = NULL;
 	{
 		intptr_t L_0;
 		L_0 = IntPtr_op_Explicit_mE2CEC14C61FD5E2159A03EA2AD97F5CDC5BB9F4D((void*)((uintptr_t)(&___0_node)), NULL);
@@ -14700,7 +14714,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutProcessorNative_UnityEngine_UIElem
 		bool L_13 = V_5;
 		if (!L_13)
 		{
-			goto IL_0077;
+			goto IL_0086;
 		}
 	}
 	{
@@ -14710,15 +14724,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutProcessorNative_UnityEngine_UIElem
 		V_6 = L_15;
 		RuntimeObject* L_16;
 		L_16 = GCHandle_get_Target_m481F9508DA5E384D33CD1F4450060DC56BBD4CD5_inline((&V_6), NULL);
-		V_7 = ((Exception_t*)IsInstClass((RuntimeObject*)L_16, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+		V_7 = ((Exception_t*)IsInstClass((RuntimeObject*)L_16, Exception_t_il2cpp_TypeInfo_var));
 		GCHandle_Free_m1320A260E487EB1EA6D95F9E54BFFCB5A4EF83A3((&V_6), NULL);
 		LayoutState_t8B0A6E7C91052C03279882FE8495C4F96C4983E7* L_17 = (LayoutState_t8B0A6E7C91052C03279882FE8495C4F96C4983E7*)(&__this->___m_State);
 		L_17->___error = (bool)0;
 		Exception_t* L_18 = V_7;
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_18, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&LayoutProcessorNative_UnityEngine_UIElements_Layout_ILayoutProcessor_CalculateLayout_m7AA93914D1D0C69848F4496D62E9870D5FA5DB5D_RuntimeMethod_var)));
+		ExceptionDispatchInfo_tD7AF19E75FEC22F4A8329FD1E9EDF96615CB2757* L_19;
+		L_19 = ExceptionDispatchInfo_Capture_mC1C1C30D83DC04B2B7813DFCB67D07CCD4909803(L_18, NULL);
+		V_8 = L_19;
+		ExceptionDispatchInfo_tD7AF19E75FEC22F4A8329FD1E9EDF96615CB2757* L_20 = V_8;
+		NullCheck(L_20);
+		ExceptionDispatchInfo_Throw_m06F398E346AE94C1CCEB636763A8CB26511F6330(L_20, NULL);
 	}
 
-IL_0077:
+IL_0086:
 	{
 		V_3 = (LayoutState_t8B0A6E7C91052C03279882FE8495C4F96C4983E7*)((uintptr_t)0);
 		return;

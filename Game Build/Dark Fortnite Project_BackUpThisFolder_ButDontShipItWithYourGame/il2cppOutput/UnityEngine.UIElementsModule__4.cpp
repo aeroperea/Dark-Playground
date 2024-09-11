@@ -4128,6 +4128,7 @@ struct BaseSlider_1_tCD357038DC0A12750F4E032D975E8D9F2AA6CD95_StaticFields
 	String_t* ___draggerBorderUssClassName;
 	String_t* ___textFieldClassName;
 	String_t* ___fillUssClassName;
+	String_t* ___movableUssClassName;
 };
 struct BaseSlider_1_t72796443D058B00401238104911BE7078A9FD0BA_StaticFields
 {
@@ -4150,6 +4151,7 @@ struct BaseSlider_1_t72796443D058B00401238104911BE7078A9FD0BA_StaticFields
 	String_t* ___draggerBorderUssClassName;
 	String_t* ___textFieldClassName;
 	String_t* ___fillUssClassName;
+	String_t* ___movableUssClassName;
 };
 struct BaseBoolField_t01F8AFD72D18F0EB65F949062615550A9ED30B0D_StaticFields
 {

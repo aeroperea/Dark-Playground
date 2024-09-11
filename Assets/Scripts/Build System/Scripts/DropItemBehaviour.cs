@@ -9,8 +9,8 @@ public class DropItemBehaviour : MonoBehaviour, IInteractable
     
     private Rigidbody rb;
 
-    public float upForce = 10;
-    public float sideForceMax = 5;
+    public float upForce = 5;
+    public float sideForceMax = 3;
 
     [SerializeField] ItemSO itemSO;
 

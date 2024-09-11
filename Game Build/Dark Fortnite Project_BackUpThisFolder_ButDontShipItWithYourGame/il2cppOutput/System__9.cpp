@@ -710,7 +710,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_Remove_m6BC6C5F209825F38868B72599159
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m1104DB0524C8D81E9C97C6068CC22A52CCE146EC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m5C2C4F7F515869E497B68E132BF2A2029A73C932_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m60371F3C4A4481F126B9BDBFDD9D69F464780693_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Marshal_PtrToStructure_TisWin32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_m15ACABA4C13505251863EDCB0CDC31B84537D246_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Marshal_PtrToStructure_TisWin32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_m96A5AD99AAFE5DEBADD88ADC94E9144E78939EFA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Marshal_UnsafeAddrOfPinnedArrayElement_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_mC2CDD900B2BAE8DEAF428D11AF4E0DA4363B7801_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MemoryExtensions_CopyTo_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m10ED0116AC93BD794B4D93F6200E13A15556D992_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MemoryMarshal_AsMemory_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m33D67911924E1B5C252D250214DC7E0A659DC262_RuntimeMethod_var;
@@ -1708,6 +1708,39 @@ struct __StaticArrayInitTypeSizeU3D9_tE2A1104C752B51004E61139D4615CC263948C4A7
 	};
 };
 #pragma pack(pop, tp)
+struct U3CDomainNameU3Ee__FixedBuffer_t926A27D5F7E973C7FFD876F3B998323443174409 
+{
+	union
+	{
+		struct
+		{
+			uint8_t ___FixedElementField;
+		};
+		uint8_t U3CDomainNameU3Ee__FixedBuffer_t926A27D5F7E973C7FFD876F3B998323443174409__padding[132];
+	};
+};
+struct U3CHostNameU3Ee__FixedBuffer_t50927C9BC8E3D5D2A44EC8B87B0DF956AED82E56 
+{
+	union
+	{
+		struct
+		{
+			uint8_t ___FixedElementField;
+		};
+		uint8_t U3CHostNameU3Ee__FixedBuffer_t50927C9BC8E3D5D2A44EC8B87B0DF956AED82E56__padding[132];
+	};
+};
+struct U3CScopeIdU3Ee__FixedBuffer_t2EC97AD513928D6E313670EE44A6013B112B15CB 
+{
+	union
+	{
+		struct
+		{
+			uint8_t ___FixedElementField;
+		};
+		uint8_t U3CScopeIdU3Ee__FixedBuffer_t2EC97AD513928D6E313670EE44A6013B112B15CB__padding[260];
+	};
+};
 struct AsyncTaskMethodBuilder_1_tF4B144BF5EE52E8AC70FFD31FC2684642AC52B81 
 {
 	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF ___m_coreState;
@@ -2552,24 +2585,60 @@ struct Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F
 };
 struct Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshaled_pinvoke
 {
-	char ___HostName[132];
-	char ___DomainName[132];
+	char* ___HostName;
+	char* ___DomainName;
 	intptr_t ___CurrentDnsServer;
 	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshaled_pinvoke ___DnsServerList;
 	int32_t ___NodeType;
-	char ___ScopeId[260];
+	char* ___ScopeId;
 	uint32_t ___EnableRouting;
 	uint32_t ___EnableProxy;
 	uint32_t ___EnableDns;
 };
 struct Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshaled_com
 {
-	char ___HostName[132];
-	char ___DomainName[132];
+	Il2CppChar* ___HostName;
+	Il2CppChar* ___DomainName;
 	intptr_t ___CurrentDnsServer;
 	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshaled_com ___DnsServerList;
 	int32_t ___NodeType;
-	char ___ScopeId[260];
+	Il2CppChar* ___ScopeId;
+	uint32_t ___EnableRouting;
+	uint32_t ___EnableProxy;
+	uint32_t ___EnableDns;
+};
+struct Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9 
+{
+	U3CHostNameU3Ee__FixedBuffer_t50927C9BC8E3D5D2A44EC8B87B0DF956AED82E56 ___HostName;
+	U3CDomainNameU3Ee__FixedBuffer_t926A27D5F7E973C7FFD876F3B998323443174409 ___DomainName;
+	intptr_t ___CurrentDnsServer;
+	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7 ___DnsServerList;
+	int32_t ___NodeType;
+	U3CScopeIdU3Ee__FixedBuffer_t2EC97AD513928D6E313670EE44A6013B112B15CB ___ScopeId;
+	uint32_t ___EnableRouting;
+	uint32_t ___EnableProxy;
+	uint32_t ___EnableDns;
+};
+struct Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshaled_pinvoke
+{
+	U3CHostNameU3Ee__FixedBuffer_t50927C9BC8E3D5D2A44EC8B87B0DF956AED82E56 ___HostName;
+	U3CDomainNameU3Ee__FixedBuffer_t926A27D5F7E973C7FFD876F3B998323443174409 ___DomainName;
+	intptr_t ___CurrentDnsServer;
+	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshaled_pinvoke ___DnsServerList;
+	int32_t ___NodeType;
+	U3CScopeIdU3Ee__FixedBuffer_t2EC97AD513928D6E313670EE44A6013B112B15CB ___ScopeId;
+	uint32_t ___EnableRouting;
+	uint32_t ___EnableProxy;
+	uint32_t ___EnableDns;
+};
+struct Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshaled_com
+{
+	U3CHostNameU3Ee__FixedBuffer_t50927C9BC8E3D5D2A44EC8B87B0DF956AED82E56 ___HostName;
+	U3CDomainNameU3Ee__FixedBuffer_t926A27D5F7E973C7FFD876F3B998323443174409 ___DomainName;
+	intptr_t ___CurrentDnsServer;
+	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshaled_com ___DnsServerList;
+	int32_t ___NodeType;
+	U3CScopeIdU3Ee__FixedBuffer_t2EC97AD513928D6E313670EE44A6013B112B15CB ___ScopeId;
 	uint32_t ___EnableRouting;
 	uint32_t ___EnableProxy;
 	uint32_t ___EnableDns;
@@ -3532,7 +3601,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetResult_m0D83
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetStateMachine_m3BE54983634ABF5BE05200C7894AD0F9F20BDD65_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, RuntimeObject* ___0_stateMachine, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2_TisU3CReadAllAsyncU3Ed__48_t6ACF3CCC02F2AEA9BB5F1EE25F36BEF90AAFC46D_mE5A39CE22D7FB811DFFE6E741C8211D5E50E27BC_gshared (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, ConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2* ___0_awaiter, U3CReadAllAsyncU3Ed__48_t6ACF3CCC02F2AEA9BB5F1EE25F36BEF90AAFC46D* ___1_stateMachine, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t8FC486401D1951F2426478F2050EE290197B6E80_TisU3CInitReadAsyncU3Ed__52_tCC4B08BF3F120EDC18B4240A10D983633338DC72_m65DFCFAA84238D9D35B6968560FC9BD234A22371_gshared (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, ConfiguredTaskAwaiter_t8FC486401D1951F2426478F2050EE290197B6E80* ___0_awaiter, U3CInitReadAsyncU3Ed__52_tCC4B08BF3F120EDC18B4240A10D983633338DC72* ___1_stateMachine, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F Marshal_PtrToStructure_TisWin32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_m15ACABA4C13505251863EDCB0CDC31B84537D246_gshared (intptr_t ___0_ptr, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9 Marshal_PtrToStructure_TisWin32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_m96A5AD99AAFE5DEBADD88ADC94E9144E78939EFA_gshared (intptr_t ___0_ptr, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Span_1__ctor_mE18EBB601FBFA01BA29FE353364700952A9091FE_gshared_inline (Span_1_tDADAC65069DFE6B57C458109115ECD795ED39305* __this, void* ___0_pointer, int32_t ___1_length, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ReadOnlySpan_1__ctor_m470D1527EF015478E8677C7BCB52C8410A1DB604_gshared_inline (ReadOnlySpan_1_tA850A6C0E88ABBA37646A078ACBC24D6D5FD9B4D* __this, void* ___0_pointer, int32_t ___1_length, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Memory_1__ctor_m68A8E646FE59E19C27755D139B2EB8BBB4914685_gshared_inline (Memory_1_tB7CEF4416F5014E364267478CEF016A4AC5C0036* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_array, int32_t ___1_start, int32_t ___2_length, const RuntimeMethod* method) ;
@@ -3805,10 +3874,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IPGlobalProperties__ctor_mD47A72AA489322
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Win32IPGlobalProperties__ctor_m9B513B7EF6994299CD6F5043C32868D9521264EA (Win32IPGlobalProperties_tB98C6C4DD991F14120EE6F3E0B385FD027F8C925* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Win32NetworkInterface_GetNetworkParams_m0ACE6DEF5FBA99C96F2F734A6575A5ABCCBF44F5 (intptr_t ___0_ptr, int32_t* ___1_size, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Marshal_AllocHGlobal_mE1D700DF967E28BE8AB3E0D67C81A96B4FCC8F4F (int32_t ___0_cb, const RuntimeMethod* method) ;
-inline Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F Marshal_PtrToStructure_TisWin32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_m15ACABA4C13505251863EDCB0CDC31B84537D246 (intptr_t ___0_ptr, const RuntimeMethod* method)
+inline Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9 Marshal_PtrToStructure_TisWin32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_m96A5AD99AAFE5DEBADD88ADC94E9144E78939EFA (intptr_t ___0_ptr, const RuntimeMethod* method)
 {
-	return ((  Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F (*) (intptr_t, const RuntimeMethod*))Marshal_PtrToStructure_TisWin32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_m15ACABA4C13505251863EDCB0CDC31B84537D246_gshared)(___0_ptr, method);
+	return ((  Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9 (*) (intptr_t, const RuntimeMethod*))Marshal_PtrToStructure_TisWin32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_m96A5AD99AAFE5DEBADD88ADC94E9144E78939EFA_gshared)(___0_ptr, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Win32NetworkInterface_U3Cget_FixedInfoU3Eg__GetStringFromMultiByteU7C5_0_m0B614249CD74E3A4F6D204C8DA62C4F6C6CE5D08 (uint8_t* ___0_bytes, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Win32NetworkInterface_MultiByteToWideChar_m92B5BA34640F00880A5E8A9850378139F4CE16D9 (uint32_t ___0_CodePage, uint32_t ___1_dwFlags, uint8_t* ___2_lpMultiByteStr, int32_t ___3_cbMultiByte, Il2CppChar* ___4_lpWideCharStr, int32_t ___5_cchWideChar, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_CreateString_mFBC28D2E3EB87D497F7E702E4FFAD65F635E44DF (String_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___0_val, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DefaultProxySectionInternal_GetSystemWebProxy_mE4E1DD245650961864E31B4638513B3AA4201FBC (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WebProxy_CreateDefaultProxy_m27B3A824804A8B1163A29C96CA6E157704340066 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Interlocked_CompareExchange_mC2F0AEDE6957F175ED944794E7AEECE2AED96B71 (RuntimeObject** ___0_location1, RuntimeObject* ___1_value, RuntimeObject* ___2_comparand, const RuntimeMethod* method) ;
@@ -4563,6 +4635,9 @@ inline void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4 (List
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint8_t* Array_GetRawSzArrayData_m2F8F5B2A381AEF971F12866D9C0A6C4FBA59F6BB_inline (RuntimeArray* __this, const RuntimeMethod* method) ;
 #if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_iphlpapi_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL GetNetworkParams(intptr_t, int32_t*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_kernel32_INTERNAL
+IL2CPP_EXTERN_C int32_t DEFAULT_CALL MultiByteToWideChar(uint32_t, uint32_t, uint8_t*, int32_t, Il2CppChar*, int32_t);
 #endif
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -6741,22 +6816,48 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Win32NetworkInterface_GetNetworkParam
 
 	return returnValue;
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Win32NetworkInterface_MultiByteToWideChar_m92B5BA34640F00880A5E8A9850378139F4CE16D9 (uint32_t ___0_CodePage, uint32_t ___1_dwFlags, uint8_t* ___2_lpMultiByteStr, int32_t ___3_cbMultiByte, Il2CppChar* ___4_lpWideCharStr, int32_t ___5_cchWideChar, const RuntimeMethod* method) 
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (uint32_t, uint32_t, uint8_t*, int32_t, Il2CppChar*, int32_t);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_kernel32_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(uint32_t) + sizeof(uint32_t) + sizeof(uint8_t*) + sizeof(int32_t) + sizeof(Il2CppChar*) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("kernel32.dll"), "MultiByteToWideChar", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_kernel32_INTERNAL
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(MultiByteToWideChar)(___0_CodePage, ___1_dwFlags, ___2_lpMultiByteStr, ___3_cbMultiByte, ___4_lpWideCharStr, ___5_cchWideChar);
+	#else
+	int32_t returnValue = il2cppPInvokeFunc(___0_CodePage, ___1_dwFlags, ___2_lpMultiByteStr, ___3_cbMultiByte, ___4_lpWideCharStr, ___5_cchWideChar);
+	#endif
+	il2cpp_codegen_marshal_store_last_error();
+
+	return returnValue;
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F Win32NetworkInterface_get_FixedInfo_m7EF303F82B61DC514EE8D2116A28D036B392FFBF (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Marshal_PtrToStructure_TisWin32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_m15ACABA4C13505251863EDCB0CDC31B84537D246_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Marshal_PtrToStructure_TisWin32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_m96A5AD99AAFE5DEBADD88ADC94E9144E78939EFA_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
+	Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F V_2;
+	memset((&V_2), 0, sizeof(V_2));
 	{
 		bool L_0 = ((Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_StaticFields*)il2cpp_codegen_static_fields_for(Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_il2cpp_TypeInfo_var))->___initialized;
 		if (L_0)
 		{
-			goto IL_0035;
+			goto IL_00db;
 		}
 	}
 	{
@@ -6770,9 +6871,52 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF3
 		intptr_t L_4 = L_3;
 		int32_t L_5;
 		L_5 = Win32NetworkInterface_GetNetworkParams_m0ACE6DEF5FBA99C96F2F734A6575A5ABCCBF44F5(L_4, (&V_0), NULL);
-		Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F L_6;
-		L_6 = Marshal_PtrToStructure_TisWin32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_m15ACABA4C13505251863EDCB0CDC31B84537D246(L_4, Marshal_PtrToStructure_TisWin32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_m15ACABA4C13505251863EDCB0CDC31B84537D246_RuntimeMethod_var);
-		((Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_StaticFields*)il2cpp_codegen_static_fields_for(Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_il2cpp_TypeInfo_var))->___fixedInfo = L_6;
+		Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9 L_6;
+		L_6 = Marshal_PtrToStructure_TisWin32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_m96A5AD99AAFE5DEBADD88ADC94E9144E78939EFA(L_4, Marshal_PtrToStructure_TisWin32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_m96A5AD99AAFE5DEBADD88ADC94E9144E78939EFA_RuntimeMethod_var);
+		V_1 = L_6;
+		il2cpp_codegen_initobj((&V_2), sizeof(Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F));
+		U3CHostNameU3Ee__FixedBuffer_t50927C9BC8E3D5D2A44EC8B87B0DF956AED82E56* L_7 = (U3CHostNameU3Ee__FixedBuffer_t50927C9BC8E3D5D2A44EC8B87B0DF956AED82E56*)(&(&V_1)->___HostName);
+		uint8_t* L_8 = (uint8_t*)(&L_7->___FixedElementField);
+		String_t* L_9;
+		L_9 = Win32NetworkInterface_U3Cget_FixedInfoU3Eg__GetStringFromMultiByteU7C5_0_m0B614249CD74E3A4F6D204C8DA62C4F6C6CE5D08((uint8_t*)((uintptr_t)L_8), NULL);
+		(&V_2)->___HostName = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_2)->___HostName), (void*)L_9);
+		U3CDomainNameU3Ee__FixedBuffer_t926A27D5F7E973C7FFD876F3B998323443174409* L_10 = (U3CDomainNameU3Ee__FixedBuffer_t926A27D5F7E973C7FFD876F3B998323443174409*)(&(&V_1)->___DomainName);
+		uint8_t* L_11 = (uint8_t*)(&L_10->___FixedElementField);
+		String_t* L_12;
+		L_12 = Win32NetworkInterface_U3Cget_FixedInfoU3Eg__GetStringFromMultiByteU7C5_0_m0B614249CD74E3A4F6D204C8DA62C4F6C6CE5D08((uint8_t*)((uintptr_t)L_11), NULL);
+		(&V_2)->___DomainName = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_2)->___DomainName), (void*)L_12);
+		Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9 L_13 = V_1;
+		intptr_t L_14 = L_13.___CurrentDnsServer;
+		(&V_2)->___CurrentDnsServer = L_14;
+		Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9 L_15 = V_1;
+		Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7 L_16 = L_15.___DnsServerList;
+		(&V_2)->___DnsServerList = L_16;
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_2)->___DnsServerList))->___IpAddress), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_2)->___DnsServerList))->___IpMask), (void*)NULL);
+		#endif
+		Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9 L_17 = V_1;
+		int32_t L_18 = L_17.___NodeType;
+		(&V_2)->___NodeType = L_18;
+		U3CScopeIdU3Ee__FixedBuffer_t2EC97AD513928D6E313670EE44A6013B112B15CB* L_19 = (U3CScopeIdU3Ee__FixedBuffer_t2EC97AD513928D6E313670EE44A6013B112B15CB*)(&(&V_1)->___ScopeId);
+		uint8_t* L_20 = (uint8_t*)(&L_19->___FixedElementField);
+		String_t* L_21;
+		L_21 = Win32NetworkInterface_U3Cget_FixedInfoU3Eg__GetStringFromMultiByteU7C5_0_m0B614249CD74E3A4F6D204C8DA62C4F6C6CE5D08((uint8_t*)((uintptr_t)L_20), NULL);
+		(&V_2)->___ScopeId = L_21;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_2)->___ScopeId), (void*)L_21);
+		Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9 L_22 = V_1;
+		uint32_t L_23 = L_22.___EnableRouting;
+		(&V_2)->___EnableRouting = L_23;
+		Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9 L_24 = V_1;
+		uint32_t L_25 = L_24.___EnableProxy;
+		(&V_2)->___EnableProxy = L_25;
+		Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9 L_26 = V_1;
+		uint32_t L_27 = L_26.___EnableDns;
+		(&V_2)->___EnableDns = L_27;
+		Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F L_28 = V_2;
+		((Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_StaticFields*)il2cpp_codegen_static_fields_for(Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_il2cpp_TypeInfo_var))->___fixedInfo = L_28;
 		Il2CppCodeGenWriteBarrier((void**)&(((&((Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_StaticFields*)il2cpp_codegen_static_fields_for(Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_il2cpp_TypeInfo_var))->___fixedInfo))->___HostName), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
 		Il2CppCodeGenWriteBarrier((void**)&(((&((Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_StaticFields*)il2cpp_codegen_static_fields_for(Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_il2cpp_TypeInfo_var))->___fixedInfo))->___DomainName), (void*)NULL);
@@ -6789,10 +6933,94 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF3
 		((Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_StaticFields*)il2cpp_codegen_static_fields_for(Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_il2cpp_TypeInfo_var))->___initialized = (bool)1;
 	}
 
-IL_0035:
+IL_00db:
 	{
-		Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F L_7 = ((Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_StaticFields*)il2cpp_codegen_static_fields_for(Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_il2cpp_TypeInfo_var))->___fixedInfo;
-		return L_7;
+		Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F L_29 = ((Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_StaticFields*)il2cpp_codegen_static_fields_for(Win32NetworkInterface_t59A60D24287FAC6BCF4F357CA9455DB21047CFD2_il2cpp_TypeInfo_var))->___fixedInfo;
+		return L_29;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Win32NetworkInterface_U3Cget_FixedInfoU3Eg__GetStringFromMultiByteU7C5_0_m0B614249CD74E3A4F6D204C8DA62C4F6C6CE5D08 (uint8_t* ___0_bytes, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Il2CppChar* V_1 = NULL;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* V_2 = NULL;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* G_B4_0 = NULL;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* G_B3_0 = NULL;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* G_B5_0 = NULL;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* G_B6_0 = NULL;
+	{
+		uint8_t* L_0 = ___0_bytes;
+		int32_t L_1;
+		L_1 = Win32NetworkInterface_MultiByteToWideChar_m92B5BA34640F00880A5E8A9850378139F4CE16D9(0, 0, L_0, (-1), (Il2CppChar*)((uintptr_t)0), 0, NULL);
+		V_0 = L_1;
+		int32_t L_2 = V_0;
+		if (L_2)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		String_t* L_3 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_defaults.string_class))->___Empty;
+		return L_3;
+	}
+
+IL_0016:
+	{
+		int32_t L_4 = V_0;
+		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_5 = (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)SZArrayNew(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var, (uint32_t)L_4);
+		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_6 = L_5;
+		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_7 = L_6;
+		V_2 = L_7;
+		if (!L_7)
+		{
+			G_B4_0 = L_6;
+			goto IL_0026;
+		}
+		G_B3_0 = L_6;
+	}
+	{
+		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_8 = V_2;
+		NullCheck(L_8);
+		if (((int32_t)(((RuntimeArray*)L_8)->max_length)))
+		{
+			G_B5_0 = G_B3_0;
+			goto IL_002b;
+		}
+		G_B4_0 = G_B3_0;
+	}
+
+IL_0026:
+	{
+		V_1 = (Il2CppChar*)((uintptr_t)0);
+		G_B6_0 = G_B4_0;
+		goto IL_0034;
+	}
+
+IL_002b:
+	{
+		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_9 = V_2;
+		NullCheck(L_9);
+		V_1 = (Il2CppChar*)((uintptr_t)((L_9)->GetAddressAt(static_cast<il2cpp_array_size_t>(0))));
+		G_B6_0 = G_B5_0;
+	}
+
+IL_0034:
+	{
+		uint8_t* L_10 = ___0_bytes;
+		Il2CppChar* L_11 = V_1;
+		int32_t L_12 = V_0;
+		int32_t L_13;
+		L_13 = Win32NetworkInterface_MultiByteToWideChar_m92B5BA34640F00880A5E8A9850378139F4CE16D9(0, 0, L_10, (-1), L_11, L_12, NULL);
+		V_2 = (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)NULL;
+		String_t* L_14;
+		L_14 = String_CreateString_mFBC28D2E3EB87D497F7E702E4FFAD65F635E44DF(NULL, G_B6_0, NULL);
+		return L_14;
 	}
 }
 #ifdef __clang__
@@ -6807,12 +7035,12 @@ IL_0035:
 
 IL2CPP_EXTERN_C void Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshal_pinvoke(const Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F& unmarshaled, Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshaled_pinvoke& marshaled)
 {
-	il2cpp_codegen_marshal_string_fixed(unmarshaled.___HostName, (char*)&marshaled.___HostName, 132);
-	il2cpp_codegen_marshal_string_fixed(unmarshaled.___DomainName, (char*)&marshaled.___DomainName, 132);
+	marshaled.___HostName = il2cpp_codegen_marshal_string(unmarshaled.___HostName);
+	marshaled.___DomainName = il2cpp_codegen_marshal_string(unmarshaled.___DomainName);
 	marshaled.___CurrentDnsServer = unmarshaled.___CurrentDnsServer;
 	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_pinvoke(unmarshaled.___DnsServerList, marshaled.___DnsServerList);
 	marshaled.___NodeType = unmarshaled.___NodeType;
-	il2cpp_codegen_marshal_string_fixed(unmarshaled.___ScopeId, (char*)&marshaled.___ScopeId, 260);
+	marshaled.___ScopeId = il2cpp_codegen_marshal_string(unmarshaled.___ScopeId);
 	marshaled.___EnableRouting = unmarshaled.___EnableRouting;
 	marshaled.___EnableProxy = unmarshaled.___EnableProxy;
 	marshaled.___EnableDns = unmarshaled.___EnableDns;
@@ -6852,28 +7080,34 @@ IL2CPP_EXTERN_C void Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_
 }
 IL2CPP_EXTERN_C void Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshal_pinvoke_cleanup(Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshaled_pinvoke& marshaled)
 {
+	il2cpp_codegen_marshal_free(marshaled.___HostName);
+	marshaled.___HostName = NULL;
+	il2cpp_codegen_marshal_free(marshaled.___DomainName);
+	marshaled.___DomainName = NULL;
 	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_pinvoke_cleanup(marshaled.___DnsServerList);
+	il2cpp_codegen_marshal_free(marshaled.___ScopeId);
+	marshaled.___ScopeId = NULL;
 }
 
 
 IL2CPP_EXTERN_C void Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshal_com(const Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F& unmarshaled, Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshaled_com& marshaled)
 {
-	il2cpp_codegen_marshal_string_fixed(unmarshaled.___HostName, (char*)&marshaled.___HostName, 132);
-	il2cpp_codegen_marshal_string_fixed(unmarshaled.___DomainName, (char*)&marshaled.___DomainName, 132);
+	marshaled.___HostName = il2cpp_codegen_marshal_bstring(unmarshaled.___HostName);
+	marshaled.___DomainName = il2cpp_codegen_marshal_bstring(unmarshaled.___DomainName);
 	marshaled.___CurrentDnsServer = unmarshaled.___CurrentDnsServer;
 	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_com(unmarshaled.___DnsServerList, marshaled.___DnsServerList);
 	marshaled.___NodeType = unmarshaled.___NodeType;
-	il2cpp_codegen_marshal_string_fixed(unmarshaled.___ScopeId, (char*)&marshaled.___ScopeId, 260);
+	marshaled.___ScopeId = il2cpp_codegen_marshal_bstring(unmarshaled.___ScopeId);
 	marshaled.___EnableRouting = unmarshaled.___EnableRouting;
 	marshaled.___EnableProxy = unmarshaled.___EnableProxy;
 	marshaled.___EnableDns = unmarshaled.___EnableDns;
 }
 IL2CPP_EXTERN_C void Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshal_com_back(const Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshaled_com& marshaled, Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F& unmarshaled)
 {
-	unmarshaled.___HostName = il2cpp_codegen_marshal_string_result(marshaled.___HostName);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___HostName), (void*)il2cpp_codegen_marshal_string_result(marshaled.___HostName));
-	unmarshaled.___DomainName = il2cpp_codegen_marshal_string_result(marshaled.___DomainName);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___DomainName), (void*)il2cpp_codegen_marshal_string_result(marshaled.___DomainName));
+	unmarshaled.___HostName = il2cpp_codegen_marshal_bstring_result(marshaled.___HostName);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___HostName), (void*)il2cpp_codegen_marshal_bstring_result(marshaled.___HostName));
+	unmarshaled.___DomainName = il2cpp_codegen_marshal_bstring_result(marshaled.___DomainName);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___DomainName), (void*)il2cpp_codegen_marshal_bstring_result(marshaled.___DomainName));
 	intptr_t unmarshaledCurrentDnsServer_temp_2;
 	memset((&unmarshaledCurrentDnsServer_temp_2), 0, sizeof(unmarshaledCurrentDnsServer_temp_2));
 	unmarshaledCurrentDnsServer_temp_2 = marshaled.___CurrentDnsServer;
@@ -6889,8 +7123,8 @@ IL2CPP_EXTERN_C void Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_
 	int32_t unmarshaledNodeType_temp_4 = 0;
 	unmarshaledNodeType_temp_4 = marshaled.___NodeType;
 	unmarshaled.___NodeType = unmarshaledNodeType_temp_4;
-	unmarshaled.___ScopeId = il2cpp_codegen_marshal_string_result(marshaled.___ScopeId);
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___ScopeId), (void*)il2cpp_codegen_marshal_string_result(marshaled.___ScopeId));
+	unmarshaled.___ScopeId = il2cpp_codegen_marshal_bstring_result(marshaled.___ScopeId);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___ScopeId), (void*)il2cpp_codegen_marshal_bstring_result(marshaled.___ScopeId));
 	uint32_t unmarshaledEnableRouting_temp_6 = 0;
 	unmarshaledEnableRouting_temp_6 = marshaled.___EnableRouting;
 	unmarshaled.___EnableRouting = unmarshaledEnableRouting_temp_6;
@@ -6903,8 +7137,160 @@ IL2CPP_EXTERN_C void Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_
 }
 IL2CPP_EXTERN_C void Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshal_com_cleanup(Win32_FIXED_INFO_t9D99BDFAAAAC166F7EDAFA26BF309D322F817C5F_marshaled_com& marshaled)
 {
+	il2cpp_codegen_marshal_free_bstring(marshaled.___HostName);
+	marshaled.___HostName = NULL;
+	il2cpp_codegen_marshal_free_bstring(marshaled.___DomainName);
+	marshaled.___DomainName = NULL;
+	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_com_cleanup(marshaled.___DnsServerList);
+	il2cpp_codegen_marshal_free_bstring(marshaled.___ScopeId);
+	marshaled.___ScopeId = NULL;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+
+IL2CPP_EXTERN_C void Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshal_pinvoke(const Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9& unmarshaled, Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshaled_pinvoke& marshaled)
+{
+	marshaled.___HostName = unmarshaled.___HostName;
+	marshaled.___DomainName = unmarshaled.___DomainName;
+	marshaled.___CurrentDnsServer = unmarshaled.___CurrentDnsServer;
+	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_pinvoke(unmarshaled.___DnsServerList, marshaled.___DnsServerList);
+	marshaled.___NodeType = unmarshaled.___NodeType;
+	marshaled.___ScopeId = unmarshaled.___ScopeId;
+	marshaled.___EnableRouting = unmarshaled.___EnableRouting;
+	marshaled.___EnableProxy = unmarshaled.___EnableProxy;
+	marshaled.___EnableDns = unmarshaled.___EnableDns;
+}
+IL2CPP_EXTERN_C void Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshal_pinvoke_back(const Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshaled_pinvoke& marshaled, Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9& unmarshaled)
+{
+	U3CHostNameU3Ee__FixedBuffer_t50927C9BC8E3D5D2A44EC8B87B0DF956AED82E56 unmarshaledHostName_temp_0;
+	memset((&unmarshaledHostName_temp_0), 0, sizeof(unmarshaledHostName_temp_0));
+	unmarshaledHostName_temp_0 = marshaled.___HostName;
+	unmarshaled.___HostName = unmarshaledHostName_temp_0;
+	U3CDomainNameU3Ee__FixedBuffer_t926A27D5F7E973C7FFD876F3B998323443174409 unmarshaledDomainName_temp_1;
+	memset((&unmarshaledDomainName_temp_1), 0, sizeof(unmarshaledDomainName_temp_1));
+	unmarshaledDomainName_temp_1 = marshaled.___DomainName;
+	unmarshaled.___DomainName = unmarshaledDomainName_temp_1;
+	intptr_t unmarshaledCurrentDnsServer_temp_2;
+	memset((&unmarshaledCurrentDnsServer_temp_2), 0, sizeof(unmarshaledCurrentDnsServer_temp_2));
+	unmarshaledCurrentDnsServer_temp_2 = marshaled.___CurrentDnsServer;
+	unmarshaled.___CurrentDnsServer = unmarshaledCurrentDnsServer_temp_2;
+	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7 unmarshaledDnsServerList_temp_3;
+	memset((&unmarshaledDnsServerList_temp_3), 0, sizeof(unmarshaledDnsServerList_temp_3));
+	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_pinvoke_back(marshaled.___DnsServerList, unmarshaledDnsServerList_temp_3);
+	unmarshaled.___DnsServerList = unmarshaledDnsServerList_temp_3;
+	Il2CppCodeGenWriteBarrier((void**)&(((&unmarshaled.___DnsServerList))->___IpAddress), (void*)NULL);
+	#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+	Il2CppCodeGenWriteBarrier((void**)&(((&unmarshaled.___DnsServerList))->___IpMask), (void*)NULL);
+	#endif
+	int32_t unmarshaledNodeType_temp_4 = 0;
+	unmarshaledNodeType_temp_4 = marshaled.___NodeType;
+	unmarshaled.___NodeType = unmarshaledNodeType_temp_4;
+	U3CScopeIdU3Ee__FixedBuffer_t2EC97AD513928D6E313670EE44A6013B112B15CB unmarshaledScopeId_temp_5;
+	memset((&unmarshaledScopeId_temp_5), 0, sizeof(unmarshaledScopeId_temp_5));
+	unmarshaledScopeId_temp_5 = marshaled.___ScopeId;
+	unmarshaled.___ScopeId = unmarshaledScopeId_temp_5;
+	uint32_t unmarshaledEnableRouting_temp_6 = 0;
+	unmarshaledEnableRouting_temp_6 = marshaled.___EnableRouting;
+	unmarshaled.___EnableRouting = unmarshaledEnableRouting_temp_6;
+	uint32_t unmarshaledEnableProxy_temp_7 = 0;
+	unmarshaledEnableProxy_temp_7 = marshaled.___EnableProxy;
+	unmarshaled.___EnableProxy = unmarshaledEnableProxy_temp_7;
+	uint32_t unmarshaledEnableDns_temp_8 = 0;
+	unmarshaledEnableDns_temp_8 = marshaled.___EnableDns;
+	unmarshaled.___EnableDns = unmarshaledEnableDns_temp_8;
+}
+IL2CPP_EXTERN_C void Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshal_pinvoke_cleanup(Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshaled_pinvoke& marshaled)
+{
+	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_pinvoke_cleanup(marshaled.___DnsServerList);
+}
+
+
+IL2CPP_EXTERN_C void Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshal_com(const Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9& unmarshaled, Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshaled_com& marshaled)
+{
+	marshaled.___HostName = unmarshaled.___HostName;
+	marshaled.___DomainName = unmarshaled.___DomainName;
+	marshaled.___CurrentDnsServer = unmarshaled.___CurrentDnsServer;
+	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_com(unmarshaled.___DnsServerList, marshaled.___DnsServerList);
+	marshaled.___NodeType = unmarshaled.___NodeType;
+	marshaled.___ScopeId = unmarshaled.___ScopeId;
+	marshaled.___EnableRouting = unmarshaled.___EnableRouting;
+	marshaled.___EnableProxy = unmarshaled.___EnableProxy;
+	marshaled.___EnableDns = unmarshaled.___EnableDns;
+}
+IL2CPP_EXTERN_C void Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshal_com_back(const Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshaled_com& marshaled, Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9& unmarshaled)
+{
+	U3CHostNameU3Ee__FixedBuffer_t50927C9BC8E3D5D2A44EC8B87B0DF956AED82E56 unmarshaledHostName_temp_0;
+	memset((&unmarshaledHostName_temp_0), 0, sizeof(unmarshaledHostName_temp_0));
+	unmarshaledHostName_temp_0 = marshaled.___HostName;
+	unmarshaled.___HostName = unmarshaledHostName_temp_0;
+	U3CDomainNameU3Ee__FixedBuffer_t926A27D5F7E973C7FFD876F3B998323443174409 unmarshaledDomainName_temp_1;
+	memset((&unmarshaledDomainName_temp_1), 0, sizeof(unmarshaledDomainName_temp_1));
+	unmarshaledDomainName_temp_1 = marshaled.___DomainName;
+	unmarshaled.___DomainName = unmarshaledDomainName_temp_1;
+	intptr_t unmarshaledCurrentDnsServer_temp_2;
+	memset((&unmarshaledCurrentDnsServer_temp_2), 0, sizeof(unmarshaledCurrentDnsServer_temp_2));
+	unmarshaledCurrentDnsServer_temp_2 = marshaled.___CurrentDnsServer;
+	unmarshaled.___CurrentDnsServer = unmarshaledCurrentDnsServer_temp_2;
+	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7 unmarshaledDnsServerList_temp_3;
+	memset((&unmarshaledDnsServerList_temp_3), 0, sizeof(unmarshaledDnsServerList_temp_3));
+	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_com_back(marshaled.___DnsServerList, unmarshaledDnsServerList_temp_3);
+	unmarshaled.___DnsServerList = unmarshaledDnsServerList_temp_3;
+	Il2CppCodeGenWriteBarrier((void**)&(((&unmarshaled.___DnsServerList))->___IpAddress), (void*)NULL);
+	#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+	Il2CppCodeGenWriteBarrier((void**)&(((&unmarshaled.___DnsServerList))->___IpMask), (void*)NULL);
+	#endif
+	int32_t unmarshaledNodeType_temp_4 = 0;
+	unmarshaledNodeType_temp_4 = marshaled.___NodeType;
+	unmarshaled.___NodeType = unmarshaledNodeType_temp_4;
+	U3CScopeIdU3Ee__FixedBuffer_t2EC97AD513928D6E313670EE44A6013B112B15CB unmarshaledScopeId_temp_5;
+	memset((&unmarshaledScopeId_temp_5), 0, sizeof(unmarshaledScopeId_temp_5));
+	unmarshaledScopeId_temp_5 = marshaled.___ScopeId;
+	unmarshaled.___ScopeId = unmarshaledScopeId_temp_5;
+	uint32_t unmarshaledEnableRouting_temp_6 = 0;
+	unmarshaledEnableRouting_temp_6 = marshaled.___EnableRouting;
+	unmarshaled.___EnableRouting = unmarshaledEnableRouting_temp_6;
+	uint32_t unmarshaledEnableProxy_temp_7 = 0;
+	unmarshaledEnableProxy_temp_7 = marshaled.___EnableProxy;
+	unmarshaled.___EnableProxy = unmarshaledEnableProxy_temp_7;
+	uint32_t unmarshaledEnableDns_temp_8 = 0;
+	unmarshaledEnableDns_temp_8 = marshaled.___EnableDns;
+	unmarshaled.___EnableDns = unmarshaledEnableDns_temp_8;
+}
+IL2CPP_EXTERN_C void Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshal_com_cleanup(Win32_FIXED_INFO_Marshal_t94EBD2D1DEE549CB7991EDBAE4099CCD95A9F3D9_marshaled_com& marshaled)
+{
 	Win32_IP_ADDR_STRING_tB0FA66A644EFD59AFE80E7F55060CC566FF7BEC7_marshal_com_cleanup(marshaled.___DnsServerList);
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

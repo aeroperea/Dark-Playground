@@ -749,6 +749,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8
 IL2CPP_EXTERN_C String_t* _stringLiteral472C9301FEF704607CF49357EA1296CFB5868D8E;
 IL2CPP_EXTERN_C String_t* _stringLiteral4788ABFA6011F8E13B2CF27EE88224FD03E8FB5E;
 IL2CPP_EXTERN_C String_t* _stringLiteral47A3FAF17D89549FD0F0ECA7370B81F7C80DFCDE;
+IL2CPP_EXTERN_C String_t* _stringLiteral49B817169CAB91B7D049ED5DD113DA49EACF9484;
 IL2CPP_EXTERN_C String_t* _stringLiteral49D529B6648C038B5F458453C2CF7D40C12FB850;
 IL2CPP_EXTERN_C String_t* _stringLiteral4A8C9CFF976BBA2D06FA917CA3D0280D8DB8499F;
 IL2CPP_EXTERN_C String_t* _stringLiteral4AD35B1F3A33A544CAAFB1F73531F074976F1B20;
@@ -878,7 +879,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC2692DAFABAE4F20748622DC4EFFB18765E992B9
 IL2CPP_EXTERN_C String_t* _stringLiteralC4EB0F001991DE0022B8FEB648D5E91F3CA9586B;
 IL2CPP_EXTERN_C String_t* _stringLiteralC59516EA9947E189FE87D10AD39DC42083D59792;
 IL2CPP_EXTERN_C String_t* _stringLiteralC6C47A8792A2BB0013C0B0141B5EFF5EAD53403B;
-IL2CPP_EXTERN_C String_t* _stringLiteralC8AAA93862ABB8FFA1B25A875896A614DE2B49C1;
 IL2CPP_EXTERN_C String_t* _stringLiteralC8C5FBC56EB35B2E664F5FF73F9BB73A33B6191E;
 IL2CPP_EXTERN_C String_t* _stringLiteralCB2C04E9F961F00D07E6BA706E6B515F8CCE10DE;
 IL2CPP_EXTERN_C String_t* _stringLiteralCBF3506B7A76338A7B17805E088E77B8246FE11B;
@@ -10946,6 +10946,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightingStrings__cctor_mB1573DA02CDAA776
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral43B3968EF4AEB6CEBC606CFBA27BC0495A20FA16);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral46428F1342961245D98F5F7B8D215070BA71CADD);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral472C9301FEF704607CF49357EA1296CFB5868D8E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral49B817169CAB91B7D049ED5DD113DA49EACF9484);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4AD35B1F3A33A544CAAFB1F73531F074976F1B20);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4D4B8A4882413CF15FB95284EED7EE111FA5F525);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4F910CE099D5597D7445B2C5FBD0765E08D5F3CF);
@@ -11013,7 +11014,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightingStrings__cctor_mB1573DA02CDAA776
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC4EB0F001991DE0022B8FEB648D5E91F3CA9586B);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC59516EA9947E189FE87D10AD39DC42083D59792);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC6C47A8792A2BB0013C0B0141B5EFF5EAD53403B);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC8AAA93862ABB8FFA1B25A875896A614DE2B49C1);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCB2C04E9F961F00D07E6BA706E6B515F8CCE10DE);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCDFA942DEE35300E8C16178405EDB962436298BC);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD14ED25DBADCABAB6A94F9C8AFA1835443E5D393);
@@ -11371,8 +11371,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightingStrings__cctor_mB1573DA02CDAA776
 		Il2CppCodeGenWriteBarrier((void**)&(((&((LightingStrings_tD27426D7696E0C92830B1AA1FCED6300A6E08468_StaticFields*)il2cpp_codegen_static_fields_for(LightingStrings_tD27426D7696E0C92830B1AA1FCED6300A6E08468_il2cpp_TypeInfo_var))->___LightLayersVisualization))->___tooltip), (void*)NULL);
 		#endif
 		il2cpp_codegen_initobj((&V_0), sizeof(NameAndTooltip_tA6656221A6E70C8409CFCBAF6CCEC9C718E344D4));
-		(&V_0)->___name = _stringLiteralC8AAA93862ABB8FFA1B25A875896A614DE2B49C1;
-		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___name), (void*)_stringLiteralC8AAA93862ABB8FFA1B25A875896A614DE2B49C1);
+		(&V_0)->___name = _stringLiteral49B817169CAB91B7D049ED5DD113DA49EACF9484;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___name), (void*)_stringLiteral49B817169CAB91B7D049ED5DD113DA49EACF9484);
 		(&V_0)->___tooltip = _stringLiteral33CFD75A4639879A4BA09009F2216C07A7382E76;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___tooltip), (void*)_stringLiteral33CFD75A4639879A4BA09009F2216C07A7382E76);
 		NameAndTooltip_tA6656221A6E70C8409CFCBAF6CCEC9C718E344D4 L_29 = V_0;
