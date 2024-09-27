@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb56611815d6c643aa2f5b2dbce4c79, type: 3}
+  m_Name: grandmaPictureQuest
+  m_EditorClassIdentifier: 
+  questName: Find your Kidney
+  questDescription: Oh no skibidi yellow man took your kidney! now go find it >:(
+  objectives:
+  - description: Oh no skibidi yellow man took your kidney! now go find it >:(
+    objectiveType: 0
+    status: 1
+    isOptional: 0
+    location: {x: 48.7, y: 0.42, z: 29.22}
+    sceneName: KidneyRoom
+    requiredItemCount: 1
+    currentItemCount: 0
+    targetId: Kidney Location
+  - description: find a way out!!!! :0
+    objectiveType: 0
+    status: 0
+    isOptional: 0
+    location: {x: 70.72009, y: 0.489, z: -12.366039}
+    sceneName: KidneyRoom
+    requiredItemCount: 1
+    currentItemCount: 0
+    targetId: solitary room
+  status: 0
+  linkedQuest: {fileID: 11400000, guid: 39087685f8ca53f47a8f8721c3e8ff82, type: 2}

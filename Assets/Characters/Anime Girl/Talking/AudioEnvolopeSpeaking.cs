@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(AudioSource))]
 public class AudioEnvelopeSpeaking : MonoBehaviour
@@ -9,6 +10,12 @@ public class AudioEnvelopeSpeaking : MonoBehaviour
     private AudioSource audioSource;
     private float initialYPosition;
 
+    // Array to hold voice clips and serialize it for inspector assignment
+    [SerializeField] private AudioClip[] voiceClips;
+
+    // Dictionary to hold voice lines
+    private Dictionary<string, AudioClip> voiceLineDictionary;
+
     [Header("Testing")]
     public AudioClip testAudio;
     public bool testing = false;
@@ -17,9 +24,38 @@ public class AudioEnvelopeSpeaking : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
 
-        if(testing)
+        // Initialize voice lines when the script starts
+        InitializeVoiceLines();
+
+        if (testing && testAudio != null)
         {
             PlayAudio(testAudio);
+        }
+    }
+
+    // Function to initialize voice lines dictionary from voiceClips array
+    private void InitializeVoiceLines()
+    {
+        voiceLineDictionary = new Dictionary<string, AudioClip>();
+        foreach (AudioClip clip in voiceClips)
+        {
+            if (clip != null && !voiceLineDictionary.ContainsKey(clip.name))
+            {
+                voiceLineDictionary.Add(clip.name, clip);
+            }
+        }
+    }
+
+    // Function to play a voice line using its name (key)
+    public void PlayVoiceLine(string clipName)
+    {
+        if (voiceLineDictionary != null && voiceLineDictionary.TryGetValue(clipName, out AudioClip clip))
+        {
+            PlayAudio(clip);
+        }
+        else
+        {
+            Debug.LogWarning($"Voice line with ID '{clipName}' not found.");
         }
     }
 
@@ -38,7 +74,7 @@ public class AudioEnvelopeSpeaking : MonoBehaviour
         }
 
         initialYPosition = targetTransform.position.y; // Set initial Y position at the start of analysis
-         audioSource.clip = clip;
+        audioSource.clip = clip;
         audioSource.Play();
         StartCoroutine(AnalyzeAudioCoroutine(clip.length, clip));
     }
@@ -63,7 +99,6 @@ public class AudioEnvelopeSpeaking : MonoBehaviour
         }
 
         audioSource.Stop();
-        PlayAudio(clip);
     }
 
     float GetCurrentAverageVolume(float[] data)
@@ -74,5 +109,17 @@ public class AudioEnvelopeSpeaking : MonoBehaviour
             total += Mathf.Abs(datum);
         }
         return total / 1024; // Average
+    }
+
+    public float GetVoiceLineLength(string clipName)
+    {
+        if(voiceLineDictionary.TryGetValue(clipName, out AudioClip clip))
+        {
+            return clip.length;
+        }else
+        {
+            Debug.LogWarning($"Voice Line with ID'{clipName}' notfound.");
+            return 0;
+        }
     }
 }

@@ -1,14 +1,17 @@
 using UnityEngine;
 using System.Collections;
+
 public class Animegirlcutscene : MonoBehaviour
 {
+    public Quest grandmaPictureQuest;
+
     // Audio Components
     [Header("Audio Components")]
     [SerializeField] AudioEnvelopeSpeaking animeGirlVoice;
 
     // Animator Components
     [Header("Animator Components")]
-    [SerializeField] Animator playerAnimator;
+    Animator playerAnimator;
 
     // Transform Components
     [Header("Transform Components")]
@@ -18,16 +21,16 @@ public class Animegirlcutscene : MonoBehaviour
 
     // Camera Components
     [Header("Camera Settings")]
-    [SerializeField] Camera mainCamera;
+   Camera mainCamera;
     [Tooltip("Secondary camera used for specific sequences.")]
-    public Camera cutsceneCamera;
+    public Camera camera1;
+    public Camera camera2;
     [Tooltip("Animated camera component attached to the secondary camera.")]
     public AnimatedCamera animatedCamera;
     [Header("Anime Girl Targets")]
     public Transform agTarget1;
 
     [Header("Camera Targets")]
-
     public Transform cTarget1;
 
     [Header("Player Targets")]
@@ -35,7 +38,14 @@ public class Animegirlcutscene : MonoBehaviour
 
     // Player Components
     [Header("Player Components")]
-    [SerializeField] ThirdPersonController playerController;
+    ThirdPersonController playerController;
+
+    // Missing Variables
+    [SerializeField] private float moveDuration = 3f; // How long the player takes to move
+    
+    [SerializeField] private Transform wideAnglePlacement; // The position for the wide-angle camera placement
+    [SerializeField] private Transform wideAnglePan; // The target for wide-angle camera pan
+
     void Awake()
     {
         playerT = GameManager.Instance.playerT;
@@ -45,74 +55,91 @@ public class Animegirlcutscene : MonoBehaviour
         mainCamera = Camera.main;
         animeGirlVoice = animeGirl.gameObject.GetComponent<AudioEnvelopeSpeaking>();
 
-        animatedCamera = cutsceneCamera.gameObject.GetComponent<AnimatedCamera>();
+        animatedCamera = camera1.gameObject.GetComponent<AnimatedCamera>();
+        camera1.gameObject.SetActive(false);
+        camera2.gameObject.SetActive(false);
     }
+
     public void StartCutscene()
     {
         StartCoroutine(CutScene());
     }
+
     public void EndCutscene()
     {
-
+        // Implement end cutscene logic here if needed
     }
 
     IEnumerator CutScene()
     {
-        // //turn on the cutscene camera
-        // mainCamera.gameObject.SetActive(false);
-        // cutsceneCamera.gameObject.SetActive(true);
+        // Turn on the cutscene camera
+        mainCamera.gameObject.SetActive(false);
+        camera1.gameObject.SetActive(true);
 
-        // //player walks up
-        // playerT.position = playerStartPlacement.position;
-        // playerT.rotation = playerStartPlacement.rotation;
-        // playerController.DeactivateControls();
-        // //animated camera pans to something
-        // animatedCamera.SetTargetTransform(cTarget1);
+        // Player walks up
+        playerT.position = playerStartPlacement.position;
+        playerT.rotation = playerStartPlacement.rotation;
+        playerController.DeactivateControls();
 
-        // //wauit for player to get there and animate him
-        // float startTime = Time.time;
-        // Vector3 startPosition = playerT.position;
-        // float speed = 0f;
-        // while (Time.time < startTime + moveDuration)
-        // {
-        //     Vector3 previousPosition = playerT.position;
-        //     playerT.position = Vector3.Lerp(startPosition, destination.position, (Time.time - startTime) / moveDuration);
-        //     speed = Vector3.Distance(playerT.position, previousPosition) / Time.deltaTime;
-        //     playerAnimator.SetFloat("speedZ", speed);
-        //     yield return null;
-        // }
-        // //stop doing the walk u dummy
-        // playerAnimator.SetFloat("speedZ", 0);
+        // Animated camera pans to something
+        animatedCamera.SetTargetTransform(cTarget1);
 
-        // //camera switches to other cam which is a close up of the anime girl face turning around 
+        // Wait for the player to reach the pTarget1
+        float startTime = Time.time;
+        Vector3 startPosition = playerT.position;
+        float speed = 0f;
+        while (Time.time < startTime + moveDuration)
+        {
+            Vector3 previousPosition = playerT.position;
+            playerT.position = Vector3.Lerp(startPosition, pTarget1.position, (Time.time - startTime) / moveDuration);
+            speed = Vector3.Distance(playerT.position, previousPosition) / Time.deltaTime;
+            playerAnimator.SetFloat("speedZ", speed);
+            yield return null;
+        }
 
-        // // player turns around to look at dandid... wth i mean anime girl turns around and looks at player
-        // Quaternion initialRotation = animeGirl.rotation;
-        // Quaternion targetRotation = Quaternion.Euler(0, initialRotation.eulerAngles.y + 180, 0);
-        // float rotationSpeed = 1f; // Speed of rotation
-        // float rotationProgress = 0f; // Progress from 0 to 1
-        // while (rotationProgress < 1f)
-        // {
-        //     rotationProgress += Time.deltaTime * rotationSpeed;
-        //     animeGirl.rotation = Quaternion.Lerp(initialRotation, targetRotation, rotationProgress);
-        //     yield return null;
-        // }
+        // Stop walking animation
+        playerAnimator.SetFloat("speedZ", 0);
 
-        // //camera switch to wide angle of anime girl using that original camera we just used before by placing it at the wide angle camera location and rotation
+        // Camera switches to close up of the anime girl face
+        camera1.gameObject.SetActive(false);
+        camera2.gameObject.SetActive(true);
 
-        // //anime girl talks and says stufff using the audio evenelope thingy
-        
+        // Anime girl turns around and looks at the player
+        Quaternion initialRotation = animeGirl.rotation;
+        Quaternion targetRotation = agTarget1.rotation;
+        float rotationSpeed = 1f;
+        float rotationProgress = 0f;
+        while (rotationProgress < 1f)
+        {
+            rotationProgress += Time.deltaTime * rotationSpeed;
+            animeGirl.rotation = Quaternion.Lerp(initialRotation, targetRotation, rotationProgress);
+            yield return null;
+        }
 
-        // // player guy talks too using his regular player voice thing
+        // Wide angle camera shot of anime girl
+        camera1.transform.position = wideAnglePlacement.position;
+        camera1.gameObject.SetActive(true);
+        camera2.gameObject.SetActive(false);
+        animatedCamera.SetTargetTransform(wideAnglePan);
+        yield return new WaitWhile(() => animatedCamera.isAnimating);
+    
 
-        // //they talk some more different camera angle and some panning using animated camera component
+        // Player voice line
+        GameManager.Instance.playerVoiceLineController.PlayVoiceLine("who are you");
+        float lineDuration = GameManager.Instance.playerVoiceLineController.GetVoiceLineLength("who are you");
+        yield return new WaitForSeconds(lineDuration);
 
-        // //a quest is given to get that pictujre
+        // Anime girl responds
+        animeGirlVoice.PlayVoiceLine("I Am An Alien");
+        lineDuration = animeGirlVoice.GetVoiceLineLength("I Am An Alien");
+        yield return new WaitForSeconds(lineDuration);
 
+        // Player's awkward response
+        GameManager.Instance.playerVoiceLineController.PlayVoiceLine("uh ok");
+        lineDuration = GameManager.Instance.playerVoiceLineController.GetVoiceLineLength("uh ok");
+        yield return new WaitForSeconds(lineDuration);
 
-
-    yield return null;
-
-
+        // Add quest
+        QuestManager.Instance.AddQuest(grandmaPictureQuest);
     }
 }
