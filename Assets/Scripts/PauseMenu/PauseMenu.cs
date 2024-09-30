@@ -60,14 +60,27 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void OpenMainMenu()
+    // public void OpenMainMenu()
+    // {
+    //     SceneManager.LoadScene(0);
+    // }
+
+    public void ResetCurrentScene()
     {
-        SceneManager.LoadScene(0);
+        // get the current active scene's index
+        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        
+        // reload the scene by index
+        SceneManager.LoadScene(sceneIndex);
     }
 
     public void OpenSettings()
     {
-        settings.SetActive(true);
+        if(settings != null)
+        {
+            settings.SetActive(true);
+        }
+        print("clicked settings");
     }
 
     public void Reset()

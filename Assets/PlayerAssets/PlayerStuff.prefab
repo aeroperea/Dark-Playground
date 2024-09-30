@@ -354,8 +354,8 @@ RectTransform:
   m_Children:
   - {fileID: 5915854697260312082}
   - {fileID: 8029905327913516590}
-  - {fileID: 5204187391596987334}
   - {fileID: 2521561935175346111}
+  - {fileID: 5204187391596987334}
   m_Father: {fileID: 3065199707768532011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -380,11 +380,11 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &2108862618435954361
 MonoBehaviour:
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
+  m_IgnoreReversedGraphics: 0
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 7752665762705549014}
   - component: {fileID: 1441244440197082620}
   m_Layer: 0
-  m_Name: Main Camera (1)
+  m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -655,7 +655,7 @@ Transform:
   m_GameObject: {fileID: 6836088984207674351}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3000008, y: 1.607, z: -2.4696848}
+  m_LocalPosition: {x: 0.2999878, y: 1.6069999, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1323,7 +1323,7 @@ Transform:
   m_GameObject: {fileID: 8801293446149904310}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3000008, y: 1.607, z: -2.4696848}
+  m_LocalPosition: {x: 0.2999878, y: 1.6069999, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1384,6 +1384,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3065199707768532011}
     m_Modifications:
+    - target: {fileID: 982121192394882692, guid: 700659c71136a9f488bfb0901e864c60, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 426.7898
+      objectReference: {fileID: 0}
+    - target: {fileID: 982121192394882692, guid: 700659c71136a9f488bfb0901e864c60, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 491.5938
+      objectReference: {fileID: 0}
+    - target: {fileID: 982121192394882692, guid: 700659c71136a9f488bfb0901e864c60, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -51.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 982121192394882692, guid: 700659c71136a9f488bfb0901e864c60, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -36.875
+      objectReference: {fileID: 0}
     - target: {fileID: 2722162969190284929, guid: 700659c71136a9f488bfb0901e864c60, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1468,13 +1484,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScreenFader Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8302078349862535795, guid: 700659c71136a9f488bfb0901e864c60, type: 3}
+      propertyPath: fadeInStartDuration
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8803355107041672665, guid: 700659c71136a9f488bfb0901e864c60, type: 3}
       propertyPath: m_PixelPerfect
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8803355107041672665, guid: 700659c71136a9f488bfb0901e864c60, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9190386961716036217, guid: 700659c71136a9f488bfb0901e864c60, type: 3}
       propertyPath: m_UiScaleMode
@@ -1671,7 +1691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2643225883746874497, guid: 8f96688bd782815449fd6334d1aeb8dd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenMainMenu
+      value: ResetCurrentScene
       objectReference: {fileID: 0}
     - target: {fileID: 2643225883746874497, guid: 8f96688bd782815449fd6334d1aeb8dd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1687,7 +1707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2759720727188973244, guid: 8f96688bd782815449fd6334d1aeb8dd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3015306422650174595, guid: 8f96688bd782815449fd6334d1aeb8dd, type: 3}
+      propertyPath: m_Name
+      value: Reset
       objectReference: {fileID: 0}
     - target: {fileID: 3091646888669898950, guid: 8f96688bd782815449fd6334d1aeb8dd, type: 3}
       propertyPath: m_fontAsset
@@ -1752,6 +1776,12 @@ PrefabInstance:
     - target: {fileID: 3716817368231755949, guid: 8f96688bd782815449fd6334d1aeb8dd, type: 3}
       propertyPath: m_ActiveFontFeatures.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4501375012967368888, guid: 8f96688bd782815449fd6334d1aeb8dd, type: 3}
+      propertyPath: m_text
+      value: 'Reset
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 4501375012967368888, guid: 8f96688bd782815449fd6334d1aeb8dd, type: 3}
       propertyPath: m_fontAsset
