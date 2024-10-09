@@ -966,6 +966,7 @@ struct IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields
 	Dictionary_2_t7031B396E7D168860EBBB005B70ECA2A0436BA28* ___textHandles;
 	LinkedList_1_t7EE8D522D208DA75C308C552A78356300EE9351E* ___textHandlesTuple;
 	float ___lastCleanupTime;
+	int32_t ___newHandlesSinceCleanup;
 };
 #ifdef __clang__
 #pragma clang diagnostic pop

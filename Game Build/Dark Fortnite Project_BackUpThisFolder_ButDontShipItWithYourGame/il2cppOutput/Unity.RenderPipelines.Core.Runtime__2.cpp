@@ -431,6 +431,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral6B5A7D6E08296D3CB71ACC7CBB9CA1ED3FB8C8AC
 IL2CPP_EXTERN_C String_t* _stringLiteral6CDD1443DE6643A1D3D5655734D26A0D7C6F0800;
 IL2CPP_EXTERN_C String_t* _stringLiteral6D2F40F96F2C1ACED7231FD25A24376CF08D35D9;
 IL2CPP_EXTERN_C String_t* _stringLiteral710DBC2AB0008244470C47D7BC6247D5B349234B;
+IL2CPP_EXTERN_C String_t* _stringLiteral715FD3F1FA1AD8A5B9ADA94E911B4C4E50915E36;
 IL2CPP_EXTERN_C String_t* _stringLiteral7785438CD6B8E95498D6C68ABC71C5C7FFC335BE;
 IL2CPP_EXTERN_C String_t* _stringLiteral7BFC0B8E3244F70396DC03150C10DF25CAE22299;
 IL2CPP_EXTERN_C String_t* _stringLiteral803E75FCD3CE49ACAD74564C3B7664E345954BAC;
@@ -4867,8 +4868,9 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ProbeBrickIndex_GetRemain
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ProbeBrickPool_GetRemainingChunkCount_mCB45E13C46121828339423C4AA1C7A1295F5E3FB_inline (ProbeBrickPool_tC43640788A2B356F3F99A068D2CED6702E721693* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProbeReferenceVolume_UpdateIndexDefragmentation_m4A6ADD334D8173000D1B74B78C354FA912F2C987 (ProbeReferenceVolume_t05ED7EF2BB9B58F26CE1629F0AA773D14100695F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ProbeReferenceVolume_TryLoadCell_m5389771ABBE5C6BCE45BD5A215C38A1744046CB8 (ProbeReferenceVolume_t05ED7EF2BB9B58F26CE1629F0AA773D14100695F* __this, Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* ___0_cell, int32_t* ___1_shBudget, int32_t* ___2_indexBudget, DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* ___3_loadedCells, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProbeReferenceVolume_ComputeWorseLoadedCells_m6C60BDC213185C0096F91DF78AF9EEE079756127 (ProbeReferenceVolume_t05ED7EF2BB9B58F26CE1629F0AA773D14100695F* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_cameraPosition, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_cameraDirection, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProbeReferenceVolume_ComputeStreamingScoreAndWorseLoadedCells_mC7D3167127B38EA0FB2CA85DE4D6981377108426 (ProbeReferenceVolume_t05ED7EF2BB9B58F26CE1629F0AA773D14100695F* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_cameraPosition, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_cameraDirection, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProbeBrickIndex_ComputeFragmentationRate_m021C1297A3C6B7C6B5A3DF19A4AD6C7FCB14ED00 (ProbeBrickIndex_tF1B02DB88E5F4CF79533962B018B5724D74E32D2* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProbeReferenceVolume_ComputeMinMaxStreamingScore_m9601FE5AA42BD1941944A6EEA4E6E1E5D050143D (ProbeReferenceVolume_t05ED7EF2BB9B58F26CE1629F0AA773D14100695F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProbeReferenceVolume_UpdateDiskStreaming_m17FB1458D5762ED06BF42D9AC86D4005B76720E8 (ProbeReferenceVolume_t05ED7EF2BB9B58F26CE1629F0AA773D14100695F* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProfilingScope__ctor_mE15813DF7651C1A3B6AFD6465AD4B973E8F1DBFC (ProfilingScope_t57898BA31E8EF8F083EF84E0DA2737AC61CBC5BD* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, ProfilingSampler_t420D4672EDB44E0EF980B31ADFD9E5747200FECE* ___1_sampler, const RuntimeMethod* method) ;
@@ -18538,7 +18540,7 @@ IL_00fe:
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProbeReferenceVolume_ComputeWorseLoadedCells_m6C60BDC213185C0096F91DF78AF9EEE079756127 (ProbeReferenceVolume_t05ED7EF2BB9B58F26CE1629F0AA773D14100695F* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_cameraPosition, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_cameraDirection, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProbeReferenceVolume_ComputeStreamingScoreAndWorseLoadedCells_mC7D3167127B38EA0FB2CA85DE4D6981377108426 (ProbeReferenceVolume_t05ED7EF2BB9B58F26CE1629F0AA773D14100695F* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_cameraPosition, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_cameraDirection, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19162,6 +19164,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProbeReferenceVolume_UpdateCellStreaming
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DynamicArrayExtensions_QuickSort_TisCell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87_m869F968D8C99AEF052E407633AB05DC28921AC0D_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DynamicArray_1_Add_m03D4A41D562311E5960931949D3909326636C7A6_RuntimeMethod_var);
@@ -19174,6 +19177,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProbeReferenceVolume_UpdateCellStreaming
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Iterator_get_Current_mCB9B4B0DD9771D09012D6298DD5C9ECD87BC527A_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProfilingSampler_Get_TisCoreProfileId_t66459E976D5987566CDB33711B12441EE66A16CA_mA80A89059AFD99B01D38B415ABA8F49B070E19D7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral715FD3F1FA1AD8A5B9ADA94E911B4C4E50915E36);
 		s_Il2CppMethodInitialized = true;
 	}
 	ProfilingScope_t57898BA31E8EF8F083EF84E0DA2737AC61CBC5BD V_0;
@@ -19190,17 +19194,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProbeReferenceVolume_UpdateCellStreaming
 	int32_t V_7 = 0;
 	int32_t V_8 = 0;
 	bool V_9 = false;
-	Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* V_10 = NULL;
-	int32_t V_11 = 0;
+	bool V_10 = false;
+	Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* V_11 = NULL;
 	int32_t V_12 = 0;
-	Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* V_13 = NULL;
+	int32_t V_13 = 0;
 	Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* V_14 = NULL;
-	int32_t V_15 = 0;
-	Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* V_16 = NULL;
-	Iterator_tDD1343BCA00989F0ACE1BA643FC41CE0FEB039F3 V_17;
-	memset((&V_17), 0, sizeof(V_17));
-	Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* V_18 = NULL;
+	Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* V_15 = NULL;
+	int32_t V_16 = 0;
+	Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* V_17 = NULL;
+	Iterator_tDD1343BCA00989F0ACE1BA643FC41CE0FEB039F3 V_18;
+	memset((&V_18), 0, sizeof(V_18));
 	Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* V_19 = NULL;
+	Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* V_20 = NULL;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B8_0;
 	memset((&G_B8_0), 0, sizeof(G_B8_0));
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G_B7_0;
@@ -19245,7 +19250,7 @@ IL_0017:
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_049d:
+FINALLY_04d3:
 			{
 				ProfilingScope_Dispose_m4231A2ACA1F8E345BB0078310A9F7601704C8BE4((&V_0), NULL);
 				return;
@@ -19389,31 +19394,32 @@ IL_0103_1:
 				int32_t L_45;
 				L_45 = Mathf_Min_m888083F74FF5655778F0403BB5E9608BEFDEA8CB_inline(L_42, L_44, NULL);
 				V_8 = L_45;
+				V_9 = (bool)0;
 				bool L_46 = __this->___m_SupportGPUStreaming;
 				if (!L_46)
 				{
-					goto IL_039c_1;
+					goto IL_03a2_1;
 				}
 			}
 			{
 				bool L_47 = __this->___m_IndexDefragmentationInProgress;
 				if (!L_47)
 				{
-					goto IL_014f_1;
+					goto IL_0152_1;
 				}
 			}
 			{
 				ProbeReferenceVolume_UpdateIndexDefragmentation_m4A6ADD334D8173000D1B74B78C354FA912F2C987(__this, NULL);
-				goto IL_03da_1;
+				goto IL_03f1_1;
 			}
 
-IL_014f_1:
+IL_0152_1:
 			{
-				V_9 = (bool)0;
-				goto IL_017d_1;
+				V_10 = (bool)0;
+				goto IL_0180_1;
 			}
 
-IL_0154_1:
+IL_0157_1:
 			{
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_48 = V_4;
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_49 = __this->___m_TempCellToLoadList;
@@ -19424,18 +19430,18 @@ IL_0154_1:
 				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_51;
 				L_51 = DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949(L_48, L_50, DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949_RuntimeMethod_var);
 				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_52 = *((Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87**)L_51);
-				V_10 = L_52;
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_53 = V_10;
+				V_11 = L_52;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_53 = V_11;
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_54 = __this->___m_TempCellToLoadList;
 				bool L_55;
 				L_55 = ProbeReferenceVolume_TryLoadCell_m5389771ABBE5C6BCE45BD5A215C38A1744046CB8(__this, L_53, (&V_7), (&V_6), L_54, NULL);
 				if (!L_55)
 				{
-					goto IL_018c_1;
+					goto IL_018f_1;
 				}
 			}
 
-IL_017d_1:
+IL_0180_1:
 			{
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_56 = __this->___m_TempCellToLoadList;
 				NullCheck(L_56);
@@ -19444,11 +19450,11 @@ IL_017d_1:
 				int32_t L_58 = V_8;
 				if ((((int32_t)L_57) < ((int32_t)L_58)))
 				{
-					goto IL_0154_1;
+					goto IL_0157_1;
 				}
 			}
 
-IL_018c_1:
+IL_018f_1:
 			{
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_59 = __this->___m_TempCellToLoadList;
 				NullCheck(L_59);
@@ -19457,21 +19463,21 @@ IL_018c_1:
 				int32_t L_61 = V_8;
 				if ((((int32_t)L_60) == ((int32_t)L_61)))
 				{
-					goto IL_0373_1;
+					goto IL_0379_1;
 				}
 			}
 			{
 				bool L_62 = __this->___m_IndexDefragmentationInProgress;
 				if (L_62)
 				{
-					goto IL_0373_1;
+					goto IL_0379_1;
 				}
 			}
 			{
 				bool L_63 = __this->___m_LoadMaxCellsPerFrame;
 				if (!L_63)
 				{
-					goto IL_01d9_1;
+					goto IL_01dc_1;
 				}
 			}
 			{
@@ -19483,69 +19489,70 @@ IL_018c_1:
 				DynamicArrayExtensions_QuickSort_TisCell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87_m869F968D8C99AEF052E407633AB05DC28921AC0D(L_67, DynamicArrayExtensions_QuickSort_TisCell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87_m869F968D8C99AEF052E407633AB05DC28921AC0D_RuntimeMethod_var);
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_68 = __this->___m_LoadedCells;
 				V_5 = L_68;
-				goto IL_01ee_1;
+				goto IL_01f1_1;
 			}
 
-IL_01d9_1:
+IL_01dc_1:
 			{
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_69 = V_3;
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70 = __this->___m_FrozenCameraDirection;
-				ProbeReferenceVolume_ComputeWorseLoadedCells_m6C60BDC213185C0096F91DF78AF9EEE079756127(__this, L_69, L_70, NULL);
+				ProbeReferenceVolume_ComputeStreamingScoreAndWorseLoadedCells_mC7D3167127B38EA0FB2CA85DE4D6981377108426(__this, L_69, L_70, NULL);
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_71 = __this->___m_WorseLoadedCells;
 				V_5 = L_71;
 			}
 
-IL_01ee_1:
+IL_01f1_1:
 			{
-				V_11 = 0;
-				goto IL_0361_1;
+				V_9 = (bool)1;
+				V_12 = 0;
+				goto IL_0367_1;
 			}
 
-IL_01f6_1:
+IL_01fc_1:
 			{
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_72 = V_5;
 				NullCheck(L_72);
 				int32_t L_73;
 				L_73 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_72, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-				int32_t L_74 = V_11;
+				int32_t L_74 = V_12;
 				if (!((int32_t)il2cpp_codegen_subtract(L_73, L_74)))
 				{
-					goto IL_0373_1;
+					goto IL_0379_1;
 				}
 			}
 			{
 				bool L_75 = __this->___m_LoadMaxCellsPerFrame;
 				if (L_75)
 				{
-					goto IL_0211_1;
+					goto IL_0217_1;
 				}
 			}
 			{
-				int32_t L_76 = V_11;
+				int32_t L_76 = V_12;
 				G_B28_0 = L_76;
-				goto IL_021d_1;
+				goto IL_0223_1;
 			}
 
-IL_0211_1:
+IL_0217_1:
 			{
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_77 = V_5;
 				NullCheck(L_77);
 				int32_t L_78;
 				L_78 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_77, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-				int32_t L_79 = V_11;
+				int32_t L_79 = V_12;
 				G_B28_0 = ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_78, L_79)), 1));
 			}
 
-IL_021d_1:
+IL_0223_1:
 			{
-				V_12 = G_B28_0;
+				V_13 = G_B28_0;
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_80 = V_5;
-				int32_t L_81 = V_12;
+				int32_t L_81 = V_13;
 				NullCheck(L_80);
 				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_82;
 				L_82 = DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949(L_80, L_81, DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949_RuntimeMethod_var);
 				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_83 = *((Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87**)L_82);
-				V_13 = L_83;
+				V_14 = L_83;
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_84 = V_4;
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_85 = __this->___m_TempCellToLoadList;
 				NullCheck(L_85);
@@ -19555,45 +19562,45 @@ IL_021d_1:
 				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_87;
 				L_87 = DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949(L_84, L_86, DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949_RuntimeMethod_var);
 				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_88 = *((Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87**)L_87);
-				V_14 = L_88;
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_89 = V_13;
+				V_15 = L_88;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_89 = V_14;
 				NullCheck(L_89);
 				CellStreamingInfo_t4C971022090188CCCDAA4908A17043F5F66D8FCD* L_90 = L_89->___streamingInfo;
 				NullCheck(L_90);
 				float L_91 = L_90->___streamingScore;
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_92 = V_14;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_92 = V_15;
 				NullCheck(L_92);
 				CellStreamingInfo_t4C971022090188CCCDAA4908A17043F5F66D8FCD* L_93 = L_92->___streamingInfo;
 				NullCheck(L_93);
 				float L_94 = L_93->___streamingScore;
 				if ((!(((float)L_91) <= ((float)L_94))))
 				{
-					goto IL_02dd_1;
+					goto IL_02e3_1;
 				}
 			}
 			{
-				goto IL_0373_1;
+				goto IL_0379_1;
 			}
 
-IL_0262_1:
+IL_0268_1:
 			{
 				ProbeVolumeDebug_t295620780739F33AEAD1D1BB44C5252CE70D3DD8* L_95;
 				L_95 = ProbeReferenceVolume_get_probeVolumeDebug_m96372A6BF79C4E05EF70A101B2CCDDCC7CE9D34F_inline(__this, NULL);
 				NullCheck(L_95);
 				bool L_96 = L_95->___verboseStreamingLog;
-				int32_t L_97 = V_11;
-				V_11 = ((int32_t)il2cpp_codegen_add(L_97, 1));
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_98 = V_13;
+				int32_t L_97 = V_12;
+				V_12 = ((int32_t)il2cpp_codegen_add(L_97, 1));
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_98 = V_14;
 				ProbeReferenceVolume_UnloadCell_m3B66C99B774E86D69DE81788AC9DE04D577772B2(__this, L_98, NULL);
 				int32_t L_99 = V_7;
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_100 = V_13;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_100 = V_14;
 				NullCheck(L_100);
 				CellDesc_tE8FD220551E0FC637343C950CE68522345E001E4* L_101 = L_100->___desc;
 				NullCheck(L_101);
 				int32_t L_102 = L_101->___shChunkCount;
 				V_7 = ((int32_t)il2cpp_codegen_add(L_99, L_102));
 				int32_t L_103 = V_6;
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_104 = V_13;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_104 = V_14;
 				NullCheck(L_104);
 				CellDesc_tE8FD220551E0FC637343C950CE68522345E001E4* L_105 = L_104->___desc;
 				NullCheck(L_105);
@@ -19602,146 +19609,146 @@ IL_0262_1:
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_107 = __this->___m_TempCellToUnloadList;
 				NullCheck(L_107);
 				int32_t L_108;
-				L_108 = DynamicArray_1_Add_m03D4A41D562311E5960931949D3909326636C7A6(L_107, (&V_13), DynamicArray_1_Add_m03D4A41D562311E5960931949D3909326636C7A6_RuntimeMethod_var);
+				L_108 = DynamicArray_1_Add_m03D4A41D562311E5960931949D3909326636C7A6(L_107, (&V_14), DynamicArray_1_Add_m03D4A41D562311E5960931949D3909326636C7A6_RuntimeMethod_var);
 				bool L_109 = __this->___m_LoadMaxCellsPerFrame;
 				if (L_109)
 				{
-					goto IL_02b8_1;
+					goto IL_02be_1;
 				}
 			}
 			{
-				int32_t L_110 = V_11;
+				int32_t L_110 = V_12;
 				G_B33_0 = L_110;
-				goto IL_02c4_1;
+				goto IL_02ca_1;
 			}
 
-IL_02b8_1:
+IL_02be_1:
 			{
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_111 = V_5;
 				NullCheck(L_111);
 				int32_t L_112;
 				L_112 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_111, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-				int32_t L_113 = V_11;
+				int32_t L_113 = V_12;
 				G_B33_0 = ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_112, L_113)), 1));
 			}
 
-IL_02c4_1:
+IL_02ca_1:
 			{
-				V_12 = G_B33_0;
-				int32_t L_114 = V_11;
+				V_13 = G_B33_0;
+				int32_t L_114 = V_12;
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_115 = V_5;
 				NullCheck(L_115);
 				int32_t L_116;
 				L_116 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_115, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
 				if ((((int32_t)L_114) >= ((int32_t)L_116)))
 				{
-					goto IL_02dd_1;
+					goto IL_02e3_1;
 				}
 			}
 			{
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_117 = V_5;
-				int32_t L_118 = V_12;
+				int32_t L_118 = V_13;
 				NullCheck(L_117);
 				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_119;
 				L_119 = DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949(L_117, L_118, DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949_RuntimeMethod_var);
 				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_120 = *((Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87**)L_119);
-				V_13 = L_120;
+				V_14 = L_120;
 			}
 
-IL_02dd_1:
+IL_02e3_1:
 			{
-				int32_t L_121 = V_11;
+				int32_t L_121 = V_12;
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_122 = V_5;
 				NullCheck(L_122);
 				int32_t L_123;
 				L_123 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_122, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
 				if ((((int32_t)L_121) >= ((int32_t)L_123)))
 				{
-					goto IL_0328_1;
+					goto IL_032e_1;
 				}
 			}
 			{
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_124 = V_13;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_124 = V_14;
 				NullCheck(L_124);
 				CellStreamingInfo_t4C971022090188CCCDAA4908A17043F5F66D8FCD* L_125 = L_124->___streamingInfo;
 				NullCheck(L_125);
 				float L_126 = L_125->___streamingScore;
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_127 = V_14;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_127 = V_15;
 				NullCheck(L_127);
 				CellStreamingInfo_t4C971022090188CCCDAA4908A17043F5F66D8FCD* L_128 = L_127->___streamingInfo;
 				NullCheck(L_128);
 				float L_129 = L_128->___streamingScore;
 				if ((!(((float)L_126) > ((float)L_129))))
 				{
-					goto IL_0328_1;
+					goto IL_032e_1;
 				}
 			}
 			{
 				int32_t L_130 = V_7;
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_131 = V_14;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_131 = V_15;
 				NullCheck(L_131);
 				CellDesc_tE8FD220551E0FC637343C950CE68522345E001E4* L_132 = L_131->___desc;
 				NullCheck(L_132);
 				int32_t L_133 = L_132->___shChunkCount;
 				if ((((int32_t)L_130) < ((int32_t)L_133)))
 				{
-					goto IL_0262_1;
+					goto IL_0268_1;
 				}
 			}
 			{
 				int32_t L_134 = V_6;
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_135 = V_14;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_135 = V_15;
 				NullCheck(L_135);
 				CellDesc_tE8FD220551E0FC637343C950CE68522345E001E4* L_136 = L_135->___desc;
 				NullCheck(L_136);
 				int32_t L_137 = L_136->___indexChunkCount;
 				if ((((int32_t)L_134) < ((int32_t)L_137)))
 				{
-					goto IL_0262_1;
+					goto IL_0268_1;
 				}
 			}
 
-IL_0328_1:
+IL_032e_1:
 			{
 				int32_t L_138 = V_7;
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_139 = V_14;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_139 = V_15;
 				NullCheck(L_139);
 				CellDesc_tE8FD220551E0FC637343C950CE68522345E001E4* L_140 = L_139->___desc;
 				NullCheck(L_140);
 				int32_t L_141 = L_140->___shChunkCount;
 				if ((((int32_t)L_138) < ((int32_t)L_141)))
 				{
-					goto IL_0361_1;
+					goto IL_0367_1;
 				}
 			}
 			{
 				int32_t L_142 = V_6;
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_143 = V_14;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_143 = V_15;
 				NullCheck(L_143);
 				CellDesc_tE8FD220551E0FC637343C950CE68522345E001E4* L_144 = L_143->___desc;
 				NullCheck(L_144);
 				int32_t L_145 = L_144->___indexChunkCount;
 				if ((((int32_t)L_142) < ((int32_t)L_145)))
 				{
-					goto IL_0361_1;
+					goto IL_0367_1;
 				}
 			}
 			{
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_146 = V_14;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_146 = V_15;
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_147 = __this->___m_TempCellToLoadList;
 				bool L_148;
 				L_148 = ProbeReferenceVolume_TryLoadCell_m5389771ABBE5C6BCE45BD5A215C38A1744046CB8(__this, L_146, (&V_7), (&V_6), L_147, NULL);
 				if (L_148)
 				{
-					goto IL_0361_1;
+					goto IL_0367_1;
 				}
 			}
 			{
-				V_9 = (bool)1;
-				goto IL_0373_1;
+				V_10 = (bool)1;
+				goto IL_0379_1;
 			}
 
-IL_0361_1:
+IL_0367_1:
 			{
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_149 = __this->___m_TempCellToLoadList;
 				NullCheck(L_149);
@@ -19750,16 +19757,16 @@ IL_0361_1:
 				int32_t L_151 = V_8;
 				if ((((int32_t)L_150) < ((int32_t)L_151)))
 				{
-					goto IL_01f6_1;
+					goto IL_01fc_1;
 				}
 			}
 
-IL_0373_1:
+IL_0379_1:
 			{
-				bool L_152 = V_9;
+				bool L_152 = V_10;
 				if (!L_152)
 				{
-					goto IL_0382_1;
+					goto IL_0388_1;
 				}
 			}
 			{
@@ -19768,7 +19775,7 @@ IL_0373_1:
 				ProbeBrickIndex_ComputeFragmentationRate_m021C1297A3C6B7C6B5A3DF19A4AD6C7FCB14ED00(L_153, NULL);
 			}
 
-IL_0382_1:
+IL_0388_1:
 			{
 				ProbeBrickIndex_tF1B02DB88E5F4CF79533962B018B5724D74E32D2* L_154 = __this->___m_Index;
 				NullCheck(L_154);
@@ -19776,21 +19783,21 @@ IL_0382_1:
 				L_155 = ProbeBrickIndex_get_fragmentationRate_mD02F13390554A2BA84258DA12B9B13416EDA648F_inline(L_154, NULL);
 				if ((!(((float)L_155) >= ((float)(0.200000003f)))))
 				{
-					goto IL_03da_1;
+					goto IL_03f1_1;
 				}
 			}
 			{
 				ProbeReferenceVolume_StartIndexDefragmentation_mD20ECCB96E4D1A9FE6FAD71E8521EDC0E609C369(__this, NULL);
-				goto IL_03da_1;
+				goto IL_03f1_1;
 			}
 
-IL_039c_1:
+IL_03a2_1:
 			{
-				V_15 = 0;
-				goto IL_03d4_1;
+				V_16 = 0;
+				goto IL_03eb_1;
 			}
 
-IL_03a1_1:
+IL_03a7_1:
 			{
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_156 = __this->___m_ToBeLoadedCells;
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_157 = __this->___m_TempCellToLoadList;
@@ -19801,139 +19808,176 @@ IL_03a1_1:
 				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_159;
 				L_159 = DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949(L_156, L_158, DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949_RuntimeMethod_var);
 				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_160 = *((Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87**)L_159);
-				V_16 = L_160;
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_161 = V_16;
+				V_17 = L_160;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_161 = V_17;
 				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_162 = __this->___m_TempCellToLoadList;
 				bool L_163;
 				L_163 = ProbeReferenceVolume_TryLoadCell_m5389771ABBE5C6BCE45BD5A215C38A1744046CB8(__this, L_161, (&V_7), (&V_6), L_162, NULL);
-				if (!L_163)
+				if (L_163)
 				{
-					goto IL_03da_1;
+					goto IL_03e5_1;
 				}
 			}
 			{
-				int32_t L_164 = V_15;
-				V_15 = ((int32_t)il2cpp_codegen_add(L_164, 1));
+				int32_t L_164 = V_16;
+				if ((((int32_t)L_164) <= ((int32_t)0)))
+				{
+					goto IL_03f1_1;
+				}
+			}
+			{
+				il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+				Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral715FD3F1FA1AD8A5B9ADA94E911B4C4E50915E36, NULL);
+				goto IL_03f1_1;
 			}
 
-IL_03d4_1:
+IL_03e5_1:
 			{
-				int32_t L_165 = V_15;
-				int32_t L_166 = V_8;
-				if ((((int32_t)L_165) < ((int32_t)L_166)))
+				int32_t L_165 = V_16;
+				V_16 = ((int32_t)il2cpp_codegen_add(L_165, 1));
+			}
+
+IL_03eb_1:
+			{
+				int32_t L_166 = V_16;
+				int32_t L_167 = V_8;
+				if ((((int32_t)L_166) < ((int32_t)L_167)))
 				{
-					goto IL_03a1_1;
+					goto IL_03a7_1;
 				}
 			}
 
-IL_03da_1:
+IL_03f1_1:
 			{
-				bool L_167 = __this->___m_LoadMaxCellsPerFrame;
-				if (!L_167)
+				bool L_168 = V_9;
+				if (L_168)
 				{
-					goto IL_03e8_1;
+					goto IL_0410_1;
+				}
+			}
+			{
+				bool L_169;
+				L_169 = ProbeReferenceVolume_get_supportScenarioBlending_m4BAF2E6E058A225CD888D9BB6132BC8EEC910B5B_inline(__this, NULL);
+				if (!L_169)
+				{
+					goto IL_0410_1;
+				}
+			}
+			{
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_170 = V_3;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_171 = __this->___m_FrozenCameraDirection;
+				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_172 = __this->___m_LoadedCells;
+				ProbeReferenceVolume_ComputeStreamingScore_mA91FE13BF95D9A075BCB6C39910CCFB4EB6D50FB(__this, L_170, L_171, L_172, NULL);
+			}
+
+IL_0410_1:
+			{
+				bool L_173 = __this->___m_LoadMaxCellsPerFrame;
+				if (!L_173)
+				{
+					goto IL_041e_1;
 				}
 			}
 			{
 				ProbeReferenceVolume_ComputeMinMaxStreamingScore_m9601FE5AA42BD1941944A6EEA4E6E1E5D050143D(__this, NULL);
 			}
 
-IL_03e8_1:
+IL_041e_1:
 			{
-				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_168 = __this->___m_TempCellToLoadList;
-				NullCheck(L_168);
-				Iterator_tDD1343BCA00989F0ACE1BA643FC41CE0FEB039F3 L_169;
-				L_169 = DynamicArray_1_GetEnumerator_m2FE7DA8B264E72F5F5EEB66AACA8CE09274BB532(L_168, DynamicArray_1_GetEnumerator_m2FE7DA8B264E72F5F5EEB66AACA8CE09274BB532_RuntimeMethod_var);
-				V_17 = L_169;
-				goto IL_040f_1;
+				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_174 = __this->___m_TempCellToLoadList;
+				NullCheck(L_174);
+				Iterator_tDD1343BCA00989F0ACE1BA643FC41CE0FEB039F3 L_175;
+				L_175 = DynamicArray_1_GetEnumerator_m2FE7DA8B264E72F5F5EEB66AACA8CE09274BB532(L_174, DynamicArray_1_GetEnumerator_m2FE7DA8B264E72F5F5EEB66AACA8CE09274BB532_RuntimeMethod_var);
+				V_18 = L_175;
+				goto IL_0445_1;
 			}
 
-IL_03f7_1:
+IL_042d_1:
 			{
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_170;
-				L_170 = Iterator_get_Current_mCB9B4B0DD9771D09012D6298DD5C9ECD87BC527A((&V_17), Iterator_get_Current_mCB9B4B0DD9771D09012D6298DD5C9ECD87BC527A_RuntimeMethod_var);
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_171 = *((Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87**)L_170);
-				V_18 = L_171;
-				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_172 = __this->___m_ToBeLoadedCells;
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_173 = V_18;
-				NullCheck(L_172);
-				bool L_174;
-				L_174 = DynamicArray_1_Remove_mE698387BC68F1ADA4A4DF1A2D50DDCC771D89D05(L_172, L_173, DynamicArray_1_Remove_mE698387BC68F1ADA4A4DF1A2D50DDCC771D89D05_RuntimeMethod_var);
-			}
-
-IL_040f_1:
-			{
-				bool L_175;
-				L_175 = Iterator_MoveNext_m81ADD4CCA90B7317063ED40CA510F0826AB2F341((&V_17), Iterator_MoveNext_m81ADD4CCA90B7317063ED40CA510F0826AB2F341_RuntimeMethod_var);
-				if (L_175)
-				{
-					goto IL_03f7_1;
-				}
-			}
-			{
-				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_176 = __this->___m_LoadedCells;
-				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_177 = __this->___m_TempCellToLoadList;
-				NullCheck(L_176);
-				DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF(L_176, L_177, DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF_RuntimeMethod_var);
-				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_178 = __this->___m_TempCellToUnloadList;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_176;
+				L_176 = Iterator_get_Current_mCB9B4B0DD9771D09012D6298DD5C9ECD87BC527A((&V_18), Iterator_get_Current_mCB9B4B0DD9771D09012D6298DD5C9ECD87BC527A_RuntimeMethod_var);
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_177 = *((Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87**)L_176);
+				V_19 = L_177;
+				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_178 = __this->___m_ToBeLoadedCells;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_179 = V_19;
 				NullCheck(L_178);
-				int32_t L_179;
-				L_179 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_178, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-				if ((((int32_t)L_179) <= ((int32_t)0)))
+				bool L_180;
+				L_180 = DynamicArray_1_Remove_mE698387BC68F1ADA4A4DF1A2D50DDCC771D89D05(L_178, L_179, DynamicArray_1_Remove_mE698387BC68F1ADA4A4DF1A2D50DDCC771D89D05_RuntimeMethod_var);
+			}
+
+IL_0445_1:
+			{
+				bool L_181;
+				L_181 = Iterator_MoveNext_m81ADD4CCA90B7317063ED40CA510F0826AB2F341((&V_18), Iterator_MoveNext_m81ADD4CCA90B7317063ED40CA510F0826AB2F341_RuntimeMethod_var);
+				if (L_181)
 				{
-					goto IL_046d_1;
+					goto IL_042d_1;
 				}
 			}
 			{
-				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_180 = __this->___m_TempCellToUnloadList;
-				NullCheck(L_180);
-				Iterator_tDD1343BCA00989F0ACE1BA643FC41CE0FEB039F3 L_181;
-				L_181 = DynamicArray_1_GetEnumerator_m2FE7DA8B264E72F5F5EEB66AACA8CE09274BB532(L_180, DynamicArray_1_GetEnumerator_m2FE7DA8B264E72F5F5EEB66AACA8CE09274BB532_RuntimeMethod_var);
-				V_17 = L_181;
-				goto IL_045e_1;
-			}
-
-IL_0446_1:
-			{
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_182;
-				L_182 = Iterator_get_Current_mCB9B4B0DD9771D09012D6298DD5C9ECD87BC527A((&V_17), Iterator_get_Current_mCB9B4B0DD9771D09012D6298DD5C9ECD87BC527A_RuntimeMethod_var);
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_183 = *((Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87**)L_182);
-				V_19 = L_183;
-				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_184 = __this->___m_LoadedCells;
-				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_185 = V_19;
+				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_182 = __this->___m_LoadedCells;
+				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_183 = __this->___m_TempCellToLoadList;
+				NullCheck(L_182);
+				DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF(L_182, L_183, DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF_RuntimeMethod_var);
+				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_184 = __this->___m_TempCellToUnloadList;
 				NullCheck(L_184);
-				bool L_186;
-				L_186 = DynamicArray_1_Remove_mE698387BC68F1ADA4A4DF1A2D50DDCC771D89D05(L_184, L_185, DynamicArray_1_Remove_mE698387BC68F1ADA4A4DF1A2D50DDCC771D89D05_RuntimeMethod_var);
+				int32_t L_185;
+				L_185 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_184, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
+				if ((((int32_t)L_185) <= ((int32_t)0)))
+				{
+					goto IL_04a3_1;
+				}
+			}
+			{
+				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_186 = __this->___m_TempCellToUnloadList;
+				NullCheck(L_186);
+				Iterator_tDD1343BCA00989F0ACE1BA643FC41CE0FEB039F3 L_187;
+				L_187 = DynamicArray_1_GetEnumerator_m2FE7DA8B264E72F5F5EEB66AACA8CE09274BB532(L_186, DynamicArray_1_GetEnumerator_m2FE7DA8B264E72F5F5EEB66AACA8CE09274BB532_RuntimeMethod_var);
+				V_18 = L_187;
+				goto IL_0494_1;
 			}
 
-IL_045e_1:
+IL_047c_1:
 			{
-				bool L_187;
-				L_187 = Iterator_MoveNext_m81ADD4CCA90B7317063ED40CA510F0826AB2F341((&V_17), Iterator_MoveNext_m81ADD4CCA90B7317063ED40CA510F0826AB2F341_RuntimeMethod_var);
-				if (L_187)
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_188;
+				L_188 = Iterator_get_Current_mCB9B4B0DD9771D09012D6298DD5C9ECD87BC527A((&V_18), Iterator_get_Current_mCB9B4B0DD9771D09012D6298DD5C9ECD87BC527A_RuntimeMethod_var);
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_189 = *((Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87**)L_188);
+				V_20 = L_189;
+				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_190 = __this->___m_LoadedCells;
+				Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_191 = V_20;
+				NullCheck(L_190);
+				bool L_192;
+				L_192 = DynamicArray_1_Remove_mE698387BC68F1ADA4A4DF1A2D50DDCC771D89D05(L_190, L_191, DynamicArray_1_Remove_mE698387BC68F1ADA4A4DF1A2D50DDCC771D89D05_RuntimeMethod_var);
+			}
+
+IL_0494_1:
+			{
+				bool L_193;
+				L_193 = Iterator_MoveNext_m81ADD4CCA90B7317063ED40CA510F0826AB2F341((&V_18), Iterator_MoveNext_m81ADD4CCA90B7317063ED40CA510F0826AB2F341_RuntimeMethod_var);
+				if (L_193)
 				{
-					goto IL_0446_1;
+					goto IL_047c_1;
 				}
 			}
 			{
 				ProbeReferenceVolume_ComputeCellGlobalInfo_m54816A5E64A006F6A14E43F2E78C148A4F7B0814(__this, NULL);
 			}
 
-IL_046d_1:
+IL_04a3_1:
 			{
-				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_188 = __this->___m_ToBeLoadedCells;
-				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_189 = __this->___m_TempCellToUnloadList;
-				NullCheck(L_188);
-				DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF(L_188, L_189, DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF_RuntimeMethod_var);
-				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_190 = __this->___m_TempCellToLoadList;
-				NullCheck(L_190);
-				DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB(L_190, DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB_RuntimeMethod_var);
-				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_191 = __this->___m_TempCellToUnloadList;
-				NullCheck(L_191);
-				DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB(L_191, DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB_RuntimeMethod_var);
-				CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_192 = ___0_cmd;
-				ProbeReferenceVolume_UpdateDiskStreaming_m17FB1458D5762ED06BF42D9AC86D4005B76720E8(__this, L_192, NULL);
-				goto IL_04ab;
+				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_194 = __this->___m_ToBeLoadedCells;
+				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_195 = __this->___m_TempCellToUnloadList;
+				NullCheck(L_194);
+				DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF(L_194, L_195, DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF_RuntimeMethod_var);
+				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_196 = __this->___m_TempCellToLoadList;
+				NullCheck(L_196);
+				DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB(L_196, DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB_RuntimeMethod_var);
+				DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_197 = __this->___m_TempCellToUnloadList;
+				NullCheck(L_197);
+				DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB(L_197, DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB_RuntimeMethod_var);
+				CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_198 = ___0_cmd;
+				ProbeReferenceVolume_UpdateDiskStreaming_m17FB1458D5762ED06BF42D9AC86D4005B76720E8(__this, L_198, NULL);
+				goto IL_04e1;
 			}
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -19942,26 +19986,26 @@ IL_046d_1:
 		}
 	}
 
-IL_04ab:
+IL_04e1:
 	{
-		bool L_193;
-		L_193 = ProbeReferenceVolume_get_supportScenarioBlending_m4BAF2E6E058A225CD888D9BB6132BC8EEC910B5B_inline(__this, NULL);
-		if (!L_193)
+		bool L_199;
+		L_199 = ProbeReferenceVolume_get_supportScenarioBlending_m4BAF2E6E058A225CD888D9BB6132BC8EEC910B5B_inline(__this, NULL);
+		if (!L_199)
 		{
-			goto IL_04d8;
+			goto IL_050e;
 		}
 	}
 	{
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_194 = ___0_cmd;
-		ProfilingSampler_t420D4672EDB44E0EF980B31ADFD9E5747200FECE* L_195;
-		L_195 = ProfilingSampler_Get_TisCoreProfileId_t66459E976D5987566CDB33711B12441EE66A16CA_mA80A89059AFD99B01D38B415ABA8F49B070E19D7(2, ProfilingSampler_Get_TisCoreProfileId_t66459E976D5987566CDB33711B12441EE66A16CA_mA80A89059AFD99B01D38B415ABA8F49B070E19D7_RuntimeMethod_var);
-		ProfilingScope__ctor_mE15813DF7651C1A3B6AFD6465AD4B973E8F1DBFC((&V_0), L_194, L_195, NULL);
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_200 = ___0_cmd;
+		ProfilingSampler_t420D4672EDB44E0EF980B31ADFD9E5747200FECE* L_201;
+		L_201 = ProfilingSampler_Get_TisCoreProfileId_t66459E976D5987566CDB33711B12441EE66A16CA_mA80A89059AFD99B01D38B415ABA8F49B070E19D7(2, ProfilingSampler_Get_TisCoreProfileId_t66459E976D5987566CDB33711B12441EE66A16CA_mA80A89059AFD99B01D38B415ABA8F49B070E19D7_RuntimeMethod_var);
+		ProfilingScope__ctor_mE15813DF7651C1A3B6AFD6465AD4B973E8F1DBFC((&V_0), L_200, L_201, NULL);
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_04ca:
+FINALLY_0500:
 			{
 				ProfilingScope_Dispose_m4231A2ACA1F8E345BB0078310A9F7601704C8BE4((&V_0), NULL);
 				return;
@@ -19969,9 +20013,9 @@ FINALLY_04ca:
 		});
 		try
 		{
-			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_196 = ___0_cmd;
-			ProbeReferenceVolume_UpdateBlendingCellStreaming_mA0DAFF33FE3998ECC7439D1150AA9F41D0941CAC(__this, L_196, NULL);
-			goto IL_04d8;
+			CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_202 = ___0_cmd;
+			ProbeReferenceVolume_UpdateBlendingCellStreaming_mA0DAFF33FE3998ECC7439D1150AA9F41D0941CAC(__this, L_202, NULL);
+			goto IL_050e;
 		}
 		catch(Il2CppExceptionWrapper& e)
 		{
@@ -19979,7 +20023,7 @@ FINALLY_04ca:
 		}
 	}
 
-IL_04d8:
+IL_050e:
 	{
 		return;
 	}
@@ -20316,7 +20360,7 @@ IL_00fe:
 		int32_t L_45 = V_2;
 		if ((((int32_t)L_44) == ((int32_t)L_45)))
 		{
-			goto IL_02d6;
+			goto IL_02e7;
 		}
 	}
 	{
@@ -20357,7 +20401,7 @@ IL_0140:
 IL_014e:
 	{
 		V_6 = G_B13_0;
-		goto IL_0298;
+		goto IL_02a9;
 	}
 
 IL_0155:
@@ -20372,7 +20416,7 @@ IL_0155:
 		L_59 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_58, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
 		if (!((int32_t)il2cpp_codegen_subtract(L_57, L_59)))
 		{
-			goto IL_02a9;
+			goto IL_02ba;
 		}
 	}
 	{
@@ -20437,7 +20481,7 @@ IL_01c5:
 		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_80 = V_6;
 		if (!L_80)
 		{
-			goto IL_02a9;
+			goto IL_02ba;
 		}
 	}
 	{
@@ -20470,248 +20514,260 @@ IL_01e5:
 		L_89 = CellBlendingInfo_IsUpToDate_mBB1B0C2CCFDAEA96605CA00B30A89ABAF3100847(L_88, NULL);
 		if (L_89)
 		{
-			goto IL_02a9;
+			goto IL_02ba;
 		}
 	}
 
 IL_0206:
 	{
 		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_90 = V_7;
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_91 = __this->___m_TempBlendingCellToUnloadList;
-		ProbeReferenceVolume_UnloadBlendingCell_m584C63947229CF112FBA38B484E9059CB590FE20(__this, L_90, L_91, NULL);
-		ProbeVolumeDebug_t295620780739F33AEAD1D1BB44C5252CE70D3DD8* L_92;
-		L_92 = ProbeReferenceVolume_get_probeVolumeDebug_m96372A6BF79C4E05EF70A101B2CCDDCC7CE9D34F_inline(__this, NULL);
-		NullCheck(L_92);
-		bool L_93 = L_92->___verboseStreamingLog;
-		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_94 = V_8;
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_95 = __this->___m_TempBlendingCellToLoadList;
-		bool L_96;
-		L_96 = ProbeReferenceVolume_TryLoadBlendingCell_mAD07DA35DFCF43AA8EF8620DC40F1E854CD5C573(__this, L_94, L_95, NULL);
-		if (!L_96)
+		NullCheck(L_90);
+		CellStreamingInfo_t4C971022090188CCCDAA4908A17043F5F66D8FCD* L_91 = L_90->___streamingInfo;
+		NullCheck(L_91);
+		bool L_92;
+		L_92 = CellStreamingInfo_IsBlendingStreaming_m94B50E9B310E0E8F2FA9489D5ECD529D03319D6A(L_91, NULL);
+		if (L_92)
 		{
-			goto IL_0298;
+			goto IL_02ba;
 		}
 	}
 	{
-		int32_t L_97 = V_4;
-		if ((((int32_t)L_97) == ((int32_t)(-1))))
+		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_93 = V_7;
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_94 = __this->___m_TempBlendingCellToUnloadList;
+		ProbeReferenceVolume_UnloadBlendingCell_m584C63947229CF112FBA38B484E9059CB590FE20(__this, L_93, L_94, NULL);
+		ProbeVolumeDebug_t295620780739F33AEAD1D1BB44C5252CE70D3DD8* L_95;
+		L_95 = ProbeReferenceVolume_get_probeVolumeDebug_m96372A6BF79C4E05EF70A101B2CCDDCC7CE9D34F_inline(__this, NULL);
+		NullCheck(L_95);
+		bool L_96 = L_95->___verboseStreamingLog;
+		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_97 = V_8;
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_98 = __this->___m_TempBlendingCellToLoadList;
+		bool L_99;
+		L_99 = ProbeReferenceVolume_TryLoadBlendingCell_mAD07DA35DFCF43AA8EF8620DC40F1E854CD5C573(__this, L_97, L_98, NULL);
+		if (!L_99)
 		{
-			goto IL_0298;
+			goto IL_02a9;
 		}
 	}
 	{
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_98 = __this->___m_ToBeLoadedBlendingCells;
-		int32_t L_99 = V_4;
-		NullCheck(L_98);
-		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_100;
-		L_100 = DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949(L_98, L_99, DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949_RuntimeMethod_var);
+		int32_t L_100 = V_4;
+		if ((((int32_t)L_100) == ((int32_t)(-1))))
+		{
+			goto IL_02a9;
+		}
+	}
+	{
 		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_101 = __this->___m_ToBeLoadedBlendingCells;
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_102 = __this->___m_TempBlendingCellToLoadList;
-		NullCheck(L_102);
-		int32_t L_103;
-		L_103 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_102, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
+		int32_t L_102 = V_4;
 		NullCheck(L_101);
-		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_104;
-		L_104 = DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949(L_101, ((int32_t)il2cpp_codegen_subtract(L_103, 1)), DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949_RuntimeMethod_var);
-		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_105 = *((Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87**)L_104);
-		*((RuntimeObject**)L_100) = (RuntimeObject*)L_105;
-		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_100, (void*)(RuntimeObject*)L_105);
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_106 = __this->___m_ToBeLoadedBlendingCells;
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_107 = __this->___m_TempBlendingCellToLoadList;
-		NullCheck(L_107);
-		int32_t L_108;
-		L_108 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_107, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-		NullCheck(L_106);
-		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_109;
-		L_109 = DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949(L_106, ((int32_t)il2cpp_codegen_subtract(L_108, 1)), DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949_RuntimeMethod_var);
-		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_110 = V_8;
-		*((RuntimeObject**)L_109) = (RuntimeObject*)L_110;
-		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_109, (void*)(RuntimeObject*)L_110);
-		int32_t L_111 = V_4;
-		int32_t L_112 = ((int32_t)il2cpp_codegen_add(L_111, 1));
-		V_4 = L_112;
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_113 = __this->___m_ToBeLoadedBlendingCells;
-		NullCheck(L_113);
-		int32_t L_114;
-		L_114 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_113, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-		if ((((int32_t)L_112) < ((int32_t)L_114)))
+		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_103;
+		L_103 = DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949(L_101, L_102, DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949_RuntimeMethod_var);
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_104 = __this->___m_ToBeLoadedBlendingCells;
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_105 = __this->___m_TempBlendingCellToLoadList;
+		NullCheck(L_105);
+		int32_t L_106;
+		L_106 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_105, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
+		NullCheck(L_104);
+		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_107;
+		L_107 = DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949(L_104, ((int32_t)il2cpp_codegen_subtract(L_106, 1)), DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949_RuntimeMethod_var);
+		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_108 = *((Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87**)L_107);
+		*((RuntimeObject**)L_103) = (RuntimeObject*)L_108;
+		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_103, (void*)(RuntimeObject*)L_108);
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_109 = __this->___m_ToBeLoadedBlendingCells;
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_110 = __this->___m_TempBlendingCellToLoadList;
+		NullCheck(L_110);
+		int32_t L_111;
+		L_111 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_110, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
+		NullCheck(L_109);
+		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_112;
+		L_112 = DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949(L_109, ((int32_t)il2cpp_codegen_subtract(L_111, 1)), DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949_RuntimeMethod_var);
+		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_113 = V_8;
+		*((RuntimeObject**)L_112) = (RuntimeObject*)L_113;
+		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_112, (void*)(RuntimeObject*)L_113);
+		int32_t L_114 = V_4;
+		int32_t L_115 = ((int32_t)il2cpp_codegen_add(L_114, 1));
+		V_4 = L_115;
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_116 = __this->___m_ToBeLoadedBlendingCells;
+		NullCheck(L_116);
+		int32_t L_117;
+		L_117 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_116, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
+		if ((((int32_t)L_115) < ((int32_t)L_117)))
 		{
-			goto IL_0298;
+			goto IL_02a9;
 		}
 	}
 	{
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_115 = __this->___m_TempBlendingCellToLoadList;
-		NullCheck(L_115);
-		int32_t L_116;
-		L_116 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_115, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-		V_4 = L_116;
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_118 = __this->___m_TempBlendingCellToLoadList;
+		NullCheck(L_118);
+		int32_t L_119;
+		L_119 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_118, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
+		V_4 = L_119;
 	}
 
-IL_0298:
+IL_02a9:
 	{
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_117 = __this->___m_TempBlendingCellToLoadList;
-		NullCheck(L_117);
-		int32_t L_118;
-		L_118 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_117, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-		int32_t L_119 = V_2;
-		if ((((int32_t)L_118) < ((int32_t)L_119)))
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_120 = __this->___m_TempBlendingCellToLoadList;
+		NullCheck(L_120);
+		int32_t L_121;
+		L_121 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_120, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
+		int32_t L_122 = V_2;
+		if ((((int32_t)L_121) < ((int32_t)L_122)))
 		{
 			goto IL_0155;
 		}
 	}
 
-IL_02a9:
+IL_02ba:
 	{
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_120 = __this->___m_LoadedBlendingCells;
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_121 = __this->___m_LoadedBlendingCells;
-		NullCheck(L_121);
-		int32_t L_122;
-		L_122 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_121, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_123 = __this->___m_TempBlendingCellToUnloadList;
-		NullCheck(L_123);
-		int32_t L_124;
-		L_124 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_123, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_125 = __this->___m_TempBlendingCellToUnloadList;
-		NullCheck(L_125);
-		int32_t L_126;
-		L_126 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_125, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-		NullCheck(L_120);
-		DynamicArray_1_RemoveRange_mC28BFD6A0A56CF509EDC2C009FD09E5BDF25CA1F(L_120, ((int32_t)il2cpp_codegen_subtract(L_122, L_124)), L_126, DynamicArray_1_RemoveRange_mC28BFD6A0A56CF509EDC2C009FD09E5BDF25CA1F_RuntimeMethod_var);
-	}
-
-IL_02d6:
-	{
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_127 = __this->___m_ToBeLoadedBlendingCells;
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_128 = __this->___m_TempBlendingCellToLoadList;
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_123 = __this->___m_LoadedBlendingCells;
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_124 = __this->___m_LoadedBlendingCells;
+		NullCheck(L_124);
+		int32_t L_125;
+		L_125 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_124, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_126 = __this->___m_TempBlendingCellToUnloadList;
+		NullCheck(L_126);
+		int32_t L_127;
+		L_127 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_126, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_128 = __this->___m_TempBlendingCellToUnloadList;
 		NullCheck(L_128);
 		int32_t L_129;
 		L_129 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_128, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-		NullCheck(L_127);
-		DynamicArray_1_RemoveRange_mC28BFD6A0A56CF509EDC2C009FD09E5BDF25CA1F(L_127, 0, L_129, DynamicArray_1_RemoveRange_mC28BFD6A0A56CF509EDC2C009FD09E5BDF25CA1F_RuntimeMethod_var);
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_130 = __this->___m_LoadedBlendingCells;
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_131 = __this->___m_TempBlendingCellToLoadList;
-		NullCheck(L_130);
-		DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF(L_130, L_131, DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF_RuntimeMethod_var);
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_132 = __this->___m_TempBlendingCellToLoadList;
-		NullCheck(L_132);
-		DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB(L_132, DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB_RuntimeMethod_var);
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_133 = __this->___m_ToBeLoadedBlendingCells;
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_134 = __this->___m_TempBlendingCellToUnloadList;
-		NullCheck(L_133);
-		DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF(L_133, L_134, DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF_RuntimeMethod_var);
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_135 = __this->___m_TempBlendingCellToUnloadList;
-		NullCheck(L_135);
-		DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB(L_135, DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB_RuntimeMethod_var);
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_136 = __this->___m_LoadedBlendingCells;
-		NullCheck(L_136);
-		int32_t L_137;
-		L_137 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_136, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-		if (!L_137)
-		{
-			goto IL_03e5;
-		}
-	}
-	{
-		float L_138;
-		L_138 = ProbeReferenceVolume_get_scenarioBlendingFactor_mE2290CE32469BAE1B4862A9095964A8A0332AC3A(__this, NULL);
-		V_9 = L_138;
-		V_10 = 0;
-		V_11 = 0;
-		goto IL_03b5;
+		NullCheck(L_123);
+		DynamicArray_1_RemoveRange_mC28BFD6A0A56CF509EDC2C009FD09E5BDF25CA1F(L_123, ((int32_t)il2cpp_codegen_subtract(L_125, L_127)), L_129, DynamicArray_1_RemoveRange_mC28BFD6A0A56CF509EDC2C009FD09E5BDF25CA1F_RuntimeMethod_var);
 	}
 
-IL_0345:
+IL_02e7:
 	{
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_130 = __this->___m_ToBeLoadedBlendingCells;
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_131 = __this->___m_TempBlendingCellToLoadList;
+		NullCheck(L_131);
+		int32_t L_132;
+		L_132 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_131, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
+		NullCheck(L_130);
+		DynamicArray_1_RemoveRange_mC28BFD6A0A56CF509EDC2C009FD09E5BDF25CA1F(L_130, 0, L_132, DynamicArray_1_RemoveRange_mC28BFD6A0A56CF509EDC2C009FD09E5BDF25CA1F_RuntimeMethod_var);
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_133 = __this->___m_LoadedBlendingCells;
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_134 = __this->___m_TempBlendingCellToLoadList;
+		NullCheck(L_133);
+		DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF(L_133, L_134, DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF_RuntimeMethod_var);
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_135 = __this->___m_TempBlendingCellToLoadList;
+		NullCheck(L_135);
+		DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB(L_135, DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB_RuntimeMethod_var);
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_136 = __this->___m_ToBeLoadedBlendingCells;
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_137 = __this->___m_TempBlendingCellToUnloadList;
+		NullCheck(L_136);
+		DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF(L_136, L_137, DynamicArray_1_AddRange_mA764ED0AE511EEF7788666CF5AB61E970C41AFAF_RuntimeMethod_var);
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_138 = __this->___m_TempBlendingCellToUnloadList;
+		NullCheck(L_138);
+		DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB(L_138, DynamicArray_1_Clear_mFBB5A0080548E54C9EA6C5364E6A18C5CCD8B9CB_RuntimeMethod_var);
 		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_139 = __this->___m_LoadedBlendingCells;
-		int32_t L_140 = V_10;
-		int32_t L_141 = L_140;
-		V_10 = ((int32_t)il2cpp_codegen_add(L_141, 1));
 		NullCheck(L_139);
-		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_142;
-		L_142 = DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949(L_139, L_141, DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949_RuntimeMethod_var);
-		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_143 = *((Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87**)L_142);
-		V_12 = L_143;
-		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_144 = V_12;
-		NullCheck(L_144);
-		CellStreamingInfo_t4C971022090188CCCDAA4908A17043F5F66D8FCD* L_145 = L_144->___streamingInfo;
-		NullCheck(L_145);
-		bool L_146;
-		L_146 = CellStreamingInfo_IsBlendingStreaming_m94B50E9B310E0E8F2FA9489D5ECD529D03319D6A(L_145, NULL);
-		if (L_146)
+		int32_t L_140;
+		L_140 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_139, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
+		if (!L_140)
 		{
-			goto IL_03b5;
+			goto IL_03f6;
 		}
 	}
 	{
+		float L_141;
+		L_141 = ProbeReferenceVolume_get_scenarioBlendingFactor_mE2290CE32469BAE1B4862A9095964A8A0332AC3A(__this, NULL);
+		V_9 = L_141;
+		V_10 = 0;
+		V_11 = 0;
+		goto IL_03c6;
+	}
+
+IL_0356:
+	{
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_142 = __this->___m_LoadedBlendingCells;
+		int32_t L_143 = V_10;
+		int32_t L_144 = L_143;
+		V_10 = ((int32_t)il2cpp_codegen_add(L_144, 1));
+		NullCheck(L_142);
+		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87** L_145;
+		L_145 = DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949(L_142, L_144, DynamicArray_1_get_Item_m9B6D2374B01972F855B2BD5DAB70FDA6055DE949_RuntimeMethod_var);
+		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_146 = *((Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87**)L_145);
+		V_12 = L_146;
 		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_147 = V_12;
 		NullCheck(L_147);
-		CellBlendingInfo_tCAA467021B8E6F3C19735CDDEBCD3C822DED24E0* L_148 = L_147->___blendingInfo;
+		CellStreamingInfo_t4C971022090188CCCDAA4908A17043F5F66D8FCD* L_148 = L_147->___streamingInfo;
 		NullCheck(L_148);
 		bool L_149;
-		L_149 = CellBlendingInfo_IsUpToDate_mBB1B0C2CCFDAEA96605CA00B30A89ABAF3100847(L_148, NULL);
+		L_149 = CellStreamingInfo_IsBlendingStreaming_m94B50E9B310E0E8F2FA9489D5ECD529D03319D6A(L_148, NULL);
 		if (L_149)
 		{
-			goto IL_03b5;
+			goto IL_03c6;
 		}
 	}
 	{
-		ProbeVolumeDebug_t295620780739F33AEAD1D1BB44C5252CE70D3DD8* L_150;
-		L_150 = ProbeReferenceVolume_get_probeVolumeDebug_m96372A6BF79C4E05EF70A101B2CCDDCC7CE9D34F_inline(__this, NULL);
+		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_150 = V_12;
 		NullCheck(L_150);
-		bool L_151 = L_150->___verboseStreamingLog;
-		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_152 = V_12;
-		NullCheck(L_152);
-		CellBlendingInfo_tCAA467021B8E6F3C19735CDDEBCD3C822DED24E0* L_153 = L_152->___blendingInfo;
-		float L_154 = V_9;
+		CellBlendingInfo_tCAA467021B8E6F3C19735CDDEBCD3C822DED24E0* L_151 = L_150->___blendingInfo;
+		NullCheck(L_151);
+		bool L_152;
+		L_152 = CellBlendingInfo_IsUpToDate_mBB1B0C2CCFDAEA96605CA00B30A89ABAF3100847(L_151, NULL);
+		if (L_152)
+		{
+			goto IL_03c6;
+		}
+	}
+	{
+		ProbeVolumeDebug_t295620780739F33AEAD1D1BB44C5252CE70D3DD8* L_153;
+		L_153 = ProbeReferenceVolume_get_probeVolumeDebug_m96372A6BF79C4E05EF70A101B2CCDDCC7CE9D34F_inline(__this, NULL);
 		NullCheck(L_153);
-		L_153->___blendingFactor = L_154;
+		bool L_154 = L_153->___verboseStreamingLog;
 		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_155 = V_12;
 		NullCheck(L_155);
 		CellBlendingInfo_tCAA467021B8E6F3C19735CDDEBCD3C822DED24E0* L_156 = L_155->___blendingInfo;
+		float L_157 = V_9;
 		NullCheck(L_156);
-		CellBlendingInfo_MarkUpToDate_m8350401A4A7617FC34B4E7C3617E159586174825(L_156, NULL);
-		ProbeBrickBlendingPool_tD0DBB9B875C8C88A6410A239987DA3F9F4BE18F8* L_157 = __this->___m_BlendingPool;
+		L_156->___blendingFactor = L_157;
 		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_158 = V_12;
-		ProbeBrickPool_tC43640788A2B356F3F99A068D2CED6702E721693* L_159 = __this->___m_Pool;
-		NullCheck(L_157);
-		ProbeBrickBlendingPool_BlendChunks_m2CCDA7A93542C257C82086E048E306046AB954F9(L_157, L_158, L_159, NULL);
-		int32_t L_160 = V_11;
-		V_11 = ((int32_t)il2cpp_codegen_add(L_160, 1));
+		NullCheck(L_158);
+		CellBlendingInfo_tCAA467021B8E6F3C19735CDDEBCD3C822DED24E0* L_159 = L_158->___blendingInfo;
+		NullCheck(L_159);
+		CellBlendingInfo_MarkUpToDate_m8350401A4A7617FC34B4E7C3617E159586174825(L_159, NULL);
+		ProbeBrickBlendingPool_tD0DBB9B875C8C88A6410A239987DA3F9F4BE18F8* L_160 = __this->___m_BlendingPool;
+		Cell_t81E085F9FB7397ABA6C8C4DB4BCBCA22CF046C87* L_161 = V_12;
+		ProbeBrickPool_tC43640788A2B356F3F99A068D2CED6702E721693* L_162 = __this->___m_Pool;
+		NullCheck(L_160);
+		ProbeBrickBlendingPool_BlendChunks_m2CCDA7A93542C257C82086E048E306046AB954F9(L_160, L_161, L_162, NULL);
+		int32_t L_163 = V_11;
+		V_11 = ((int32_t)il2cpp_codegen_add(L_163, 1));
 	}
 
-IL_03b5:
+IL_03c6:
 	{
-		int32_t L_161 = V_11;
-		int32_t L_162;
-		L_162 = ProbeReferenceVolume_get_numberOfCellsBlendedPerFrame_m6B6BD6870B8A564893D9F67D13BB442D911D33F9_inline(__this, NULL);
-		if ((((int32_t)L_161) >= ((int32_t)L_162)))
-		{
-			goto IL_03d1;
-		}
-	}
-	{
-		int32_t L_163 = V_10;
-		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_164 = __this->___m_LoadedBlendingCells;
-		NullCheck(L_164);
+		int32_t L_164 = V_11;
 		int32_t L_165;
-		L_165 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_164, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
-		if ((((int32_t)L_163) < ((int32_t)L_165)))
+		L_165 = ProbeReferenceVolume_get_numberOfCellsBlendedPerFrame_m6B6BD6870B8A564893D9F67D13BB442D911D33F9_inline(__this, NULL);
+		if ((((int32_t)L_164) >= ((int32_t)L_165)))
 		{
-			goto IL_0345;
+			goto IL_03e2;
+		}
+	}
+	{
+		int32_t L_166 = V_10;
+		DynamicArray_1_t417A8A89CA5B25965BE1831A6DD20490247F49FA* L_167 = __this->___m_LoadedBlendingCells;
+		NullCheck(L_167);
+		int32_t L_168;
+		L_168 = DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_inline(L_167, DynamicArray_1_get_size_mACEF7150B42733E4246BC1C9CB3E6F0535E73BA4_RuntimeMethod_var);
+		if ((((int32_t)L_166) < ((int32_t)L_168)))
+		{
+			goto IL_0356;
 		}
 	}
 
-IL_03d1:
+IL_03e2:
 	{
-		ProbeBrickBlendingPool_tD0DBB9B875C8C88A6410A239987DA3F9F4BE18F8* L_166 = __this->___m_BlendingPool;
-		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_167 = ___0_cmd;
-		float L_168 = V_9;
-		ProbeBrickPool_tC43640788A2B356F3F99A068D2CED6702E721693* L_169 = __this->___m_Pool;
-		NullCheck(L_166);
-		ProbeBrickBlendingPool_PerformBlending_m4FE913C3C9C02C995BEADB3D7660F15FA66E4F5B(L_166, L_167, L_168, L_169, NULL);
+		ProbeBrickBlendingPool_tD0DBB9B875C8C88A6410A239987DA3F9F4BE18F8* L_169 = __this->___m_BlendingPool;
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_170 = ___0_cmd;
+		float L_171 = V_9;
+		ProbeBrickPool_tC43640788A2B356F3F99A068D2CED6702E721693* L_172 = __this->___m_Pool;
+		NullCheck(L_169);
+		ProbeBrickBlendingPool_PerformBlending_m4FE913C3C9C02C995BEADB3D7660F15FA66E4F5B(L_169, L_170, L_171, L_172, NULL);
 	}
 
-IL_03e5:
+IL_03f6:
 	{
 		return;
 	}

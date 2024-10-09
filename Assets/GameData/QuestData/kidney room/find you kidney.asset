@@ -19,7 +19,7 @@ MonoBehaviour:
     objectiveType: 0
     status: 1
     isOptional: 0
-    location: {x: 48.7, y: 0.42, z: 29.22}
+    location: {x: 46.47, y: 0.42, z: 27.095}
     sceneName: KidneyRoom
     requiredItemCount: 1
     currentItemCount: 0

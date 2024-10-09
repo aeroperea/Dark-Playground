@@ -180,6 +180,8 @@ IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass6_0_t9F591FAA04050854AAC09F80
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t737DD9364E4E5AAA1CB0DD34993194C75678EBF3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_____sanitizers_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7____playerId_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t6B29E28CA76F0BA495BF5BCF159255818D90CA55____B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral022E90CE77A648DBD52291A635A95142626B8CF8;
 IL2CPP_EXTERN_C String_t* _stringLiteral04BF85957CACD6DF8A6E78EC9C291ADD6F3E6475;
@@ -274,6 +276,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CGetAllPressedU3Ed__8_System_Collections_
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CSubscribeU3Eb__5_0_m0D318F3E7BE3B1691D8F88263ADA4A82F07D702B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass6_0_U3CUnsubscribeU3Eb__0_mA51E8F366E84179C1E842444AC6000835B290F6C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_mCBAC921D80D3923BE5208C2DE5FC97CDE4ED85EF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_0_0_0_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Event_tDC1CE7179A25C1AC33BD07C5B4F161045A672215;;
@@ -6749,12 +6753,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventProvider__cctor_m43251A9D75881B0B1D
 #endif
 IL2CPP_EXTERN_C void Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_marshal_pinvoke(const Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7& unmarshaled, Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___playerIdException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'playerId' of type 'Registration'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7____playerId_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___playerIdException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7____playerId_FieldInfo_var, Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___playerIdException, NULL);
 }
 IL2CPP_EXTERN_C void Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_marshal_pinvoke_back(const Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_marshaled_pinvoke& marshaled, Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7& unmarshaled)
 {
-	Exception_t* ___playerIdException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'playerId' of type 'Registration'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7____playerId_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___playerIdException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7____playerId_FieldInfo_var, Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___playerIdException, NULL);
 }
 IL2CPP_EXTERN_C void Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_marshal_pinvoke_cleanup(Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_marshaled_pinvoke& marshaled)
@@ -6762,12 +6780,26 @@ IL2CPP_EXTERN_C void Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_mars
 }
 IL2CPP_EXTERN_C void Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_marshal_com(const Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7& unmarshaled, Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_marshaled_com& marshaled)
 {
-	Exception_t* ___playerIdException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'playerId' of type 'Registration'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7____playerId_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___playerIdException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7____playerId_FieldInfo_var, Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___playerIdException, NULL);
 }
 IL2CPP_EXTERN_C void Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_marshal_com_back(const Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_marshaled_com& marshaled, Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7& unmarshaled)
 {
-	Exception_t* ___playerIdException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'playerId' of type 'Registration'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7____playerId_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___playerIdException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7____playerId_FieldInfo_var, Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___playerIdException, NULL);
 }
 IL2CPP_EXTERN_C void Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_marshal_com_cleanup(Registration_t4882E3A82099DD20B2E91917C08BD4D2216F21D7_marshaled_com& marshaled)
@@ -12003,12 +12035,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PointerState__cctor_m86E5EB0D671A3824A4F
 #endif
 IL2CPP_EXTERN_C void EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_marshal_pinvoke(const EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314& unmarshaled, EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ____sanitizersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_sanitizers' of type 'EventSanitizer': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_____sanitizers_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____sanitizersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_____sanitizers_FieldInfo_var, EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____sanitizersException, NULL);
 }
 IL2CPP_EXTERN_C void EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_marshal_pinvoke_back(const EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_marshaled_pinvoke& marshaled, EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314& unmarshaled)
 {
-	Exception_t* ____sanitizersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_sanitizers' of type 'EventSanitizer': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_____sanitizers_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____sanitizersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_____sanitizers_FieldInfo_var, EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____sanitizersException, NULL);
 }
 IL2CPP_EXTERN_C void EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_marshal_pinvoke_cleanup(EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_marshaled_pinvoke& marshaled)
@@ -12016,12 +12062,26 @@ IL2CPP_EXTERN_C void EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_ma
 }
 IL2CPP_EXTERN_C void EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_marshal_com(const EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314& unmarshaled, EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_marshaled_com& marshaled)
 {
-	Exception_t* ____sanitizersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_sanitizers' of type 'EventSanitizer': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_____sanitizers_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____sanitizersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_____sanitizers_FieldInfo_var, EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____sanitizersException, NULL);
 }
 IL2CPP_EXTERN_C void EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_marshal_com_back(const EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_marshaled_com& marshaled, EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314& unmarshaled)
 {
-	Exception_t* ____sanitizersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_sanitizers' of type 'EventSanitizer': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_____sanitizers_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____sanitizersException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_____sanitizers_FieldInfo_var, EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____sanitizersException, NULL);
 }
 IL2CPP_EXTERN_C void EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_marshal_com_cleanup(EventSanitizer_tA2DA48642359D0976C1DD4EEB2D45287D04BB314_marshaled_com& marshaled)

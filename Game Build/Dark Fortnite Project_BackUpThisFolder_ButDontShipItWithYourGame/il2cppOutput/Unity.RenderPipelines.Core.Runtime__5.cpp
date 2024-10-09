@@ -2314,7 +2314,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t RenderTextureDescriptor_g
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B* RTHandleSystem_Alloc_m8C8178CB251D0FF3B50EDBA74DB2164BC0CEDF98 (RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_scaleFactor, int32_t ___1_slices, int32_t ___2_depthBufferBits, int32_t ___3_colorFormat, int32_t ___4_filterMode, int32_t ___5_wrapMode, int32_t ___6_dimension, bool ___7_enableRandomWrite, bool ___8_useMipMap, bool ___9_autoGenerateMips, bool ___10_isShadowMap, int32_t ___11_anisoLevel, float ___12_mipMapBias, int32_t ___13_msaaSamples, bool ___14_bindTextureMS, bool ___15_useDynamicScale, bool ___16_useDynamicScaleExplicit, int32_t ___17_memoryless, int32_t ___18_vrUsage, String_t* ___19_name, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B* RTHandleSystem_Alloc_m378F73B9D5C56E1E6BFDE22154D31670D5575EC2 (RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_scaleFactor, RTHandleAllocInfo_t1E4041480BC822D21C8A4FA75E57D8C1B1FB4721 ___1_info, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B* RTHandleSystem_Alloc_mC32CB310ACAA0B7CFE24DF2380ABA9901DFBD959 (RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* __this, ScaleFunc_t423F661DAD5C7A18F509C8F1F62C9D6AEA9A9791* ___0_scaleFunc, int32_t ___1_slices, int32_t ___2_depthBufferBits, int32_t ___3_colorFormat, int32_t ___4_filterMode, int32_t ___5_wrapMode, int32_t ___6_dimension, bool ___7_enableRandomWrite, bool ___8_useMipMap, bool ___9_autoGenerateMips, bool ___10_isShadowMap, int32_t ___11_anisoLevel, float ___12_mipMapBias, int32_t ___13_msaaSamples, bool ___14_bindTextureMS, bool ___15_useDynamicScale, bool ___16_useDynamicScaleExplicit, int32_t ___17_memoryless, int32_t ___18_vrUsage, String_t* ___19_name, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t RenderTextureDescriptor_get_depthStencilFormat_m360929BE5BD10E9C3D8C936AA6B44B1D11C119CB_inline (RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B* RTHandleSystem_Alloc_mFD35E71092F0D6981D7E29BC4AA4C5EEF1345F1F (RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* __this, ScaleFunc_t423F661DAD5C7A18F509C8F1F62C9D6AEA9A9791* ___0_scaleFunc, RTHandleAllocInfo_t1E4041480BC822D21C8A4FA75E57D8C1B1FB4721 ___1_info, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B* RTHandleSystem_Alloc_m8813228D1C9D34992E020DDD8956CDF9AF2A3665 (RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* __this, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___0_texture, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B* RTHandleSystem_Alloc_m8B707A82A58A1025EE9E24FD8C861C5CCDE68132 (RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* __this, RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* ___0_texture, bool ___1_transferOwnership, const RuntimeMethod* method) ;
@@ -4093,106 +4092,77 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RTHandle_t135537761C47BC929F032B3C8F4D55EA111
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RTHandles_t84D932A74064E591F31E9813FBED5D64F5CC888C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	int32_t V_0 = 0;
-	RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 V_1;
-	memset((&V_1), 0, sizeof(V_1));
-	int32_t G_B3_0 = 0;
+	RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	{
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_0 = ___1_descriptor;
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_1 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_0);
-		V_1 = L_1;
-		int32_t L_2;
-		L_2 = RenderTextureDescriptor_get_graphicsFormat_m50F25A4F179EA318C8D3B0D8685F9C5F59F7DEC0((&V_1), NULL);
-		if (L_2)
-		{
-			goto IL_0018;
-		}
-	}
-	{
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_3 = ___1_descriptor;
-		int32_t L_4;
-		L_4 = RenderTextureDescriptor_get_depthStencilFormat_m360929BE5BD10E9C3D8C936AA6B44B1D11C119CB_inline(L_3, NULL);
-		G_B3_0 = L_4;
-		goto IL_0026;
-	}
-
-IL_0018:
-	{
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_5 = ___1_descriptor;
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_6 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_5);
-		V_1 = L_6;
-		int32_t L_7;
-		L_7 = RenderTextureDescriptor_get_graphicsFormat_m50F25A4F179EA318C8D3B0D8685F9C5F59F7DEC0((&V_1), NULL);
-		G_B3_0 = L_7;
-	}
-
-IL_0026:
-	{
-		V_0 = G_B3_0;
 		il2cpp_codegen_runtime_class_init_inline(RTHandles_t84D932A74064E591F31E9813FBED5D64F5CC888C_il2cpp_TypeInfo_var);
-		RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* L_8 = ((RTHandles_t84D932A74064E591F31E9813FBED5D64F5CC888C_StaticFields*)il2cpp_codegen_static_fields_for(RTHandles_t84D932A74064E591F31E9813FBED5D64F5CC888C_il2cpp_TypeInfo_var))->___s_DefaultInstance;
-		ScaleFunc_t423F661DAD5C7A18F509C8F1F62C9D6AEA9A9791* L_9 = ___0_scaleFunc;
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_10 = ___1_descriptor;
-		int32_t L_11;
-		L_11 = RenderTextureDescriptor_get_volumeDepth_m528818299E101F1B285B08BE12FAC2F9A871BA36_inline(L_10, NULL);
+		RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* L_0 = ((RTHandles_t84D932A74064E591F31E9813FBED5D64F5CC888C_StaticFields*)il2cpp_codegen_static_fields_for(RTHandles_t84D932A74064E591F31E9813FBED5D64F5CC888C_il2cpp_TypeInfo_var))->___s_DefaultInstance;
+		ScaleFunc_t423F661DAD5C7A18F509C8F1F62C9D6AEA9A9791* L_1 = ___0_scaleFunc;
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_2 = ___1_descriptor;
+		int32_t L_3;
+		L_3 = RenderTextureDescriptor_get_volumeDepth_m528818299E101F1B285B08BE12FAC2F9A871BA36_inline(L_2, NULL);
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_4 = ___1_descriptor;
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_5 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_4);
+		V_0 = L_5;
+		int32_t L_6;
+		L_6 = RenderTextureDescriptor_get_depthBufferBits_mC095E36F9803B2E68E258C03E48ACD0B0E678953((&V_0), NULL);
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_7 = ___1_descriptor;
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_8 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_7);
+		V_0 = L_8;
+		int32_t L_9;
+		L_9 = RenderTextureDescriptor_get_graphicsFormat_m50F25A4F179EA318C8D3B0D8685F9C5F59F7DEC0((&V_0), NULL);
+		int32_t L_10 = ___2_filterMode;
+		int32_t L_11 = ___3_wrapMode;
 		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_12 = ___1_descriptor;
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_13 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_12);
-		V_1 = L_13;
-		int32_t L_14;
-		L_14 = RenderTextureDescriptor_get_depthBufferBits_mC095E36F9803B2E68E258C03E48ACD0B0E678953((&V_1), NULL);
-		int32_t L_15 = V_0;
-		int32_t L_16 = ___2_filterMode;
-		int32_t L_17 = ___3_wrapMode;
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_18 = ___1_descriptor;
-		int32_t L_19;
-		L_19 = RenderTextureDescriptor_get_dimension_mA23ABB2CA03249DCE3A21F5123524A825C33E31B_inline(L_18, NULL);
+		int32_t L_13;
+		L_13 = RenderTextureDescriptor_get_dimension_mA23ABB2CA03249DCE3A21F5123524A825C33E31B_inline(L_12, NULL);
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_14 = ___1_descriptor;
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_15 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_14);
+		V_0 = L_15;
+		bool L_16;
+		L_16 = RenderTextureDescriptor_get_enableRandomWrite_m09A97B46F4482C06F4D78678ED87F75A5D01CFF9((&V_0), NULL);
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_17 = ___1_descriptor;
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_18 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_17);
+		V_0 = L_18;
+		bool L_19;
+		L_19 = RenderTextureDescriptor_get_useMipMap_mED290AAA1F816D024E026BB2D21C405388925D71((&V_0), NULL);
 		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_20 = ___1_descriptor;
 		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_21 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_20);
-		V_1 = L_21;
+		V_0 = L_21;
 		bool L_22;
-		L_22 = RenderTextureDescriptor_get_enableRandomWrite_m09A97B46F4482C06F4D78678ED87F75A5D01CFF9((&V_1), NULL);
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_23 = ___1_descriptor;
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_24 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_23);
-		V_1 = L_24;
-		bool L_25;
-		L_25 = RenderTextureDescriptor_get_useMipMap_mED290AAA1F816D024E026BB2D21C405388925D71((&V_1), NULL);
+		L_22 = RenderTextureDescriptor_get_autoGenerateMips_m53F427E61A7DA4D4F6816FBE5AFA9D063FA5DF2B((&V_0), NULL);
+		bool L_23 = ___4_isShadowMap;
+		int32_t L_24 = ___5_anisoLevel;
+		float L_25 = ___6_mipMapBias;
 		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_26 = ___1_descriptor;
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_27 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_26);
-		V_1 = L_27;
-		bool L_28;
-		L_28 = RenderTextureDescriptor_get_autoGenerateMips_m53F427E61A7DA4D4F6816FBE5AFA9D063FA5DF2B((&V_1), NULL);
-		bool L_29 = ___4_isShadowMap;
-		int32_t L_30 = ___5_anisoLevel;
-		float L_31 = ___6_mipMapBias;
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_32 = ___1_descriptor;
-		int32_t L_33;
-		L_33 = RenderTextureDescriptor_get_msaaSamples_mFCC33643AFF2265C8305DCFD79ED8774A1A8FA22_inline(L_32, NULL);
+		int32_t L_27;
+		L_27 = RenderTextureDescriptor_get_msaaSamples_mFCC33643AFF2265C8305DCFD79ED8774A1A8FA22_inline(L_26, NULL);
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_28 = ___1_descriptor;
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_29 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_28);
+		V_0 = L_29;
+		bool L_30;
+		L_30 = RenderTextureDescriptor_get_bindMS_mBDC0CE7325E5619AD8CFF213BB0EFBBBC328808A((&V_0), NULL);
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_31 = ___1_descriptor;
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_32 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_31);
+		V_0 = L_32;
+		bool L_33;
+		L_33 = RenderTextureDescriptor_get_useDynamicScale_m84AB51F1599AB6641C254F06EE7431AFBACEF60A((&V_0), NULL);
 		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_34 = ___1_descriptor;
 		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_35 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_34);
-		V_1 = L_35;
+		V_0 = L_35;
 		bool L_36;
-		L_36 = RenderTextureDescriptor_get_bindMS_mBDC0CE7325E5619AD8CFF213BB0EFBBBC328808A((&V_1), NULL);
+		L_36 = RenderTextureDescriptor_get_useDynamicScaleExplicit_m3738AB9F5FDCCF555A2114ADE85868096533D12D((&V_0), NULL);
 		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_37 = ___1_descriptor;
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_38 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_37);
-		V_1 = L_38;
-		bool L_39;
-		L_39 = RenderTextureDescriptor_get_useDynamicScale_m84AB51F1599AB6641C254F06EE7431AFBACEF60A((&V_1), NULL);
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_40 = ___1_descriptor;
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 L_41 = (*(RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46*)L_40);
-		V_1 = L_41;
-		bool L_42;
-		L_42 = RenderTextureDescriptor_get_useDynamicScaleExplicit_m3738AB9F5FDCCF555A2114ADE85868096533D12D((&V_1), NULL);
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_43 = ___1_descriptor;
-		int32_t L_44;
-		L_44 = RenderTextureDescriptor_get_memoryless_mFFD64B6716E0F7D936AD6B34D5D56F0BFD55197F_inline(L_43, NULL);
-		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_45 = ___1_descriptor;
-		int32_t L_46;
-		L_46 = RenderTextureDescriptor_get_vrUsage_m061FAE1190A623B9DEE133F1506ADB23C983F6B0_inline(L_45, NULL);
-		String_t* L_47 = ___7_name;
-		NullCheck(L_8);
-		RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B* L_48;
-		L_48 = RTHandleSystem_Alloc_mC32CB310ACAA0B7CFE24DF2380ABA9901DFBD959(L_8, L_9, L_11, L_14, L_15, L_16, L_17, L_19, L_22, L_25, L_28, L_29, L_30, L_31, L_33, L_36, L_39, L_42, L_44, L_46, L_47, NULL);
-		return L_48;
+		int32_t L_38;
+		L_38 = RenderTextureDescriptor_get_memoryless_mFFD64B6716E0F7D936AD6B34D5D56F0BFD55197F_inline(L_37, NULL);
+		RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* L_39 = ___1_descriptor;
+		int32_t L_40;
+		L_40 = RenderTextureDescriptor_get_vrUsage_m061FAE1190A623B9DEE133F1506ADB23C983F6B0_inline(L_39, NULL);
+		String_t* L_41 = ___7_name;
+		NullCheck(L_0);
+		RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B* L_42;
+		L_42 = RTHandleSystem_Alloc_mC32CB310ACAA0B7CFE24DF2380ABA9901DFBD959(L_0, L_1, L_3, L_6, L_9, L_10, L_11, L_13, L_16, L_19, L_22, L_23, L_24, L_25, L_27, L_30, L_33, L_36, L_38, L_40, L_41, NULL);
+		return L_42;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B* RTHandles_Alloc_m4F9685465A4CC9E1A2CD14C4DB3B073C2339FABA (ScaleFunc_t423F661DAD5C7A18F509C8F1F62C9D6AEA9A9791* ___0_scaleFunc, RTHandleAllocInfo_t1E4041480BC822D21C8A4FA75E57D8C1B1FB4721 ___1_info, const RuntimeMethod* method) 
@@ -23880,13 +23850,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t RenderTextureDescriptor_g
 {
 	{
 		int32_t L_0 = __this->___U3CvrUsageU3Ek__BackingField;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t RenderTextureDescriptor_get_depthStencilFormat_m360929BE5BD10E9C3D8C936AA6B44B1D11C119CB_inline (RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46* __this, const RuntimeMethod* method) 
-{
-	{
-		int32_t L_0 = __this->___U3CdepthStencilFormatU3Ek__BackingField;
 		return L_0;
 	}
 }

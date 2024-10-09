@@ -15,6 +15,33 @@ MonoBehaviour:
   questName: Explore The Prison
   questDescription: See whats in here
   objectives:
+  - description: Look for a key in the starter room
+    objectiveType: 1
+    status: 0
+    isOptional: 0
+    location: {x: -105, y: -1.983, z: 92.057}
+    sceneName: Inside Prison
+    requiredItemCount: 1
+    currentItemCount: 0
+    targetId: key thing 1 (3)
+  - description: Collect the key in the room you unlocked
+    objectiveType: 1
+    status: 0
+    isOptional: 0
+    location: {x: -73.012, y: -1.736, z: 80.91}
+    sceneName: Inside Prison
+    requiredItemCount: 1
+    currentItemCount: 0
+    targetId: KEY OF DOOM(Clone)
+  - description: Get to the cellblock :)))
+    objectiveType: 1
+    status: 0
+    isOptional: 0
+    location: {x: -62.6, y: -2.06, z: 24.97}
+    sceneName: Inside Prison
+    requiredItemCount: 1
+    currentItemCount: 0
+    targetId: CellblockObj
   - description: Have a look around
     objectiveType: 1
     status: 1
@@ -24,7 +51,7 @@ MonoBehaviour:
     requiredItemCount: 1
     currentItemCount: 0
     targetId: DandidTrigger
-  - description: Reach the SoapLocation
+  - description: Explore the weird noise =)
     objectiveType: 0
     status: 0
     isOptional: 0

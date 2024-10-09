@@ -4604,8 +4604,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugDisplaySettings__ctor_m1B38578AE004
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_il2cpp_TypeInfo_var);
 		DebugDisplaySettings_FillFullScreenDebugEnum_m6410D1875EEB800B22FB84976F21D5462B637EB7(__this, (&((DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_StaticFields*)il2cpp_codegen_static_fields_for(DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_il2cpp_TypeInfo_var))->___s_LightingFullScreenDebugStrings), (&((DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_StaticFields*)il2cpp_codegen_static_fields_for(DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_il2cpp_TypeInfo_var))->___s_LightingFullScreenDebugValues), 1, ((int32_t)22), NULL);
-		DebugDisplaySettings_FillFullScreenDebugEnum_m6410D1875EEB800B22FB84976F21D5462B637EB7(__this, (&((DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_StaticFields*)il2cpp_codegen_static_fields_for(DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_il2cpp_TypeInfo_var))->___s_RenderingFullScreenDebugStrings), (&((DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_StaticFields*)il2cpp_codegen_static_fields_for(DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_il2cpp_TypeInfo_var))->___s_RenderingFullScreenDebugValues), ((int32_t)23), ((int32_t)40), NULL);
-		DebugDisplaySettings_FillFullScreenDebugEnum_m6410D1875EEB800B22FB84976F21D5462B637EB7(__this, (&((DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_StaticFields*)il2cpp_codegen_static_fields_for(DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_il2cpp_TypeInfo_var))->___s_MaterialFullScreenDebugStrings), (&((DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_StaticFields*)il2cpp_codegen_static_fields_for(DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_il2cpp_TypeInfo_var))->___s_MaterialFullScreenDebugValues), ((int32_t)41), ((int32_t)44), NULL);
+		DebugDisplaySettings_FillFullScreenDebugEnum_m6410D1875EEB800B22FB84976F21D5462B637EB7(__this, (&((DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_StaticFields*)il2cpp_codegen_static_fields_for(DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_il2cpp_TypeInfo_var))->___s_RenderingFullScreenDebugStrings), (&((DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_StaticFields*)il2cpp_codegen_static_fields_for(DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_il2cpp_TypeInfo_var))->___s_RenderingFullScreenDebugValues), ((int32_t)23), ((int32_t)41), NULL);
+		DebugDisplaySettings_FillFullScreenDebugEnum_m6410D1875EEB800B22FB84976F21D5462B637EB7(__this, (&((DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_StaticFields*)il2cpp_codegen_static_fields_for(DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_il2cpp_TypeInfo_var))->___s_MaterialFullScreenDebugStrings), (&((DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_StaticFields*)il2cpp_codegen_static_fields_for(DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_il2cpp_TypeInfo_var))->___s_MaterialFullScreenDebugValues), ((int32_t)42), ((int32_t)45), NULL);
 		DebugDisplaySettings_FillMipmapDebugMaterialTextureSlotArrays_mA8F50FA231B1901D7F35C455BCBF60E5CAF04AEB(__this, (&((DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_StaticFields*)il2cpp_codegen_static_fields_for(DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_il2cpp_TypeInfo_var))->___s_RenderingMipmapDebugMaterialTextureSlotStrings), (&((DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_StaticFields*)il2cpp_codegen_static_fields_for(DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF_il2cpp_TypeInfo_var))->___s_RenderingMipmapDebugMaterialTextureSlotValues), NULL);
 		int32_t L_0;
 		L_0 = SystemInfo_get_graphicsDeviceType_m2D54A0B94D138727041B29B127D8837165686545(NULL);
@@ -5257,7 +5257,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_IsFullScreenDebugPa
 		L_0 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___fullScreenDebugMode;
-		if ((((int32_t)L_1) == ((int32_t)((int32_t)31))))
+		if ((((int32_t)L_1) == ((int32_t)((int32_t)32))))
 		{
 			goto IL_001f;
 		}
@@ -5267,7 +5267,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_IsFullScreenDebugPa
 		L_2 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_2);
 		int32_t L_3 = L_2->___fullScreenDebugMode;
-		return (bool)((((int32_t)L_3) == ((int32_t)((int32_t)33)))? 1 : 0);
+		return (bool)((((int32_t)L_3) == ((int32_t)((int32_t)34)))? 1 : 0);
 	}
 
 IL_001f:
@@ -5306,7 +5306,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_IsMaterialValidatio
 		L_0 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___fullScreenDebugMode;
-		if ((((int32_t)L_1) == ((int32_t)((int32_t)42))))
+		if ((((int32_t)L_1) == ((int32_t)((int32_t)43))))
 		{
 			goto IL_001f;
 		}
@@ -5316,7 +5316,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_IsMaterialValidatio
 		L_2 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_2);
 		int32_t L_3 = L_2->___fullScreenDebugMode;
-		return (bool)((((int32_t)L_3) == ((int32_t)((int32_t)43)))? 1 : 0);
+		return (bool)((((int32_t)L_3) == ((int32_t)((int32_t)44)))? 1 : 0);
 	}
 
 IL_001f:
@@ -15092,70 +15092,70 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_6 = V_0;
 		if ((((int32_t)L_6) == ((int32_t)3)))
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
 		int32_t L_7 = V_0;
 		if ((((int32_t)L_7) == ((int32_t)4)))
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
 		int32_t L_8 = V_0;
 		if ((((int32_t)L_8) == ((int32_t)5)))
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
 		int32_t L_9 = V_0;
 		if ((((int32_t)L_9) == ((int32_t)6)))
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
 		int32_t L_10 = V_0;
 		if ((((int32_t)L_10) == ((int32_t)7)))
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
 		int32_t L_11 = V_0;
 		if ((((int32_t)L_11) == ((int32_t)8)))
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
 		int32_t L_12 = V_0;
 		if ((((int32_t)L_12) == ((int32_t)1)))
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
 		int32_t L_13 = V_0;
 		if ((((int32_t)L_13) == ((int32_t)2)))
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
 		int32_t L_14 = V_0;
 		if ((((int32_t)L_14) == ((int32_t)((int32_t)12))))
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
 		int32_t L_15 = V_0;
 		if ((((int32_t)L_15) == ((int32_t)((int32_t)16))))
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
@@ -15167,7 +15167,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		bool L_18 = L_17->___overrideAlbedo;
 		if (L_18)
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
@@ -15179,7 +15179,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		bool L_21 = L_20->___overrideNormal;
 		if (L_21)
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
@@ -15191,7 +15191,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		bool L_24 = L_23->___overrideSmoothness;
 		if (L_24)
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
@@ -15203,7 +15203,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		bool L_27 = L_26->___overrideSpecularColor;
 		if (L_27)
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
@@ -15215,7 +15215,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		bool L_30 = L_29->___overrideEmissiveColor;
 		if (L_30)
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
@@ -15227,14 +15227,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		bool L_33 = L_32->___overrideAmbientOcclusion;
 		if (L_33)
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
 		int32_t L_34 = V_1;
 		if ((((int32_t)L_34) == ((int32_t)((int32_t)11))))
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
@@ -15246,7 +15246,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_37 = L_36->___debugLightFilterMode;
 		if (L_37)
 		{
-			goto IL_0208;
+			goto IL_021a;
 		}
 	}
 	{
@@ -15256,7 +15256,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_39 = L_38->___fullScreenDebugMode;
 		if ((((int32_t)L_39) == ((int32_t)((int32_t)11))))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15266,7 +15266,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_41 = L_40->___fullScreenDebugMode;
 		if ((((int32_t)L_41) == ((int32_t)((int32_t)13))))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15276,7 +15276,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_43 = L_42->___fullScreenDebugMode;
 		if ((((int32_t)L_43) == ((int32_t)((int32_t)18))))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15286,7 +15286,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_45 = L_44->___fullScreenDebugMode;
 		if ((((int32_t)L_45) == ((int32_t)4)))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15296,7 +15296,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_47 = L_46->___fullScreenDebugMode;
 		if ((((int32_t)L_47) == ((int32_t)3)))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15306,7 +15306,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_49 = L_48->___fullScreenDebugMode;
 		if ((((int32_t)L_49) == ((int32_t)5)))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15316,7 +15316,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_51 = L_50->___fullScreenDebugMode;
 		if ((((int32_t)L_51) == ((int32_t)6)))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15326,7 +15326,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_53 = L_52->___fullScreenDebugMode;
 		if ((((int32_t)L_53) == ((int32_t)7)))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15336,7 +15336,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_55 = L_54->___fullScreenDebugMode;
 		if ((((int32_t)L_55) == ((int32_t)((int32_t)14))))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15346,7 +15346,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_57 = L_56->___fullScreenDebugMode;
 		if ((((int32_t)L_57) == ((int32_t)((int32_t)10))))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15356,7 +15356,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_59 = L_58->___fullScreenDebugMode;
 		if ((((int32_t)L_59) == ((int32_t)((int32_t)27))))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15366,7 +15366,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_61 = L_60->___fullScreenDebugMode;
 		if ((((int32_t)L_61) == ((int32_t)((int32_t)28))))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15376,7 +15376,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_63 = L_62->___fullScreenDebugMode;
 		if ((((int32_t)L_63) == ((int32_t)((int32_t)15))))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15384,9 +15384,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		L_64 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_64);
 		int32_t L_65 = L_64->___fullScreenDebugMode;
-		if ((((int32_t)L_65) == ((int32_t)((int32_t)36))))
+		if ((((int32_t)L_65) == ((int32_t)((int32_t)37))))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15396,7 +15396,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		int32_t L_67 = L_66->___fullScreenDebugMode;
 		if ((((int32_t)L_67) == ((int32_t)((int32_t)20))))
 		{
-			goto IL_0206;
+			goto IL_0218;
 		}
 	}
 	{
@@ -15404,15 +15404,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_DebugNeedsExposure_
 		L_68 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_68);
 		int32_t L_69 = L_68->___fullScreenDebugMode;
-		return (bool)((((int32_t)L_69) == ((int32_t)((int32_t)39)))? 1 : 0);
+		if ((((int32_t)L_69) == ((int32_t)((int32_t)40))))
+		{
+			goto IL_0218;
+		}
+	}
+	{
+		DebugData_tED95AF3E1D504619D5E400A9FC4F16A0185DA416* L_70;
+		L_70 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
+		NullCheck(L_70);
+		int32_t L_71 = L_70->___fullScreenDebugMode;
+		return (bool)((((int32_t)L_71) == ((int32_t)((int32_t)30)))? 1 : 0);
 	}
 
-IL_0206:
+IL_0218:
 	{
 		return (bool)1;
 	}
 
-IL_0208:
+IL_021a:
 	{
 		return (bool)1;
 	}
@@ -16134,7 +16144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_U3CRegisterMaterial
 		L_0 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___fullScreenDebugMode;
-		if ((((int32_t)L_1) == ((int32_t)((int32_t)42))))
+		if ((((int32_t)L_1) == ((int32_t)((int32_t)43))))
 		{
 			goto IL_0022;
 		}
@@ -16144,7 +16154,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_U3CRegisterMaterial
 		L_2 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_2);
 		int32_t L_3 = L_2->___fullScreenDebugMode;
-		return (bool)((((int32_t)((((int32_t)L_3) == ((int32_t)((int32_t)43)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		return (bool)((((int32_t)((((int32_t)L_3) == ((int32_t)((int32_t)44)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 
 IL_0022:
@@ -18619,7 +18629,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_U3CRegisterRenderin
 		L_0 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___fullScreenDebugMode;
-		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)((int32_t)30)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)((int32_t)31)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DebugDisplaySettings_U3CRegisterRenderingDebugU3Eb__93_5_mD66A6FE2F64DFF07EBF1CEFD7A85B96CC5D2BA36 (DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF* __this, const RuntimeMethod* method) 
@@ -18654,7 +18664,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_U3CRegisterRenderin
 		L_0 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___fullScreenDebugMode;
-		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)((int32_t)31)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)((int32_t)32)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DebugDisplaySettings_U3CRegisterRenderingDebugU3Eb__93_10_m7E2F430E28B5056DD3C9ADB156B75D8AF6D97BEF (DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF* __this, const RuntimeMethod* method) 
@@ -18685,7 +18695,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_U3CRegisterRenderin
 		L_0 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___fullScreenDebugMode;
-		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)((int32_t)33)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)((int32_t)34)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DebugDisplaySettings_U3CRegisterRenderingDebugU3Eb__93_15_m53EB18FD80F3C4E7486917A223D234CB84174072 (DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF* __this, const RuntimeMethod* method) 
@@ -18716,7 +18726,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_U3CRegisterRenderin
 		L_0 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___fullScreenDebugMode;
-		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)((int32_t)37)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)((int32_t)38)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DebugDisplaySettings_U3CRegisterRenderingDebugU3Eb__93_20_mE36CF054EF1B1E7270A1B7701CB63EC89463CEEF (DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF* __this, const RuntimeMethod* method) 
@@ -18887,7 +18897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_U3CRegisterRenderin
 		L_0 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___fullScreenDebugMode;
-		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)((int32_t)38)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)((int32_t)39)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DebugDisplaySettings_U3CRegisterRenderingDebugU3Eb__93_40_m9E7B0D7A0728F79AC389E8F927331DDD699B3755 (DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF* __this, const RuntimeMethod* method) 
@@ -18939,7 +18949,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DebugDisplaySettings_U3CRegisterRenderin
 		L_0 = DebugDisplaySettings_get_data_m3D41C50FA5154EC05DEDAC09B6B3B3F453F4658D_inline(__this, NULL);
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___fullScreenDebugMode;
-		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)((int32_t)39)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)((int32_t)40)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DebugDisplaySettings_U3CRegisterRenderingDebugU3Eb__93_45_m89C3414C028F360B3EEEFDD99B158F972BE5A34B (DebugDisplaySettings_tA48D05D8693FF24D22A1CA0744DA091ADE32FEAF* __this, const RuntimeMethod* method) 

@@ -53,6 +53,7 @@ IL2CPP_EXTERN_C RuntimeClass* PhysicsScene_t55222DD37072E8560EE054A07C0E3FE391D9
 IL2CPP_EXTERN_C RuntimeClass* Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92____m_Controller_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral21ACE806CE655297BC379B3AD17E97F0A68B6AEC;
 IL2CPP_EXTERN_C String_t* _stringLiteral31708FF86FAF74A55C0242FAE17AD0B7AA8E4646;
 IL2CPP_EXTERN_C String_t* _stringLiteral4EBC86E0EACFCA522AEB82874860D0E248D782A5;
@@ -82,6 +83,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Unmarshal_UnmarshalUnityObject_TisCollider_
 IL2CPP_EXTERN_C const RuntimeMethod* Unmarshal_UnmarshalUnityObject_TisComponent_t39FBE53E5EFCF4409111FB22C15FF73717632EC3_m1A455B7B527233D46227A0342C6F72D54FD88193_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Unmarshal_UnmarshalUnityObject_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m11B758E9EF823BBDCD4F7D573AF22F87A1532426_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnsafeUtility_As_TisIntPtr_t_TisGCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC_mD94F597CB91662C823496DA9FA9A7CF908734A78_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_0_0_0_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -1471,12 +1473,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Collision_Reuse_mC2E21A6480EE1DCEAF71F2E
 #endif
 IL2CPP_EXTERN_C void ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_marshal_pinvoke(const ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92& unmarshaled, ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_ControllerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Controller' of type 'ControllerColliderHit': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92____m_Controller_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ControllerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92____m_Controller_FieldInfo_var, ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ControllerException, NULL);
 }
 IL2CPP_EXTERN_C void ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_marshal_pinvoke_back(const ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_marshaled_pinvoke& marshaled, ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92& unmarshaled)
 {
-	Exception_t* ___m_ControllerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Controller' of type 'ControllerColliderHit': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92____m_Controller_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ControllerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92____m_Controller_FieldInfo_var, ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ControllerException, NULL);
 }
 IL2CPP_EXTERN_C void ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_marshal_pinvoke_cleanup(ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_marshaled_pinvoke& marshaled)
@@ -1484,12 +1500,26 @@ IL2CPP_EXTERN_C void ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6
 }
 IL2CPP_EXTERN_C void ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_marshal_com(const ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92& unmarshaled, ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_marshaled_com& marshaled)
 {
-	Exception_t* ___m_ControllerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Controller' of type 'ControllerColliderHit': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92____m_Controller_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ControllerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92____m_Controller_FieldInfo_var, ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ControllerException, NULL);
 }
 IL2CPP_EXTERN_C void ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_marshal_com_back(const ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_marshaled_com& marshaled, ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92& unmarshaled)
 {
-	Exception_t* ___m_ControllerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Controller' of type 'ControllerColliderHit': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92____m_Controller_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ControllerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92____m_Controller_FieldInfo_var, ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ControllerException, NULL);
 }
 IL2CPP_EXTERN_C void ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_marshal_com_cleanup(ControllerColliderHit_tD0B734CBE0E2B089339B14600EB5A80295F6DE92_marshaled_com& marshaled)

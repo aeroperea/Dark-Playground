@@ -361,7 +361,6 @@ IL2CPP_EXTERN_C RuntimeClass* CoreUtils_tEE57AB2B0DAE9561F4954B08800A8F957850B03
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DepthOfFieldModeParameter_t3B031D2335B7A46E5915E1E67EE98FCA90CBCCA5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DepthOfFieldResolutionParameter_t71CF006447A75BEF7833B954ACDA9C68EECB5B9E_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* DepthOfField_t8EF8CEC4B383C3603B4A31831A2CECCF08F7DE69_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t2F4F4BEB90144AE795DF0AB4B05D0BA8E6F62D82_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DiffusionProfileSettings_tB3573EB63BB0B8B369BFAB54DF3AC3D9C3C753AB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DiffusionProfile_tFEA9F22754A0C417A41B9E18EC9B43F90EA33991_il2cpp_TypeInfo_var;
@@ -426,6 +425,8 @@ IL2CPP_EXTERN_C RuntimeClass* Uniforms_t8EEEB02B693B3D51BA16BC5AFA35CE529C2749AF
 IL2CPP_EXTERN_C RuntimeClass* UpdateJob_t53353216D01DEC5246C2BA67CDDB0CED55DE39B3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884____transparentTextureResolution_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374____captureCameraDepthBuffer_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t52D74BF05A4BD9E64351FAC4ECCED878E3AC8C45____1ED83F404632AC882D3E8D4EE096C5A03FCB2482857368B6D59A345B319D360A_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t52D74BF05A4BD9E64351FAC4ECCED878E3AC8C45____1F873678600E983F82C2BE0D64C4B2AF7BFB1F9DDC355B495EAB4B14E04C0FFA_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t52D74BF05A4BD9E64351FAC4ECCED878E3AC8C45____6E925A3C00BB4EBE7DC8BFAF57E04560A63FF340889E46D0B2E748F9EFFB8554_FieldInfo_var;
@@ -783,7 +784,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* UnlitAPI_ValidateMaterial_m993F3FB4DCA5E826
 IL2CPP_EXTERN_C const RuntimeMethod* VolumeParameter_1__ctor_m87D40E8AA376659AF7DA5A46CB263C3101B871B4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VolumeParameter_1_op_Inequality_mDDFE734CEEAD27BF3EC3216C3892E1B5390E060F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VolumeParameter_1_op_Inequality_mEF5DA337413DF7C9E0D703CE11D70CD72ECDA9DD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* MaterialId_t534BA940414A81EA9119AAFAC0DEC91B18EE3046_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_0_0_0_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -893,6 +896,7 @@ struct GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E
 	DepthOfFieldResolutionU5BU5D_t8633727C3F2A50BA7792771A5F39717071E1FAD9* ___DoFResolution;
 	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ___DoFHighQualityFiltering;
 	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ___DoFPhysicallyBased;
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___AdaptiveSamplingWeight;
 	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ___LimitManualRangeNearBlur;
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___MotionBlurSampleCount;
 	BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B* ___BloomRes;
@@ -1053,6 +1057,8 @@ struct HDRenderPipelineRuntimeShaders_t9B4BFC2FD535842EAB0269713C07D7D3BEC46B80 
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofCoCMinMaxCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofMinMaxDilateCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofCombineCS;
+	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofComputeSlowTilesCS;
+	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofComputeApertureShapeCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurMotionVecPrepCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurGenTileCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurMergeTileCS;
@@ -5597,7 +5603,9 @@ struct DepthOfField_t8EF8CEC4B383C3603B4A31831A2CECCF08F7DE69  : public VolumeCo
 	DepthOfFieldResolutionParameter_t71CF006447A75BEF7833B954ACDA9C68EECB5B9E* ___m_Resolution;
 	BoolParameter_tAA460C5A72ADBDDB4519BFF0BA040EC202E14E95* ___m_HighQualityFiltering;
 	BoolParameter_tAA460C5A72ADBDDB4519BFF0BA040EC202E14E95* ___m_PhysicallyBased;
+	FloatParameter_t566B623CD21B2F957A20BA790ACEF6684A712106* ___m_AdaptiveSamplingWeight;
 	BoolParameter_tAA460C5A72ADBDDB4519BFF0BA040EC202E14E95* ___m_LimitManualRangeNearBlur;
+	BoolParameter_tAA460C5A72ADBDDB4519BFF0BA040EC202E14E95* ___coCStabilization;
 };
 struct HDRenderPipelineGlobalSettings_tC9E41F4C1F4F6C5617F2B9327644DEE5267D7008  : public RenderPipelineGlobalSettings_2_t88A4A53D43AD234450326B09DD85D6F28E9E2C7D
 {
@@ -6399,6 +6407,7 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____OutputVelocityMagnitudeHistory;
 	int32_t ____OutputDepthTexture;
 	int32_t ____OutputMotionVectorTexture;
+	int32_t ____OutputResolution;
 	int32_t ____TargetScale;
 	int32_t ____Params;
 	int32_t ____Params1;
@@ -6406,6 +6415,7 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____Params3;
 	int32_t ____BokehKernel;
 	int32_t ____InputCoCTexture;
+	int32_t ____DebugTileClassification;
 	int32_t ____InputHistoryCoCTexture;
 	int32_t ____OutputCoCTexture;
 	int32_t ____OutputNearCoCTexture;
@@ -6433,6 +6443,8 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____InputNearAlphaTexture;
 	int32_t ____CoCTargetScale;
 	int32_t ____DepthMinMaxAvg;
+	int32_t ____ApertureShapeTable;
+	int32_t ____ApertureShapeTableCount;
 	int32_t ____FlareOcclusionTex;
 	int32_t ____FlareSunOcclusionTex;
 	int32_t ____FlareOcclusionRemapTex;
@@ -6992,11 +7004,6 @@ struct HDRenderPipeline_t1B44562A781BC76EDE4A608B524567F5250106EC_StaticFields
 	UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* ___vfxSystemMasks;
 	List_1_t386E09F4F22DDE4D2AC41A8567FFF283C254537B* ___materialArray;
 	Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* ___m_MaterialCRCs;
-};
-struct DepthOfField_t8EF8CEC4B383C3603B4A31831A2CECCF08F7DE69_StaticFields
-{
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___s_HighQualityAdaptiveSamplingWeights;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___s_LowQualityAdaptiveSamplingWeights;
 };
 struct HDRenderPipelineGlobalSettings_tC9E41F4C1F4F6C5617F2B9327644DEE5267D7008_StaticFields
 {
@@ -9006,12 +9013,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CUpdateShaderGraphAtlasTexture
 #endif
 IL2CPP_EXTERN_C void GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_marshal_pinvoke(const GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884& unmarshaled, GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___transparentTextureResolutionException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'transparentTextureResolution' of type 'GlobalDecalSettings': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884____transparentTextureResolution_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___transparentTextureResolutionException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884____transparentTextureResolution_FieldInfo_var, GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___transparentTextureResolutionException, NULL);
 }
 IL2CPP_EXTERN_C void GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_marshal_pinvoke_back(const GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_marshaled_pinvoke& marshaled, GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884& unmarshaled)
 {
-	Exception_t* ___transparentTextureResolutionException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'transparentTextureResolution' of type 'GlobalDecalSettings': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884____transparentTextureResolution_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___transparentTextureResolutionException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884____transparentTextureResolution_FieldInfo_var, GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___transparentTextureResolutionException, NULL);
 }
 IL2CPP_EXTERN_C void GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_marshal_pinvoke_cleanup(GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_marshaled_pinvoke& marshaled)
@@ -9019,12 +9040,26 @@ IL2CPP_EXTERN_C void GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E8
 }
 IL2CPP_EXTERN_C void GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_marshal_com(const GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884& unmarshaled, GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_marshaled_com& marshaled)
 {
-	Exception_t* ___transparentTextureResolutionException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'transparentTextureResolution' of type 'GlobalDecalSettings': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884____transparentTextureResolution_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___transparentTextureResolutionException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884____transparentTextureResolution_FieldInfo_var, GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___transparentTextureResolutionException, NULL);
 }
 IL2CPP_EXTERN_C void GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_marshal_com_back(const GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_marshaled_com& marshaled, GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884& unmarshaled)
 {
-	Exception_t* ___transparentTextureResolutionException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'transparentTextureResolution' of type 'GlobalDecalSettings': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884____transparentTextureResolution_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___transparentTextureResolutionException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884____transparentTextureResolution_FieldInfo_var, GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___transparentTextureResolutionException, NULL);
 }
 IL2CPP_EXTERN_C void GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_marshal_com_cleanup(GlobalDecalSettings_t0FFEA3CDC57CB4DF84E44A7E5F00B63DF301E884_marshaled_com& marshaled)
@@ -13727,12 +13762,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IBLFilterBSDF__ctor_m10108ADF5AA6FD2E79F
 #endif
 IL2CPP_EXTERN_C void PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_marshal_pinvoke(const PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374& unmarshaled, PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___captureCameraDepthBufferException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'captureCameraDepthBuffer' of type 'PlanarTextureFilteringParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374____captureCameraDepthBuffer_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___captureCameraDepthBufferException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374____captureCameraDepthBuffer_FieldInfo_var, PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___captureCameraDepthBufferException, NULL);
 }
 IL2CPP_EXTERN_C void PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_marshal_pinvoke_back(const PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_marshaled_pinvoke& marshaled, PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374& unmarshaled)
 {
-	Exception_t* ___captureCameraDepthBufferException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'captureCameraDepthBuffer' of type 'PlanarTextureFilteringParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374____captureCameraDepthBuffer_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___captureCameraDepthBufferException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374____captureCameraDepthBuffer_FieldInfo_var, PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___captureCameraDepthBufferException, NULL);
 }
 IL2CPP_EXTERN_C void PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_marshal_pinvoke_cleanup(PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_marshaled_pinvoke& marshaled)
@@ -13740,12 +13789,26 @@ IL2CPP_EXTERN_C void PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24E
 }
 IL2CPP_EXTERN_C void PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_marshal_com(const PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374& unmarshaled, PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_marshaled_com& marshaled)
 {
-	Exception_t* ___captureCameraDepthBufferException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'captureCameraDepthBuffer' of type 'PlanarTextureFilteringParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374____captureCameraDepthBuffer_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___captureCameraDepthBufferException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374____captureCameraDepthBuffer_FieldInfo_var, PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___captureCameraDepthBufferException, NULL);
 }
 IL2CPP_EXTERN_C void PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_marshal_com_back(const PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_marshaled_com& marshaled, PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374& unmarshaled)
 {
-	Exception_t* ___captureCameraDepthBufferException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'captureCameraDepthBuffer' of type 'PlanarTextureFilteringParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374____captureCameraDepthBuffer_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___captureCameraDepthBufferException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374____captureCameraDepthBuffer_FieldInfo_var, PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___captureCameraDepthBufferException, NULL);
 }
 IL2CPP_EXTERN_C void PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_marshal_com_cleanup(PlanarTextureFilteringParameters_t8D00D4BEBC14C8FE0A515F24EDEF8FE66731F374_marshaled_com& marshaled)
@@ -26013,6 +26076,54 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DepthOfField_set_physicallyBased_m1EAA51
 		return;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DepthOfField_get_adaptiveSamplingWeight_mF7D45CA8FB6DA7B165233A038EA561DE77D4513C (DepthOfField_t8EF8CEC4B383C3603B4A31831A2CECCF08F7DE69* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		bool L_0;
+		L_0 = VolumeComponentWithQuality_UsesQualitySettings_m253D6B7E61BB951789D75BAB218BE3B7FD1FDF4D(__this, NULL);
+		if (L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		FloatParameter_t566B623CD21B2F957A20BA790ACEF6684A712106* L_1 = __this->___m_AdaptiveSamplingWeight;
+		NullCheck(L_1);
+		float L_2;
+		L_2 = VirtualFuncInvoker0< float >::Invoke(14, L_1);
+		return L_2;
+	}
+
+IL_0014:
+	{
+		ScalableSettingLevelParameter_t43B63B2E01E67D28CFE0F7D88D41EAD11562E710* L_3 = ((VolumeComponentWithQuality_t4ACBE3014E601E21B123DC7AF0CF4D813260E1A8*)__this)->___quality;
+		NullCheck(L_3);
+		ValueTuple_2_tB358DB210B9947851BE1C2586AD7532BEB639942 L_4;
+		L_4 = ScalableSettingLevelParameter_get_levelAndOverride_m9E887B2AE2AAEF540FDC7B920626C38C17C39011(L_3, NULL);
+		int32_t L_5 = L_4.___Item1;
+		V_0 = L_5;
+		GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E* L_6;
+		L_6 = VolumeComponentWithQuality_GetPostProcessingQualitySettings_mAB7F9C7206FEA8FFFF4E829F40EFBFBD4782261A(NULL);
+		NullCheck(L_6);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_7 = L_6->___AdaptiveSamplingWeight;
+		int32_t L_8 = V_0;
+		NullCheck(L_7);
+		int32_t L_9 = L_8;
+		float L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		return L_10;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DepthOfField_set_adaptiveSamplingWeight_m93573BA1A5E191511B30A46080F1C708625963E6 (DepthOfField_t8EF8CEC4B383C3603B4A31831A2CECCF08F7DE69* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		FloatParameter_t566B623CD21B2F957A20BA790ACEF6684A712106* L_0 = __this->___m_AdaptiveSamplingWeight;
+		float L_1 = ___0_value;
+		NullCheck(L_0);
+		VirtualActionInvoker1< float >::Invoke(15, L_0, L_1);
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DepthOfField_get_limitManualRangeNearBlur_mA6B0AB107809B6C9CFD41F292B7D23E08553A53F (DepthOfField_t8EF8CEC4B383C3603B4A31831A2CECCF08F7DE69* __this, const RuntimeMethod* method) 
 {
 	{
@@ -26244,31 +26355,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DepthOfField__ctor_m41388403B4B6A31CFA46
 		BoolParameter__ctor_m2355BE07CF2E06B525D26161B1E0C357CE772190(L_13, (bool)0, (bool)0, NULL);
 		__this->___m_PhysicallyBased = L_13;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_PhysicallyBased), (void*)L_13);
-		BoolParameter_tAA460C5A72ADBDDB4519BFF0BA040EC202E14E95* L_14 = (BoolParameter_tAA460C5A72ADBDDB4519BFF0BA040EC202E14E95*)il2cpp_codegen_object_new(BoolParameter_tAA460C5A72ADBDDB4519BFF0BA040EC202E14E95_il2cpp_TypeInfo_var);
-		BoolParameter__ctor_m2355BE07CF2E06B525D26161B1E0C357CE772190(L_14, (bool)0, (bool)0, NULL);
-		__this->___m_LimitManualRangeNearBlur = L_14;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_LimitManualRangeNearBlur), (void*)L_14);
+		ClampedFloatParameter_tCD9F742962EAA50F658BC77595AB025D9EF8DEB8* L_14 = (ClampedFloatParameter_tCD9F742962EAA50F658BC77595AB025D9EF8DEB8*)il2cpp_codegen_object_new(ClampedFloatParameter_tCD9F742962EAA50F658BC77595AB025D9EF8DEB8_il2cpp_TypeInfo_var);
+		ClampedFloatParameter__ctor_mFC9EF54EFA2A6B51F252CB98A6F6D66C768F3CE5(L_14, (0.75f), (0.5f), (4.0f), (bool)0, NULL);
+		__this->___m_AdaptiveSamplingWeight = L_14;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_AdaptiveSamplingWeight), (void*)L_14);
+		BoolParameter_tAA460C5A72ADBDDB4519BFF0BA040EC202E14E95* L_15 = (BoolParameter_tAA460C5A72ADBDDB4519BFF0BA040EC202E14E95*)il2cpp_codegen_object_new(BoolParameter_tAA460C5A72ADBDDB4519BFF0BA040EC202E14E95_il2cpp_TypeInfo_var);
+		BoolParameter__ctor_m2355BE07CF2E06B525D26161B1E0C357CE772190(L_15, (bool)0, (bool)0, NULL);
+		__this->___m_LimitManualRangeNearBlur = L_15;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_LimitManualRangeNearBlur), (void*)L_15);
+		BoolParameter_tAA460C5A72ADBDDB4519BFF0BA040EC202E14E95* L_16 = (BoolParameter_tAA460C5A72ADBDDB4519BFF0BA040EC202E14E95*)il2cpp_codegen_object_new(BoolParameter_tAA460C5A72ADBDDB4519BFF0BA040EC202E14E95_il2cpp_TypeInfo_var);
+		BoolParameter__ctor_m2355BE07CF2E06B525D26161B1E0C357CE772190(L_16, (bool)1, (bool)0, NULL);
+		__this->___coCStabilization = L_16;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___coCStabilization), (void*)L_16);
 		VolumeComponentWithQuality__ctor_m878E939CD7A966D6A9D2F93EEC0C4EF22AD71560(__this, NULL);
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DepthOfField__cctor_m226B5606804360EBB4F2FC01D5A7F53CC8DCA061 (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DepthOfField_t8EF8CEC4B383C3603B4A31831A2CECCF08F7DE69_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0;
-		memset((&L_0), 0, sizeof(L_0));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_0), (4.0f), (1.0f), NULL);
-		((DepthOfField_t8EF8CEC4B383C3603B4A31831A2CECCF08F7DE69_StaticFields*)il2cpp_codegen_static_fields_for(DepthOfField_t8EF8CEC4B383C3603B4A31831A2CECCF08F7DE69_il2cpp_TypeInfo_var))->___s_HighQualityAdaptiveSamplingWeights = L_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
-		memset((&L_1), 0, sizeof(L_1));
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_1), (1.0f), (0.75f), NULL);
-		((DepthOfField_t8EF8CEC4B383C3603B4A31831A2CECCF08F7DE69_StaticFields*)il2cpp_codegen_static_fields_for(DepthOfField_t8EF8CEC4B383C3603B4A31831A2CECCF08F7DE69_il2cpp_TypeInfo_var))->___s_LowQualityAdaptiveSamplingWeights = L_1;
 		return;
 	}
 }

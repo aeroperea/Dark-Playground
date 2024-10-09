@@ -392,6 +392,7 @@ IL2CPP_EXTERN_C RuntimeClass* XmlTypeCode_tCA027FC382F4E2DBDF63CB305D942DDFC072E
 IL2CPP_EXTERN_C RuntimeClass* XmlUntypedConverter_tB707BD09CB81865831777481D33D744A4E960703_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XmlUrlResolver_tD1DCA07B66A58F98930187AF17C9B31258C1008E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B____dtVal_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral013BD4ABE4D4A1BC6D9EEF501A242AC0124ACED6;
 IL2CPP_EXTERN_C String_t* _stringLiteral06F74C6DAF114664BF1BD452596A0DBDCCED259A;
 IL2CPP_EXTERN_C String_t* _stringLiteral072BA90B274B502615639084DC3D7FCC63407A24;
@@ -635,6 +636,7 @@ IL2CPP_EXTERN_C const RuntimeType* IList_t1C522956D79B7DC92B5B01053DF1AC058C8B59
 IL2CPP_EXTERN_C const RuntimeType* ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* XPathItem_tF0126CC493F2BFDDDFB5B0D05EAE05E8EF8AE1B7_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* XPathNavigator_tC010C20907D6C6F1589A1BF1B5BE4C313C289E13_0_0_0_var;
@@ -7132,12 +7134,26 @@ IL_0024:
 #endif
 IL2CPP_EXTERN_C void Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_marshal_pinvoke(const Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B& unmarshaled, Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___dtValException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'dtVal' of type 'Union'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B____dtVal_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___dtValException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B____dtVal_FieldInfo_var, Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___dtValException, NULL);
 }
 IL2CPP_EXTERN_C void Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_marshal_pinvoke_back(const Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_marshaled_pinvoke& marshaled, Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B& unmarshaled)
 {
-	Exception_t* ___dtValException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'dtVal' of type 'Union'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B____dtVal_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___dtValException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B____dtVal_FieldInfo_var, Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___dtValException, NULL);
 }
 IL2CPP_EXTERN_C void Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_marshal_pinvoke_cleanup(Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_marshaled_pinvoke& marshaled)
@@ -7145,12 +7161,26 @@ IL2CPP_EXTERN_C void Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_marshal_pin
 }
 IL2CPP_EXTERN_C void Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_marshal_com(const Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B& unmarshaled, Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_marshaled_com& marshaled)
 {
-	Exception_t* ___dtValException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'dtVal' of type 'Union'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B____dtVal_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___dtValException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B____dtVal_FieldInfo_var, Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___dtValException, NULL);
 }
 IL2CPP_EXTERN_C void Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_marshal_com_back(const Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_marshaled_com& marshaled, Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B& unmarshaled)
 {
-	Exception_t* ___dtValException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'dtVal' of type 'Union'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B____dtVal_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___dtValException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B____dtVal_FieldInfo_var, Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___dtValException, NULL);
 }
 IL2CPP_EXTERN_C void Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_marshal_com_cleanup(Union_tB0D56D753DC8A0B45FCAF1229929BAA3E2B9293B_marshaled_com& marshaled)

@@ -14652,6 +14652,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1287677597}
     - target: {fileID: 2411945283626230905, guid: 60a4e07bc46a56349b2105214db0adfd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2411945283626230905, guid: 60a4e07bc46a56349b2105214db0adfd, type: 3}
       propertyPath: simpleQuest
       value: 
       objectReference: {fileID: 11400000, guid: 93ebdb6b18c9b6543a7c0f8f9ff4486c, type: 2}

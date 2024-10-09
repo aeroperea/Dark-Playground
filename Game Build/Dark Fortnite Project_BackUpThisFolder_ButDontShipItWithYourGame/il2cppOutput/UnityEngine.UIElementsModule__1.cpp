@@ -614,6 +614,8 @@ IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_
 IL2CPP_EXTERN_C RuntimeClass* VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VisualTreeBindingsUpdater_t6EF5299259D0A81E931840287AE6C7E43093A637_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VisualTreeDataBindingsUpdater_t212CC04D52E750350769384FC602878A77ED1FA4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383____m_TargetElement_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C____m_HierarchyViewModel_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral00A10D862AFB1B0B1A01D123400DE18ED0216DE5;
 IL2CPP_EXTERN_C String_t* _stringLiteral0956AA1F0F211E587493B756EB7BCC5477737C52;
 IL2CPP_EXTERN_C String_t* _stringLiteral09D6324510EBCC321772968FC08938AF60A2BB16;
@@ -915,6 +917,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* UQueryExtensions_Q_TisFoldout_t150CF00C27D0
 IL2CPP_EXTERN_C const RuntimeMethod* UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_m5C1965594C3AC744352BDE8F45FA0A18491EAF5F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VisualTreeDataBindingsUpdater_IsPrefix_mC982C7579A7F530A8F76217C5B6B7A5FAC40D569_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* IList_1_t8C7C301DAF6E4E4DFA7504EF93E6E2C93AB33AE7_0_0_0_var;
 struct BindingId_t8BBB6188CD126EACCA07816C78760E92DC16620E;;
 struct BindingId_t8BBB6188CD126EACCA07816C78760E92DC16620E_marshaled_com;
@@ -6510,12 +6514,26 @@ IL2CPP_EXTERN_C  void DataSourceContext__ctor_m610F1CDAA0C273D407AE065DA8B64F3FF
 
 IL2CPP_EXTERN_C void DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_marshal_pinvoke(const DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383& unmarshaled, DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_TargetElementException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_TargetElement' of type 'DataSourceContextChanged': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383____m_TargetElement_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_TargetElementException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383____m_TargetElement_FieldInfo_var, DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_TargetElementException, NULL);
 }
 IL2CPP_EXTERN_C void DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_marshal_pinvoke_back(const DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_marshaled_pinvoke& marshaled, DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383& unmarshaled)
 {
-	Exception_t* ___m_TargetElementException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_TargetElement' of type 'DataSourceContextChanged': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383____m_TargetElement_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_TargetElementException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383____m_TargetElement_FieldInfo_var, DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_TargetElementException, NULL);
 }
 IL2CPP_EXTERN_C void DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_marshal_pinvoke_cleanup(DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_marshaled_pinvoke& marshaled)
@@ -6529,12 +6547,26 @@ IL2CPP_EXTERN_C void DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B
 
 IL2CPP_EXTERN_C void DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_marshal_com(const DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383& unmarshaled, DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_marshaled_com& marshaled)
 {
-	Exception_t* ___m_TargetElementException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_TargetElement' of type 'DataSourceContextChanged': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383____m_TargetElement_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_TargetElementException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383____m_TargetElement_FieldInfo_var, DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_TargetElementException, NULL);
 }
 IL2CPP_EXTERN_C void DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_marshal_com_back(const DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_marshaled_com& marshaled, DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383& unmarshaled)
 {
-	Exception_t* ___m_TargetElementException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_TargetElement' of type 'DataSourceContextChanged': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383____m_TargetElement_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_TargetElementException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383____m_TargetElement_FieldInfo_var, DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_TargetElementException, NULL);
 }
 IL2CPP_EXTERN_C void DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_marshal_com_cleanup(DataSourceContextChanged_t4FE3AF8F7024D6868947346FE6D40E25B24DD383_marshaled_com& marshaled)
@@ -15226,12 +15258,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyHierarchyViewModelList_RemoveAt_
 
 IL2CPP_EXTERN_C void Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_marshal_pinvoke(const Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C& unmarshaled, Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_HierarchyViewModelException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_HierarchyViewModel' of type 'Enumerator': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C____m_HierarchyViewModel_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_HierarchyViewModelException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C____m_HierarchyViewModel_FieldInfo_var, Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_HierarchyViewModelException, NULL);
 }
 IL2CPP_EXTERN_C void Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_marshal_pinvoke_back(const Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_marshaled_pinvoke& marshaled, Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C& unmarshaled)
 {
-	Exception_t* ___m_HierarchyViewModelException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_HierarchyViewModel' of type 'Enumerator': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C____m_HierarchyViewModel_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_HierarchyViewModelException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C____m_HierarchyViewModel_FieldInfo_var, Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_HierarchyViewModelException, NULL);
 }
 IL2CPP_EXTERN_C void Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_marshal_pinvoke_cleanup(Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_marshaled_pinvoke& marshaled)
@@ -15243,12 +15289,26 @@ IL2CPP_EXTERN_C void Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_marsha
 
 IL2CPP_EXTERN_C void Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_marshal_com(const Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C& unmarshaled, Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_marshaled_com& marshaled)
 {
-	Exception_t* ___m_HierarchyViewModelException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_HierarchyViewModel' of type 'Enumerator': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C____m_HierarchyViewModel_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_HierarchyViewModelException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C____m_HierarchyViewModel_FieldInfo_var, Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_HierarchyViewModelException, NULL);
 }
 IL2CPP_EXTERN_C void Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_marshal_com_back(const Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_marshaled_com& marshaled, Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C& unmarshaled)
 {
-	Exception_t* ___m_HierarchyViewModelException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_HierarchyViewModel' of type 'Enumerator': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C____m_HierarchyViewModel_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_HierarchyViewModelException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C____m_HierarchyViewModel_FieldInfo_var, Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_HierarchyViewModelException, NULL);
 }
 IL2CPP_EXTERN_C void Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_marshal_com_cleanup(Enumerator_tE9115EE54509914C644606AF0DDF8C975E25D49C_marshaled_com& marshaled)

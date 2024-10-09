@@ -559,6 +559,8 @@ IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t6FA97D8207879F7132BAAF6E8FA25318F6F39124_
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t97704DC42644282D2EA992F6F74B2211FCF302A3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649____m_HDProbes_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8____hdProbe_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral00F7F48A706CC847EAD8424D8C1DF8A02B7C4FE4;
 IL2CPP_EXTERN_C String_t* _stringLiteral0E6D0A6744545A97F583E63DF3EF0EDC02864E94;
 IL2CPP_EXTERN_C String_t* _stringLiteral159EC40F64DCACE15E3D7449506D3EEB00A2A37E;
@@ -831,7 +833,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_m1F848DC25ABD617DA88C25A
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_m51E80C539757985C1E29FC880C7A3ED7AF7DA919_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_m5F4A44F5994320C2DEF6F42F894CC55D0C901DD6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VolumeStack_GetComponent_TisHDShadowSettings_t232DF33AC7FEE0F7FFA3D8132837DB5AFA486044_mB7724748F6856A6543CC81ADAA57DCA0E36F9D2F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* ProcessLightsCountSlots_t3FA34F46995E4903A93701761232DEBB9FCF630C_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_0_0_0_var;
 struct CullingGroup_t0732D3CC044BAE2BE39748CBF5D96DDB6DBF62E7;;
 struct CullingGroup_t0732D3CC044BAE2BE39748CBF5D96DDB6DBF62E7_marshaled_com;
 struct CullingGroup_t0732D3CC044BAE2BE39748CBF5D96DDB6DBF62E7_marshaled_com;;
@@ -1152,6 +1156,8 @@ struct HDRenderPipelineRuntimeShaders_t9B4BFC2FD535842EAB0269713C07D7D3BEC46B80 
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofCoCMinMaxCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofMinMaxDilateCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofCombineCS;
+	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofComputeSlowTilesCS;
+	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofComputeApertureShapeCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurMotionVecPrepCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurGenTileCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurMergeTileCS;
@@ -8184,6 +8190,7 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____OutputVelocityMagnitudeHistory;
 	int32_t ____OutputDepthTexture;
 	int32_t ____OutputMotionVectorTexture;
+	int32_t ____OutputResolution;
 	int32_t ____TargetScale;
 	int32_t ____Params;
 	int32_t ____Params1;
@@ -8191,6 +8198,7 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____Params3;
 	int32_t ____BokehKernel;
 	int32_t ____InputCoCTexture;
+	int32_t ____DebugTileClassification;
 	int32_t ____InputHistoryCoCTexture;
 	int32_t ____OutputCoCTexture;
 	int32_t ____OutputNearCoCTexture;
@@ -8218,6 +8226,8 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____InputNearAlphaTexture;
 	int32_t ____CoCTargetScale;
 	int32_t ____DepthMinMaxAvg;
+	int32_t ____ApertureShapeTable;
+	int32_t ____ApertureShapeTableCount;
 	int32_t ____FlareOcclusionTex;
 	int32_t ____FlareSunOcclusionTex;
 	int32_t ____FlareOcclusionRemapTex;
@@ -23140,12 +23150,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDefinitions__cctor_m442ECB0BDB4858F
 #endif
 IL2CPP_EXTERN_C void ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_marshal_pinvoke(const ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8& unmarshaled, ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___hdProbeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'hdProbe' of type 'ProcessedProbeData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8____hdProbe_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___hdProbeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8____hdProbe_FieldInfo_var, ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___hdProbeException, NULL);
 }
 IL2CPP_EXTERN_C void ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_marshal_pinvoke_back(const ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_marshaled_pinvoke& marshaled, ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8& unmarshaled)
 {
-	Exception_t* ___hdProbeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'hdProbe' of type 'ProcessedProbeData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8____hdProbe_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___hdProbeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8____hdProbe_FieldInfo_var, ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___hdProbeException, NULL);
 }
 IL2CPP_EXTERN_C void ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_marshal_pinvoke_cleanup(ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_marshaled_pinvoke& marshaled)
@@ -23153,12 +23177,26 @@ IL2CPP_EXTERN_C void ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F
 }
 IL2CPP_EXTERN_C void ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_marshal_com(const ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8& unmarshaled, ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_marshaled_com& marshaled)
 {
-	Exception_t* ___hdProbeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'hdProbe' of type 'ProcessedProbeData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8____hdProbe_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___hdProbeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8____hdProbe_FieldInfo_var, ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___hdProbeException, NULL);
 }
 IL2CPP_EXTERN_C void ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_marshal_com_back(const ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_marshaled_com& marshaled, ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8& unmarshaled)
 {
-	Exception_t* ___hdProbeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'hdProbe' of type 'ProcessedProbeData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8____hdProbe_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___hdProbeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8____hdProbe_FieldInfo_var, ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___hdProbeException, NULL);
 }
 IL2CPP_EXTERN_C void ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_marshal_com_cleanup(ProcessedProbeData_t81DA0DD14190AF02A979E73590320609D41502F8_marshaled_com& marshaled)
@@ -27357,12 +27395,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HDProbeCullingResults__cctor_mC568A3A4F9
 
 IL2CPP_EXTERN_C void HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_marshal_pinvoke(const HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649& unmarshaled, HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_HDProbesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_HDProbes' of type 'HDProbeCullState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649____m_HDProbes_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_HDProbesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649____m_HDProbes_FieldInfo_var, HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_HDProbesException, NULL);
 }
 IL2CPP_EXTERN_C void HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_marshal_pinvoke_back(const HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_marshaled_pinvoke& marshaled, HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649& unmarshaled)
 {
-	Exception_t* ___m_HDProbesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_HDProbes' of type 'HDProbeCullState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649____m_HDProbes_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_HDProbesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649____m_HDProbes_FieldInfo_var, HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_HDProbesException, NULL);
 }
 IL2CPP_EXTERN_C void HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_marshal_pinvoke_cleanup(HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_marshaled_pinvoke& marshaled)
@@ -27372,12 +27424,26 @@ IL2CPP_EXTERN_C void HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_
 
 IL2CPP_EXTERN_C void HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_marshal_com(const HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649& unmarshaled, HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_marshaled_com& marshaled)
 {
-	Exception_t* ___m_HDProbesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_HDProbes' of type 'HDProbeCullState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649____m_HDProbes_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_HDProbesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649____m_HDProbes_FieldInfo_var, HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_HDProbesException, NULL);
 }
 IL2CPP_EXTERN_C void HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_marshal_com_back(const HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_marshaled_com& marshaled, HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649& unmarshaled)
 {
-	Exception_t* ___m_HDProbesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_HDProbes' of type 'HDProbeCullState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649____m_HDProbes_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_HDProbesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649____m_HDProbes_FieldInfo_var, HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_HDProbesException, NULL);
 }
 IL2CPP_EXTERN_C void HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_marshal_com_cleanup(HDProbeCullState_tB3F01065BA7AD6934988CBC72729614B2A9F3649_marshaled_com& marshaled)

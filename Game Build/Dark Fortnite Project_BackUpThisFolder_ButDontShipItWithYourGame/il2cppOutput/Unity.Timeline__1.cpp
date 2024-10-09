@@ -290,6 +290,7 @@ IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass0_1_t6C3CFF368A6F745558E6345B
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t008379627E11F153BBF661B1F74241272206C3D2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_tB74E998116FFDE2919C1EF6E8B35AB3798461A28_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_tF63EEC929EB23971CA55BC11860428A960E4BEB6_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62____payload_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral186728018354DD5A345662365525D1905258CFCE;
 IL2CPP_EXTERN_C String_t* _stringLiteral240CEA45B7120329057FC66CCC23A721819BCA84;
 IL2CPP_EXTERN_C String_t* _stringLiteral27604803165C6541AB273EC61FCF3B90782F0C93;
@@ -412,6 +413,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass0_0_U3CGenerateUniqueA
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass0_1_U3CGenerateUniqueActorNameU3Eb__1_m63691DF652C67A4727D3AD671C58FA56CA3FAEDB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* StandardFrameRates_t5C32C533A7C5C70490259B64B39E3034301485BC_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* SupportsChildTracksAttribute_tAA48787F5A6F2DDBC4FFB428C54C57CA21EF30E8_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_0_0_0_var;
@@ -4344,12 +4346,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeNotificationBehaviour__ctor_m82EC121
 #endif
 IL2CPP_EXTERN_C void NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshal_pinvoke(const NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62& unmarshaled, NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___payloadException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'payload' of type 'NotificationEntry': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62____payload_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___payloadException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62____payload_FieldInfo_var, NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___payloadException, NULL);
 }
 IL2CPP_EXTERN_C void NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshal_pinvoke_back(const NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshaled_pinvoke& marshaled, NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62& unmarshaled)
 {
-	Exception_t* ___payloadException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'payload' of type 'NotificationEntry': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62____payload_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___payloadException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62____payload_FieldInfo_var, NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___payloadException, NULL);
 }
 IL2CPP_EXTERN_C void NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshal_pinvoke_cleanup(NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshaled_pinvoke& marshaled)
@@ -4357,12 +4373,26 @@ IL2CPP_EXTERN_C void NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62
 }
 IL2CPP_EXTERN_C void NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshal_com(const NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62& unmarshaled, NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshaled_com& marshaled)
 {
-	Exception_t* ___payloadException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'payload' of type 'NotificationEntry': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62____payload_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___payloadException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62____payload_FieldInfo_var, NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___payloadException, NULL);
 }
 IL2CPP_EXTERN_C void NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshal_com_back(const NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshaled_com& marshaled, NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62& unmarshaled)
 {
-	Exception_t* ___payloadException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'payload' of type 'NotificationEntry': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62____payload_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___payloadException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62____payload_FieldInfo_var, NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___payloadException, NULL);
 }
 IL2CPP_EXTERN_C void NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshal_com_cleanup(NotificationEntry_tBBA39A8ACD63E90360DB0FFC4835E8702DFC2E62_marshaled_com& marshaled)

@@ -41,6 +41,10 @@ IL2CPP_EXTERN_C RuntimeClass* VFXExpressionValues_t361C45D33F7B5E9D85F8185EF47AA
 IL2CPP_EXTERN_C RuntimeClass* VFXManager_tBD98CA24D5E15AFD9DAA3AF6B51F348C173A7E2E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VisualEffectAsset_t0CD57FD9980CD68033BD96DA356697F92A69E688_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48____vfxAsset_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518____m_VfxAsset_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40____U3CeventAttributeU3Ek__BackingField_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281____m_WrapEventAttribute_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral49368FB5069A33D81E54BC6B2CC50811BBD8D856;
 IL2CPP_EXTERN_C String_t* _stringLiteral4EBC86E0EACFCA522AEB82874860D0E248D782A5;
 IL2CPP_EXTERN_C String_t* _stringLiteral51A0C417C7235FF0A4099CB1E645148600EE362A;
@@ -64,6 +68,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* VFXEventAttribute_SetWrapValue_mB74CE4A4E62
 IL2CPP_EXTERN_C const RuntimeMethod* VFXSpawnerState_PrepareWrapper_mB72BD83CBCF670DCF0FB464BBEAFBB2E6D285D5F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VFXSpawnerState_SetWrapValue_m84E0796288A032B26ADCEF35AE94F5CC95A3FAB5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VisualEffect_CheckValidVFXEventAttribute_m94E56940DEE1E1ABA5AFBBC9F89CD2227078C38C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_0_0_0_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -773,12 +781,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* IntPtr_op_Explicit_m2728CBA081E79B97DDC
 #endif
 IL2CPP_EXTERN_C void VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_marshal_pinvoke(const VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518& unmarshaled, VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_VfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_VfxAsset' of type 'VFXEventAttribute': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518____m_VfxAsset_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_VfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518____m_VfxAsset_FieldInfo_var, VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_VfxAssetException, NULL);
 }
 IL2CPP_EXTERN_C void VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_marshal_pinvoke_back(const VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_marshaled_pinvoke& marshaled, VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518& unmarshaled)
 {
-	Exception_t* ___m_VfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_VfxAsset' of type 'VFXEventAttribute': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518____m_VfxAsset_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_VfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518____m_VfxAsset_FieldInfo_var, VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_VfxAssetException, NULL);
 }
 IL2CPP_EXTERN_C void VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_marshal_pinvoke_cleanup(VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_marshaled_pinvoke& marshaled)
@@ -786,12 +808,26 @@ IL2CPP_EXTERN_C void VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518
 }
 IL2CPP_EXTERN_C void VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_marshal_com(const VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518& unmarshaled, VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_marshaled_com& marshaled)
 {
-	Exception_t* ___m_VfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_VfxAsset' of type 'VFXEventAttribute': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518____m_VfxAsset_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_VfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518____m_VfxAsset_FieldInfo_var, VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_VfxAssetException, NULL);
 }
 IL2CPP_EXTERN_C void VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_marshal_com_back(const VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_marshaled_com& marshaled, VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518& unmarshaled)
 {
-	Exception_t* ___m_VfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_VfxAsset' of type 'VFXEventAttribute': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518____m_VfxAsset_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_VfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518____m_VfxAsset_FieldInfo_var, VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_VfxAssetException, NULL);
 }
 IL2CPP_EXTERN_C void VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_marshal_com_cleanup(VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518_marshaled_com& marshaled)
@@ -1941,12 +1977,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t BindingsMarshaller_ConvertToNative_m
 #endif
 IL2CPP_EXTERN_C void VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_marshal_pinvoke(const VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48& unmarshaled, VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___vfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'vfxAsset' of type 'VFXBatchedEffectInfo': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48____vfxAsset_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___vfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48____vfxAsset_FieldInfo_var, VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___vfxAssetException, NULL);
 }
 IL2CPP_EXTERN_C void VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_marshal_pinvoke_back(const VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_marshaled_pinvoke& marshaled, VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48& unmarshaled)
 {
-	Exception_t* ___vfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'vfxAsset' of type 'VFXBatchedEffectInfo': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48____vfxAsset_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___vfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48____vfxAsset_FieldInfo_var, VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___vfxAssetException, NULL);
 }
 IL2CPP_EXTERN_C void VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_marshal_pinvoke_cleanup(VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_marshaled_pinvoke& marshaled)
@@ -1954,12 +2004,26 @@ IL2CPP_EXTERN_C void VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64
 }
 IL2CPP_EXTERN_C void VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_marshal_com(const VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48& unmarshaled, VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_marshaled_com& marshaled)
 {
-	Exception_t* ___vfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'vfxAsset' of type 'VFXBatchedEffectInfo': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48____vfxAsset_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___vfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48____vfxAsset_FieldInfo_var, VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___vfxAssetException, NULL);
 }
 IL2CPP_EXTERN_C void VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_marshal_com_back(const VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_marshaled_com& marshaled, VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48& unmarshaled)
 {
-	Exception_t* ___vfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'vfxAsset' of type 'VFXBatchedEffectInfo': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48____vfxAsset_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___vfxAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48____vfxAsset_FieldInfo_var, VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___vfxAssetException, NULL);
 }
 IL2CPP_EXTERN_C void VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_marshal_com_cleanup(VFXBatchedEffectInfo_t9FD17831A7E3BF5267119337DDDA16BAEAF64D48_marshaled_com& marshaled)
@@ -2410,12 +2474,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VFXSpawnerCallbacks__ctor_mF8C2AB380D2D2
 
 IL2CPP_EXTERN_C void VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshal_pinvoke(const VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281& unmarshaled, VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_WrapEventAttributeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_WrapEventAttribute' of type 'VFXSpawnerState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281____m_WrapEventAttribute_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_WrapEventAttributeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281____m_WrapEventAttribute_FieldInfo_var, VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_WrapEventAttributeException, NULL);
 }
 IL2CPP_EXTERN_C void VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshal_pinvoke_back(const VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshaled_pinvoke& marshaled, VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281& unmarshaled)
 {
-	Exception_t* ___m_WrapEventAttributeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_WrapEventAttribute' of type 'VFXSpawnerState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281____m_WrapEventAttribute_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_WrapEventAttributeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281____m_WrapEventAttribute_FieldInfo_var, VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_WrapEventAttributeException, NULL);
 }
 IL2CPP_EXTERN_C void VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshal_pinvoke_cleanup(VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshaled_pinvoke& marshaled)
@@ -2425,12 +2503,26 @@ IL2CPP_EXTERN_C void VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_m
 
 IL2CPP_EXTERN_C void VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshal_com(const VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281& unmarshaled, VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshaled_com& marshaled)
 {
-	Exception_t* ___m_WrapEventAttributeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_WrapEventAttribute' of type 'VFXSpawnerState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281____m_WrapEventAttribute_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_WrapEventAttributeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281____m_WrapEventAttribute_FieldInfo_var, VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_WrapEventAttributeException, NULL);
 }
 IL2CPP_EXTERN_C void VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshal_com_back(const VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshaled_com& marshaled, VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281& unmarshaled)
 {
-	Exception_t* ___m_WrapEventAttributeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_WrapEventAttribute' of type 'VFXSpawnerState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281____m_WrapEventAttribute_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_WrapEventAttributeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281____m_WrapEventAttribute_FieldInfo_var, VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_WrapEventAttributeException, NULL);
 }
 IL2CPP_EXTERN_C void VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshal_com_cleanup(VFXSpawnerState_tCAF49FEA2C8BB3E0BB1E9C3C3F2649576CB64281_marshaled_com& marshaled)
@@ -3206,12 +3298,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t VisualEffectAsset_GetExposedSpace_Inj
 
 IL2CPP_EXTERN_C void VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshal_pinvoke(const VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40& unmarshaled, VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___U3CeventAttributeU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '<eventAttribute>k__BackingField' of type 'VFXOutputEventArgs': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40____U3CeventAttributeU3Ek__BackingField_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___U3CeventAttributeU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40____U3CeventAttributeU3Ek__BackingField_FieldInfo_var, VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___U3CeventAttributeU3Ek__BackingFieldException, NULL);
 }
 IL2CPP_EXTERN_C void VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshal_pinvoke_back(const VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshaled_pinvoke& marshaled, VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40& unmarshaled)
 {
-	Exception_t* ___U3CeventAttributeU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '<eventAttribute>k__BackingField' of type 'VFXOutputEventArgs': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40____U3CeventAttributeU3Ek__BackingField_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___U3CeventAttributeU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40____U3CeventAttributeU3Ek__BackingField_FieldInfo_var, VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___U3CeventAttributeU3Ek__BackingFieldException, NULL);
 }
 IL2CPP_EXTERN_C void VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshal_pinvoke_cleanup(VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshaled_pinvoke& marshaled)
@@ -3221,12 +3327,26 @@ IL2CPP_EXTERN_C void VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A4
 
 IL2CPP_EXTERN_C void VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshal_com(const VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40& unmarshaled, VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshaled_com& marshaled)
 {
-	Exception_t* ___U3CeventAttributeU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '<eventAttribute>k__BackingField' of type 'VFXOutputEventArgs': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40____U3CeventAttributeU3Ek__BackingField_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___U3CeventAttributeU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40____U3CeventAttributeU3Ek__BackingField_FieldInfo_var, VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___U3CeventAttributeU3Ek__BackingFieldException, NULL);
 }
 IL2CPP_EXTERN_C void VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshal_com_back(const VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshaled_com& marshaled, VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40& unmarshaled)
 {
-	Exception_t* ___U3CeventAttributeU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '<eventAttribute>k__BackingField' of type 'VFXOutputEventArgs': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40____U3CeventAttributeU3Ek__BackingField_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___U3CeventAttributeU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40____U3CeventAttributeU3Ek__BackingField_FieldInfo_var, VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___U3CeventAttributeU3Ek__BackingFieldException, NULL);
 }
 IL2CPP_EXTERN_C void VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshal_com_cleanup(VFXOutputEventArgs_tA170E0868F4EFA82F5AF0835B297C4AF9E571A40_marshaled_com& marshaled)

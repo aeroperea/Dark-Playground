@@ -517,6 +517,8 @@ IL2CPP_EXTERN_C RuntimeClass* U3Cget_outputsU3Ed__49_t590B0A0FEE820B5A8A1F548908
 IL2CPP_EXTERN_C RuntimeClass* U3Cget_outputsU3Ed__4_tD8B1787938F01CCD67866DCA69224515E78663C5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3Cget_outputsU3Ed__65_tE61187F3860B492601D3B49624D0E518A1D10F46_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698____m_Objects_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F____trackList_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t4403E54E29EC9471F07384EB8E26C89441A4B3D7____5C1E66AFF9FE0AD5956BC3B537EE147B3BFAE8D3EB943074AAFCEABD28FE05E4_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t4403E54E29EC9471F07384EB8E26C89441A4B3D7____FB300D7B50C978EDC99DC1908D80F67F0FE185AC43A1C7043529CBFB8B401B3F_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral016880071372920B6C521250574026F0A2A8FCDE;
@@ -785,11 +787,13 @@ IL2CPP_EXTERN_C const RuntimeType* GroupTrack_tF8FE0FA9A74536ECFBF0C328194D206A7
 IL2CPP_EXTERN_C const RuntimeType* IMarker_t56D4AC9FC0C2FA104A18211FF74D707C03FCDB8D_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* INotification_tEF630287442F0A66470493068A5D158E3C2D3C6B_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* IPlayableAsset_tA8542A8CC4881398B9C1BA317451DE64A09A849D_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* PlayableTrack_t26BA2795391A45BA8C114EAF95EDCACC2EC25B8F_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* TrackBindingTypeAttribute_t7A2B3C3F8994B073A3354E00CAEF06FC1D7721E2_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* TrackClipTypeAttribute_tCB240AD2A704583CF65CFEEBC7B9F71A1148B6E7_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_0_0_0_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -20627,12 +20631,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackAsset__cctor_m9E9CC7F378B533931B19C
 #endif
 IL2CPP_EXTERN_C void TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshal_pinvoke(const TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F& unmarshaled, TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___trackListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'trackList' of type 'TransientBuildData'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F____trackList_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___trackListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F____trackList_FieldInfo_var, TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___trackListException, NULL);
 }
 IL2CPP_EXTERN_C void TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshal_pinvoke_back(const TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshaled_pinvoke& marshaled, TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F& unmarshaled)
 {
-	Exception_t* ___trackListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'trackList' of type 'TransientBuildData'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F____trackList_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___trackListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F____trackList_FieldInfo_var, TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___trackListException, NULL);
 }
 IL2CPP_EXTERN_C void TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshal_pinvoke_cleanup(TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshaled_pinvoke& marshaled)
@@ -20640,12 +20658,26 @@ IL2CPP_EXTERN_C void TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194
 }
 IL2CPP_EXTERN_C void TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshal_com(const TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F& unmarshaled, TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshaled_com& marshaled)
 {
-	Exception_t* ___trackListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'trackList' of type 'TransientBuildData'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F____trackList_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___trackListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F____trackList_FieldInfo_var, TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___trackListException, NULL);
 }
 IL2CPP_EXTERN_C void TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshal_com_back(const TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshaled_com& marshaled, TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F& unmarshaled)
 {
-	Exception_t* ___trackListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'trackList' of type 'TransientBuildData'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F____trackList_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___trackListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F____trackList_FieldInfo_var, TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___trackListException, NULL);
 }
 IL2CPP_EXTERN_C void TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshal_com_cleanup(TransientBuildData_t3BE8EF6B5113561AEE7D53FDF3DB331D39BE194F_marshaled_com& marshaled)
@@ -26670,12 +26702,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marker__ctor_m74124BFBCDCAFE96C2A9CE59CA
 #endif
 IL2CPP_EXTERN_C void MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshal_pinvoke(const MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698& unmarshaled, MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_ObjectsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Objects' of type 'MarkerList'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698____m_Objects_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ObjectsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698____m_Objects_FieldInfo_var, MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ObjectsException, NULL);
 }
 IL2CPP_EXTERN_C void MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshal_pinvoke_back(const MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshaled_pinvoke& marshaled, MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698& unmarshaled)
 {
-	Exception_t* ___m_ObjectsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Objects' of type 'MarkerList'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698____m_Objects_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ObjectsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698____m_Objects_FieldInfo_var, MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ObjectsException, NULL);
 }
 IL2CPP_EXTERN_C void MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshal_pinvoke_cleanup(MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshaled_pinvoke& marshaled)
@@ -26683,12 +26729,26 @@ IL2CPP_EXTERN_C void MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marsha
 }
 IL2CPP_EXTERN_C void MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshal_com(const MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698& unmarshaled, MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshaled_com& marshaled)
 {
-	Exception_t* ___m_ObjectsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Objects' of type 'MarkerList'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698____m_Objects_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ObjectsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698____m_Objects_FieldInfo_var, MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ObjectsException, NULL);
 }
 IL2CPP_EXTERN_C void MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshal_com_back(const MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshaled_com& marshaled, MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698& unmarshaled)
 {
-	Exception_t* ___m_ObjectsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Objects' of type 'MarkerList'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698____m_Objects_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ObjectsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698____m_Objects_FieldInfo_var, MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ObjectsException, NULL);
 }
 IL2CPP_EXTERN_C void MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshal_com_cleanup(MarkerList_tD4B632EBA98CE678EB8D108A1AF559F734FA7698_marshaled_com& marshaled)

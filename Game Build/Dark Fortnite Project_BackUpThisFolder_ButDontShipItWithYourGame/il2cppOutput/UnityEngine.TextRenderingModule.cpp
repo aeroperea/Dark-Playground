@@ -64,6 +64,8 @@ IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_i
 IL2CPP_EXTERN_C RuntimeClass* UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3____font_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC____m_LastSettings_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral0052C2B75AF160293B7E2B988F2F9D83DCD1D4D6;
 IL2CPP_EXTERN_C String_t* _stringLiteral4EBC86E0EACFCA522AEB82874860D0E248D782A5;
 IL2CPP_EXTERN_C String_t* _stringLiteral7EE2EC0E141890ED13D1EEC3562248EA95485987;
@@ -82,6 +84,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* ReadOnlySpan_1_get_Length_m36BD32453530B535
 IL2CPP_EXTERN_C const RuntimeMethod* Unmarshal_UnmarshalUnityObject_TisFont_tC95270EA3198038970422D78B74A7F2E218A96B6_m97441E0B7E81EF096A8750A57E7667CB52D38ADE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Unmarshal_UnmarshalUnityObject_TisMaterial_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_m58FC796AC31E8A25B0FE0BC0BDDFD688A4801F02_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnsafeUtility_As_TisIntPtr_t_TisGCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC_mD94F597CB91662C823496DA9FA9A7CF908734A78_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_0_0_0_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -1012,12 +1016,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* IntPtr_op_Explicit_m2728CBA081E79B97DDC
 #endif
 IL2CPP_EXTERN_C void TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshal_pinvoke(const TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3& unmarshaled, TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___fontException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'font' of type 'TextGenerationSettings': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3____font_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___fontException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3____font_FieldInfo_var, TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___fontException, NULL);
 }
 IL2CPP_EXTERN_C void TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshal_pinvoke_back(const TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshaled_pinvoke& marshaled, TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3& unmarshaled)
 {
-	Exception_t* ___fontException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'font' of type 'TextGenerationSettings': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3____font_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___fontException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3____font_FieldInfo_var, TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___fontException, NULL);
 }
 IL2CPP_EXTERN_C void TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshal_pinvoke_cleanup(TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshaled_pinvoke& marshaled)
@@ -1025,12 +1043,26 @@ IL2CPP_EXTERN_C void TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04
 }
 IL2CPP_EXTERN_C void TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshal_com(const TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3& unmarshaled, TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshaled_com& marshaled)
 {
-	Exception_t* ___fontException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'font' of type 'TextGenerationSettings': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3____font_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___fontException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3____font_FieldInfo_var, TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___fontException, NULL);
 }
 IL2CPP_EXTERN_C void TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshal_com_back(const TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshaled_com& marshaled, TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3& unmarshaled)
 {
-	Exception_t* ___fontException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'font' of type 'TextGenerationSettings': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3____font_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___fontException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3____font_FieldInfo_var, TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___fontException, NULL);
 }
 IL2CPP_EXTERN_C void TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshal_com_cleanup(TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3_marshaled_com& marshaled)
@@ -1379,12 +1411,26 @@ IL2CPP_EXTERN_C  bool TextGenerationSettings_Equals_m04DE9655555622E3A4EECC2EAB3
 
 IL2CPP_EXTERN_C void TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshal_pinvoke(const TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC& unmarshaled, TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_LastSettingsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_LastSettings' of type 'TextGenerator'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC____m_LastSettings_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_LastSettingsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC____m_LastSettings_FieldInfo_var, TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_LastSettingsException, NULL);
 }
 IL2CPP_EXTERN_C void TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshal_pinvoke_back(const TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshaled_pinvoke& marshaled, TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC& unmarshaled)
 {
-	Exception_t* ___m_LastSettingsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_LastSettings' of type 'TextGenerator'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC____m_LastSettings_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_LastSettingsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC____m_LastSettings_FieldInfo_var, TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_LastSettingsException, NULL);
 }
 IL2CPP_EXTERN_C void TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshal_pinvoke_cleanup(TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshaled_pinvoke& marshaled)
@@ -1394,12 +1440,26 @@ IL2CPP_EXTERN_C void TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_mar
 
 IL2CPP_EXTERN_C void TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshal_com(const TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC& unmarshaled, TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshaled_com& marshaled)
 {
-	Exception_t* ___m_LastSettingsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_LastSettings' of type 'TextGenerator'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC____m_LastSettings_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_LastSettingsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC____m_LastSettings_FieldInfo_var, TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_LastSettingsException, NULL);
 }
 IL2CPP_EXTERN_C void TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshal_com_back(const TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshaled_com& marshaled, TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC& unmarshaled)
 {
-	Exception_t* ___m_LastSettingsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_LastSettings' of type 'TextGenerator'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC____m_LastSettings_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_LastSettingsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC____m_LastSettings_FieldInfo_var, TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_LastSettingsException, NULL);
 }
 IL2CPP_EXTERN_C void TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshal_com_cleanup(TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC_marshaled_com& marshaled)

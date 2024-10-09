@@ -477,6 +477,7 @@ IL2CPP_EXTERN_C RuntimeClass* XmlText_t30AEB94C64DEFEE255D907869C96FDD25C6E812A_
 IL2CPP_EXTERN_C RuntimeClass* XmlUnspecifiedAttribute_tE47F7C121F619F5C6D79E61829694B516B6C4CDC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XmlUrlResolver_tD1DCA07B66A58F98930187AF17C9B31258C1008E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XmlWhitespace_t19767FEBC987857ADED0437FC1554F86E7D00D24_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tBAB6DC40B1709E21296656960228A17F1BE57FD7____D1D9AF18AFC4E3074AF5E4C44B81B73889D033D7AF6DFEB387BBCC76B36FE8B9_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tBAB6DC40B1709E21296656960228A17F1BE57FD7____DB7DD2341DB9D4574E432AAAFF03FB0A3E8FF2F645A337077EDF0C6FE902E660_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral010415DFD810DA785E5CD8173EA9688EDA5E73FE;
@@ -735,6 +736,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* XmlTextWriter_WriteStartAttribute_m8183A40B
 IL2CPP_EXTERN_C const RuntimeMethod* XmlTextWriter_WriteStartElement_mC9FE33DD1244C725C11F8498DFFB2193C573CC04_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* XmlTextWriter_WriteWhitespace_m6208C06449C23E262CE6D9C218910D863385BE95_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* HashCodeOfStringDelegate_t9AB4FF441166EF88D20657805C4FA187C4FF5046_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* XmlTextReader_tC907887DA34B51126640DA590B4C9358DF45738B_0_0_0_var;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_com;
@@ -7678,12 +7680,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* XmlTextReader_get_DtdInfo_mDC1
 #endif
 IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshal_pinvoke(const ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886& unmarshaled, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'encoding' of type 'ParsingState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___encodingException, NULL);
 }
 IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshal_pinvoke_back(const ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshaled_pinvoke& marshaled, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886& unmarshaled)
 {
-	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'encoding' of type 'ParsingState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___encodingException, NULL);
 }
 IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshal_pinvoke_cleanup(ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshaled_pinvoke& marshaled)
@@ -7691,12 +7707,26 @@ IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_mars
 }
 IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshal_com(const ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886& unmarshaled, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshaled_com& marshaled)
 {
-	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'encoding' of type 'ParsingState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___encodingException, NULL);
 }
 IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshal_com_back(const ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshaled_com& marshaled, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886& unmarshaled)
 {
-	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'encoding' of type 'ParsingState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___encodingException, NULL);
 }
 IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshal_com_cleanup(ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshaled_com& marshaled)

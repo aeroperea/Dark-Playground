@@ -629,6 +629,7 @@ IL2CPP_EXTERN_C RuntimeClass* ViewConstantsU5BU5D_tE0BEC68A10F48C1DB96A83A8F1BAA
 IL2CPP_EXTERN_C RuntimeClass* VignetteModeParameter_t4DFEEC493CC03DDEC2BBC0EBF5B30CEF05D5D969_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VolumeManager_tC1135CDD73B47230FE58646CB8242E6B324DA621_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XRBuiltinShaderConstants_t1D37F9AC982A0FBE2161D89BD21DADC6DCD88024_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24____parent_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral008C8F3D5C7E1798ADF5400DBE37FBDF859432F4;
 IL2CPP_EXTERN_C String_t* _stringLiteral027318A427C6E17424BA25802709CED308902584;
 IL2CPP_EXTERN_C String_t* _stringLiteral0AF06524F9BE267ADB384A1051108555536C0669;
@@ -803,6 +804,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* VolumeStack_GetComponent_TisRecursiveRender
 IL2CPP_EXTERN_C const RuntimeMethod* VolumeStack_GetComponent_TisScreenSpaceReflection_tDA855EA901B7646166AA650A8488A6DF472794C2_m97F5E1D1DA07D1297E9790420596C1B74EAB4F8E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VolumeStack_GetComponent_TisVisualEnvironment_t599E0CD9FA784189BB8EF7BD7151C72DEBE87376_m3C4915538A9B6D227DE46DCF8997053F44CE4A1C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* CustomPostProcessVolumeComponent_tE94F10890CC1336A0F7434C252063344D5AF5C86_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* HDRenderPipelineAsset_t089CFEE8874FC8A9A7D398E4175C1AEE7462D5F7_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Level_tFBA2E4D4595740A499053A6FC3454BFE22EAE07E_0_0_0_var;
 struct Delegate_t_marshaled_com;
@@ -1058,6 +1060,7 @@ struct GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E
 	DepthOfFieldResolutionU5BU5D_t8633727C3F2A50BA7792771A5F39717071E1FAD9* ___DoFResolution;
 	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ___DoFHighQualityFiltering;
 	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ___DoFPhysicallyBased;
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___AdaptiveSamplingWeight;
 	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* ___LimitManualRangeNearBlur;
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___MotionBlurSampleCount;
 	BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B* ___BloomRes;
@@ -7106,6 +7109,7 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____OutputVelocityMagnitudeHistory;
 	int32_t ____OutputDepthTexture;
 	int32_t ____OutputMotionVectorTexture;
+	int32_t ____OutputResolution;
 	int32_t ____TargetScale;
 	int32_t ____Params;
 	int32_t ____Params1;
@@ -7113,6 +7117,7 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____Params3;
 	int32_t ____BokehKernel;
 	int32_t ____InputCoCTexture;
+	int32_t ____DebugTileClassification;
 	int32_t ____InputHistoryCoCTexture;
 	int32_t ____OutputCoCTexture;
 	int32_t ____OutputNearCoCTexture;
@@ -7140,6 +7145,8 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____InputNearAlphaTexture;
 	int32_t ____CoCTargetScale;
 	int32_t ____DepthMinMaxAvg;
+	int32_t ____ApertureShapeTable;
+	int32_t ____ApertureShapeTableCount;
 	int32_t ____FlareOcclusionTex;
 	int32_t ____FlareSunOcclusionTex;
 	int32_t ____FlareOcclusionRemapTex;
@@ -25355,12 +25362,26 @@ IL2CPP_EXTERN_C void ExposureGpuReadbackRequest_tE9C0FE148B9D8B7BEF0E2680ED4CAEA
 #endif
 IL2CPP_EXTERN_C void ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_marshal_pinvoke(const ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24& unmarshaled, ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___parentException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'parent' of type 'ExposureTextures': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24____parent_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___parentException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24____parent_FieldInfo_var, ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___parentException, NULL);
 }
 IL2CPP_EXTERN_C void ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_marshal_pinvoke_back(const ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_marshaled_pinvoke& marshaled, ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24& unmarshaled)
 {
-	Exception_t* ___parentException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'parent' of type 'ExposureTextures': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24____parent_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___parentException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24____parent_FieldInfo_var, ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___parentException, NULL);
 }
 IL2CPP_EXTERN_C void ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_marshal_pinvoke_cleanup(ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_marshaled_pinvoke& marshaled)
@@ -25368,12 +25389,26 @@ IL2CPP_EXTERN_C void ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_
 }
 IL2CPP_EXTERN_C void ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_marshal_com(const ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24& unmarshaled, ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_marshaled_com& marshaled)
 {
-	Exception_t* ___parentException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'parent' of type 'ExposureTextures': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24____parent_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___parentException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24____parent_FieldInfo_var, ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___parentException, NULL);
 }
 IL2CPP_EXTERN_C void ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_marshal_com_back(const ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_marshaled_com& marshaled, ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24& unmarshaled)
 {
-	Exception_t* ___parentException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'parent' of type 'ExposureTextures': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24____parent_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___parentException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24____parent_FieldInfo_var, ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___parentException, NULL);
 }
 IL2CPP_EXTERN_C void ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_marshal_com_cleanup(ExposureTextures_t28DAFC0DBC28A34CBEB877FC77B0D5DBB8628D24_marshaled_com& marshaled)
@@ -26797,138 +26832,151 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalPostProcessingQualitySettings__cto
 		__this->___DoFPhysicallyBased = L_13;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___DoFPhysicallyBased), (void*)L_13);
 		int32_t L_14 = ((GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_StaticFields*)il2cpp_codegen_static_fields_for(GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_il2cpp_TypeInfo_var))->___s_QualitySettingCount;
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_15 = (BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)SZArrayNew(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4_il2cpp_TypeInfo_var, (uint32_t)L_14);
-		__this->___LimitManualRangeNearBlur = L_15;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___LimitManualRangeNearBlur), (void*)L_15);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_15 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)L_14);
+		__this->___AdaptiveSamplingWeight = L_15;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___AdaptiveSamplingWeight), (void*)L_15);
 		int32_t L_16 = ((GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_StaticFields*)il2cpp_codegen_static_fields_for(GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_il2cpp_TypeInfo_var))->___s_QualitySettingCount;
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_17 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)L_16);
-		__this->___MotionBlurSampleCount = L_17;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___MotionBlurSampleCount), (void*)L_17);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_17 = (BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)SZArrayNew(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4_il2cpp_TypeInfo_var, (uint32_t)L_16);
+		__this->___LimitManualRangeNearBlur = L_17;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___LimitManualRangeNearBlur), (void*)L_17);
 		int32_t L_18 = ((GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_StaticFields*)il2cpp_codegen_static_fields_for(GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_il2cpp_TypeInfo_var))->___s_QualitySettingCount;
-		BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B* L_19 = (BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B*)(BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B*)SZArrayNew(BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B_il2cpp_TypeInfo_var, (uint32_t)L_18);
-		__this->___BloomRes = L_19;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___BloomRes), (void*)L_19);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_19 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)L_18);
+		__this->___MotionBlurSampleCount = L_19;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___MotionBlurSampleCount), (void*)L_19);
 		int32_t L_20 = ((GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_StaticFields*)il2cpp_codegen_static_fields_for(GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_il2cpp_TypeInfo_var))->___s_QualitySettingCount;
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_21 = (BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)SZArrayNew(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4_il2cpp_TypeInfo_var, (uint32_t)L_20);
-		__this->___BloomHighQualityFiltering = L_21;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___BloomHighQualityFiltering), (void*)L_21);
+		BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B* L_21 = (BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B*)(BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B*)SZArrayNew(BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B_il2cpp_TypeInfo_var, (uint32_t)L_20);
+		__this->___BloomRes = L_21;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___BloomRes), (void*)L_21);
 		int32_t L_22 = ((GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_StaticFields*)il2cpp_codegen_static_fields_for(GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_il2cpp_TypeInfo_var))->___s_QualitySettingCount;
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_23 = (BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)SZArrayNew(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4_il2cpp_TypeInfo_var, (uint32_t)L_22);
-		__this->___BloomHighQualityPrefiltering = L_23;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___BloomHighQualityPrefiltering), (void*)L_23);
+		__this->___BloomHighQualityFiltering = L_23;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___BloomHighQualityFiltering), (void*)L_23);
 		int32_t L_24 = ((GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_StaticFields*)il2cpp_codegen_static_fields_for(GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_il2cpp_TypeInfo_var))->___s_QualitySettingCount;
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_25 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)L_24);
-		__this->___ChromaticAberrationMaxSamples = L_25;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ChromaticAberrationMaxSamples), (void*)L_25);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_25 = (BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4*)SZArrayNew(BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4_il2cpp_TypeInfo_var, (uint32_t)L_24);
+		__this->___BloomHighQualityPrefiltering = L_25;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___BloomHighQualityPrefiltering), (void*)L_25);
+		int32_t L_26 = ((GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_StaticFields*)il2cpp_codegen_static_fields_for(GlobalPostProcessingQualitySettings_tFAE12AA2D98FCFB304FC5279D0C948B9448E670E_il2cpp_TypeInfo_var))->___s_QualitySettingCount;
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_27 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)L_26);
+		__this->___ChromaticAberrationMaxSamples = L_27;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ChromaticAberrationMaxSamples), (void*)L_27);
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_26 = __this->___NearBlurSampleCount;
-		NullCheck(L_26);
-		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)3);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_27 = __this->___NearBlurSampleCount;
-		NullCheck(L_27);
-		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)5);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_28 = __this->___NearBlurSampleCount;
 		NullCheck(L_28);
-		(L_28)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)8);
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_29 = __this->___NearBlurMaxRadius;
+		(L_28)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)3);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_29 = __this->___NearBlurSampleCount;
 		NullCheck(L_29);
-		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(0), (float)(2.0f));
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_30 = __this->___NearBlurMaxRadius;
+		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)5);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_30 = __this->___NearBlurSampleCount;
 		NullCheck(L_30);
-		(L_30)->SetAt(static_cast<il2cpp_array_size_t>(1), (float)(4.0f));
+		(L_30)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)8);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_31 = __this->___NearBlurMaxRadius;
 		NullCheck(L_31);
-		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(2), (float)(7.0f));
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_32 = __this->___FarBlurSampleCount;
+		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(0), (float)(2.0f));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_32 = __this->___NearBlurMaxRadius;
 		NullCheck(L_32);
-		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_33 = __this->___FarBlurSampleCount;
+		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(1), (float)(4.0f));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_33 = __this->___NearBlurMaxRadius;
 		NullCheck(L_33);
-		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)7);
+		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(2), (float)(7.0f));
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_34 = __this->___FarBlurSampleCount;
 		NullCheck(L_34);
-		(L_34)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)14));
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_35 = __this->___FarBlurMaxRadius;
+		(L_34)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_35 = __this->___FarBlurSampleCount;
 		NullCheck(L_35);
-		(L_35)->SetAt(static_cast<il2cpp_array_size_t>(0), (float)(5.0f));
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_36 = __this->___FarBlurMaxRadius;
+		(L_35)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)7);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_36 = __this->___FarBlurSampleCount;
 		NullCheck(L_36);
-		(L_36)->SetAt(static_cast<il2cpp_array_size_t>(1), (float)(8.0f));
+		(L_36)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)14));
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_37 = __this->___FarBlurMaxRadius;
 		NullCheck(L_37);
-		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(2), (float)(13.0f));
-		DepthOfFieldResolutionU5BU5D_t8633727C3F2A50BA7792771A5F39717071E1FAD9* L_38 = __this->___DoFResolution;
+		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(0), (float)(5.0f));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_38 = __this->___FarBlurMaxRadius;
 		NullCheck(L_38);
-		(L_38)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
-		DepthOfFieldResolutionU5BU5D_t8633727C3F2A50BA7792771A5F39717071E1FAD9* L_39 = __this->___DoFResolution;
+		(L_38)->SetAt(static_cast<il2cpp_array_size_t>(1), (float)(8.0f));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_39 = __this->___FarBlurMaxRadius;
 		NullCheck(L_39);
-		(L_39)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)2);
+		(L_39)->SetAt(static_cast<il2cpp_array_size_t>(2), (float)(13.0f));
 		DepthOfFieldResolutionU5BU5D_t8633727C3F2A50BA7792771A5F39717071E1FAD9* L_40 = __this->___DoFResolution;
 		NullCheck(L_40);
-		(L_40)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)1);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_41 = __this->___DoFHighQualityFiltering;
+		(L_40)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
+		DepthOfFieldResolutionU5BU5D_t8633727C3F2A50BA7792771A5F39717071E1FAD9* L_41 = __this->___DoFResolution;
 		NullCheck(L_41);
-		(L_41)->SetAt(static_cast<il2cpp_array_size_t>(0), (bool)0);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_42 = __this->___DoFHighQualityFiltering;
+		(L_41)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)2);
+		DepthOfFieldResolutionU5BU5D_t8633727C3F2A50BA7792771A5F39717071E1FAD9* L_42 = __this->___DoFResolution;
 		NullCheck(L_42);
-		(L_42)->SetAt(static_cast<il2cpp_array_size_t>(1), (bool)1);
+		(L_42)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)1);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_43 = __this->___DoFHighQualityFiltering;
 		NullCheck(L_43);
-		(L_43)->SetAt(static_cast<il2cpp_array_size_t>(2), (bool)1);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_44 = __this->___LimitManualRangeNearBlur;
+		(L_43)->SetAt(static_cast<il2cpp_array_size_t>(0), (bool)0);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_44 = __this->___DoFHighQualityFiltering;
 		NullCheck(L_44);
-		(L_44)->SetAt(static_cast<il2cpp_array_size_t>(0), (bool)0);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_45 = __this->___LimitManualRangeNearBlur;
+		(L_44)->SetAt(static_cast<il2cpp_array_size_t>(1), (bool)1);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_45 = __this->___DoFHighQualityFiltering;
 		NullCheck(L_45);
-		(L_45)->SetAt(static_cast<il2cpp_array_size_t>(1), (bool)0);
+		(L_45)->SetAt(static_cast<il2cpp_array_size_t>(2), (bool)1);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_46 = __this->___LimitManualRangeNearBlur;
 		NullCheck(L_46);
-		(L_46)->SetAt(static_cast<il2cpp_array_size_t>(2), (bool)0);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_47 = __this->___MotionBlurSampleCount;
+		(L_46)->SetAt(static_cast<il2cpp_array_size_t>(0), (bool)0);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_47 = __this->___LimitManualRangeNearBlur;
 		NullCheck(L_47);
-		(L_47)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_48 = __this->___MotionBlurSampleCount;
+		(L_47)->SetAt(static_cast<il2cpp_array_size_t>(1), (bool)0);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_48 = __this->___LimitManualRangeNearBlur;
 		NullCheck(L_48);
-		(L_48)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)8);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_49 = __this->___MotionBlurSampleCount;
+		(L_48)->SetAt(static_cast<il2cpp_array_size_t>(2), (bool)0);
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_49 = __this->___AdaptiveSamplingWeight;
 		NullCheck(L_49);
-		(L_49)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)12));
-		BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B* L_50 = __this->___BloomRes;
+		(L_49)->SetAt(static_cast<il2cpp_array_size_t>(0), (float)(0.5f));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_50 = __this->___AdaptiveSamplingWeight;
 		NullCheck(L_50);
-		(L_50)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
-		BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B* L_51 = __this->___BloomRes;
+		(L_50)->SetAt(static_cast<il2cpp_array_size_t>(1), (float)(0.75f));
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_51 = __this->___AdaptiveSamplingWeight;
 		NullCheck(L_51);
-		(L_51)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)2);
-		BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B* L_52 = __this->___BloomRes;
+		(L_51)->SetAt(static_cast<il2cpp_array_size_t>(2), (float)(2.0f));
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_52 = __this->___MotionBlurSampleCount;
 		NullCheck(L_52);
-		(L_52)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)2);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_53 = __this->___BloomHighQualityFiltering;
+		(L_52)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_53 = __this->___MotionBlurSampleCount;
 		NullCheck(L_53);
-		(L_53)->SetAt(static_cast<il2cpp_array_size_t>(0), (bool)0);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_54 = __this->___BloomHighQualityFiltering;
+		(L_53)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)8);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_54 = __this->___MotionBlurSampleCount;
 		NullCheck(L_54);
-		(L_54)->SetAt(static_cast<il2cpp_array_size_t>(1), (bool)1);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_55 = __this->___BloomHighQualityFiltering;
+		(L_54)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)12));
+		BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B* L_55 = __this->___BloomRes;
 		NullCheck(L_55);
-		(L_55)->SetAt(static_cast<il2cpp_array_size_t>(2), (bool)1);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_56 = __this->___BloomHighQualityPrefiltering;
+		(L_55)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
+		BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B* L_56 = __this->___BloomRes;
 		NullCheck(L_56);
-		(L_56)->SetAt(static_cast<il2cpp_array_size_t>(0), (bool)0);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_57 = __this->___BloomHighQualityPrefiltering;
+		(L_56)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)2);
+		BloomResolutionU5BU5D_tD96BA02B0DDC7E937093FFE337BA6EE8C22AC43B* L_57 = __this->___BloomRes;
 		NullCheck(L_57);
-		(L_57)->SetAt(static_cast<il2cpp_array_size_t>(1), (bool)0);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_58 = __this->___BloomHighQualityPrefiltering;
+		(L_57)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)2);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_58 = __this->___BloomHighQualityFiltering;
 		NullCheck(L_58);
-		(L_58)->SetAt(static_cast<il2cpp_array_size_t>(2), (bool)1);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_59 = __this->___ChromaticAberrationMaxSamples;
+		(L_58)->SetAt(static_cast<il2cpp_array_size_t>(0), (bool)0);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_59 = __this->___BloomHighQualityFiltering;
 		NullCheck(L_59);
-		(L_59)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)3);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_60 = __this->___ChromaticAberrationMaxSamples;
+		(L_59)->SetAt(static_cast<il2cpp_array_size_t>(1), (bool)1);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_60 = __this->___BloomHighQualityFiltering;
 		NullCheck(L_60);
-		(L_60)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)6);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_61 = __this->___ChromaticAberrationMaxSamples;
+		(L_60)->SetAt(static_cast<il2cpp_array_size_t>(2), (bool)1);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_61 = __this->___BloomHighQualityPrefiltering;
 		NullCheck(L_61);
-		(L_61)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)12));
+		(L_61)->SetAt(static_cast<il2cpp_array_size_t>(0), (bool)0);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_62 = __this->___BloomHighQualityPrefiltering;
+		NullCheck(L_62);
+		(L_62)->SetAt(static_cast<il2cpp_array_size_t>(1), (bool)0);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_63 = __this->___BloomHighQualityPrefiltering;
+		NullCheck(L_63);
+		(L_63)->SetAt(static_cast<il2cpp_array_size_t>(2), (bool)1);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_64 = __this->___ChromaticAberrationMaxSamples;
+		NullCheck(L_64);
+		(L_64)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)3);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_65 = __this->___ChromaticAberrationMaxSamples;
+		NullCheck(L_65);
+		(L_65)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)6);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_66 = __this->___ChromaticAberrationMaxSamples;
+		NullCheck(L_66);
+		(L_66)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)12));
 		return;
 	}
 }

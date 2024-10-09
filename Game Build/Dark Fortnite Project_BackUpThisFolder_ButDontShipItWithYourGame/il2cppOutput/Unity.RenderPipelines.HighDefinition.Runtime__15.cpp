@@ -462,6 +462,7 @@ IL2CPP_EXTERN_C RuntimeClass* VolumeParameter_1_tAD69E5D203818714418AAC8E4193171
 IL2CPP_EXTERN_C RuntimeClass* WindOrientationParameter_tCA03D3B088E49F920E870F0684BB1BFF3EF669F7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WindSpeedParameter_t7FD07F8AD07CB0EA5736B6197E55FA8779D72517_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WorldLightManager_tFA8F53AD8F60AA44EC22884F64FA71FF041B8363_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3____target_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral004649ED375054B6E42C54E58D286587109A8324;
 IL2CPP_EXTERN_C String_t* _stringLiteral01167E429719EE2CCF6269CF091AC85E3C09FE97;
 IL2CPP_EXTERN_C String_t* _stringLiteral013110C61EA4A63D88BB137C9C17AC4ABAB1891B;
@@ -619,6 +620,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral77D38C0623F92B292B925F6E72CF5CF99A20D4EB
 IL2CPP_EXTERN_C String_t* _stringLiteral77E9FC9DD23200535725D77153C7AE9BA0DD2D6C;
 IL2CPP_EXTERN_C String_t* _stringLiteral78F8EE1112856CE603172B0F9DF12AA158D11FCC;
 IL2CPP_EXTERN_C String_t* _stringLiteral7A7942718574499954BC5D1EAFBD77F591E84B51;
+IL2CPP_EXTERN_C String_t* _stringLiteral7A8FB85230FE852E7E59BECCC9844864B721195B;
 IL2CPP_EXTERN_C String_t* _stringLiteral7B2D0152F6AEDF0B838629E3E4D3C77BEC7A2247;
 IL2CPP_EXTERN_C String_t* _stringLiteral7B825C1CBADF260F063948D8DA19FAED84A351CC;
 IL2CPP_EXTERN_C String_t* _stringLiteral7BA803FABE6827A50B7CE03EAE4D17D7EE56AF30;
@@ -700,6 +702,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralB9C98B9C3DCBFC46C1DFD37916204A614C039193
 IL2CPP_EXTERN_C String_t* _stringLiteralBA284A9AA926BBACB80BF1E33CDBFB340298FEFD;
 IL2CPP_EXTERN_C String_t* _stringLiteralBC5469A4E52366E1D3398B7114BFCC6B61D9F6CB;
 IL2CPP_EXTERN_C String_t* _stringLiteralBC578108820B99B3B1969D7C184C351900FFF59A;
+IL2CPP_EXTERN_C String_t* _stringLiteralBC95780CDF6456B947F4F35307558162AA952B63;
 IL2CPP_EXTERN_C String_t* _stringLiteralBCFCBDDA97715AE76318A2C5F85E74960F5B0242;
 IL2CPP_EXTERN_C String_t* _stringLiteralBDBD166E258AEFAB5ECCE8D062AE7E8BC7F439F5;
 IL2CPP_EXTERN_C String_t* _stringLiteralBE7116D7CF730EC625F5D2A793E77DA8DA0F4F72;
@@ -899,6 +902,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* VolumeStack_GetComponent_TisVisualEnvironme
 IL2CPP_EXTERN_C const RuntimeType* CloudLayerRenderer_tC4B40D53B2A6B099552FB5DD34096D1EF25B2845_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* EnvLightData_t8A17ECB16F4806CC1A4B1755A304E429441B39C6_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* LightData_t8694116A62939E2F9CFB1D9C2DC626F399FF51CE_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* WorldLightVolume_tE18C9DAB235309B93C25C3CDECC28E1A3B22A810_0_0_0_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
@@ -1288,6 +1292,8 @@ struct HDRenderPipelineRuntimeShaders_t9B4BFC2FD535842EAB0269713C07D7D3BEC46B80 
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofCoCMinMaxCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofMinMaxDilateCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofCombineCS;
+	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofComputeSlowTilesCS;
+	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofComputeApertureShapeCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurMotionVecPrepCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurGenTileCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurMergeTileCS;
@@ -7228,6 +7234,7 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____OutputVelocityMagnitudeHistory;
 	int32_t ____OutputDepthTexture;
 	int32_t ____OutputMotionVectorTexture;
+	int32_t ____OutputResolution;
 	int32_t ____TargetScale;
 	int32_t ____Params;
 	int32_t ____Params1;
@@ -7235,6 +7242,7 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____Params3;
 	int32_t ____BokehKernel;
 	int32_t ____InputCoCTexture;
+	int32_t ____DebugTileClassification;
 	int32_t ____InputHistoryCoCTexture;
 	int32_t ____OutputCoCTexture;
 	int32_t ____OutputNearCoCTexture;
@@ -7262,6 +7270,8 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____InputNearAlphaTexture;
 	int32_t ____CoCTargetScale;
 	int32_t ____DepthMinMaxAvg;
+	int32_t ____ApertureShapeTable;
+	int32_t ____ApertureShapeTableCount;
 	int32_t ____FlareOcclusionTex;
 	int32_t ____FlareSunOcclusionTex;
 	int32_t ____FlareOcclusionRemapTex;
@@ -11696,12 +11706,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AtlasElement_ToString_mC03FAF2F51BD
 #endif
 IL2CPP_EXTERN_C void MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_marshal_pinvoke(const MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3& unmarshaled, MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___targetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'target' of type 'MipGenerationSwapData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3____target_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___targetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3____target_FieldInfo_var, MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___targetException, NULL);
 }
 IL2CPP_EXTERN_C void MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_marshal_pinvoke_back(const MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_marshaled_pinvoke& marshaled, MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3& unmarshaled)
 {
-	Exception_t* ___targetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'target' of type 'MipGenerationSwapData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3____target_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___targetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3____target_FieldInfo_var, MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___targetException, NULL);
 }
 IL2CPP_EXTERN_C void MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_marshal_pinvoke_cleanup(MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_marshaled_pinvoke& marshaled)
@@ -11709,12 +11733,26 @@ IL2CPP_EXTERN_C void MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD208
 }
 IL2CPP_EXTERN_C void MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_marshal_com(const MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3& unmarshaled, MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_marshaled_com& marshaled)
 {
-	Exception_t* ___targetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'target' of type 'MipGenerationSwapData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3____target_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___targetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3____target_FieldInfo_var, MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___targetException, NULL);
 }
 IL2CPP_EXTERN_C void MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_marshal_com_back(const MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_marshaled_com& marshaled, MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3& unmarshaled)
 {
-	Exception_t* ___targetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'target' of type 'MipGenerationSwapData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3____target_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___targetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3____target_FieldInfo_var, MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___targetException, NULL);
 }
 IL2CPP_EXTERN_C void MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_marshal_com_cleanup(MipGenerationSwapData_t2E70AC5F21B8F6F6F4F408D4BCE4D01AD2080AB3_marshaled_com& marshaled)
@@ -22114,6 +22152,52 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HDRenderPipelineRuntimeShaders_set_dofCo
 		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8** L_0 = (ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8**)(&__this->___m_DofCombineCS);
 		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_1 = ___0_value;
 		RenderPipelineGraphicsSettingsExtensions_SetValueAndNotify_TisComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8_mB626479C1AFB7962C3CCF8700B4021E92D0A0536(__this, L_0, L_1, _stringLiteralC9B7E92DEA7CF63E3A98904812A340822D45BB08, RenderPipelineGraphicsSettingsExtensions_SetValueAndNotify_TisComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8_mB626479C1AFB7962C3CCF8700B4021E92D0A0536_RuntimeMethod_var);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* HDRenderPipelineRuntimeShaders_get_dofComputeSlowTilesCS_mFEF73FB3AC25D5F0A093DEC76ECDC3E3F853990E (HDRenderPipelineRuntimeShaders_t9B4BFC2FD535842EAB0269713C07D7D3BEC46B80* __this, const RuntimeMethod* method) 
+{
+	{
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_0 = __this->___m_DofComputeSlowTilesCS;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HDRenderPipelineRuntimeShaders_set_dofComputeSlowTilesCS_mB62C392CA2435BE994076A0C1408C66B475838B5 (HDRenderPipelineRuntimeShaders_t9B4BFC2FD535842EAB0269713C07D7D3BEC46B80* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RenderPipelineGraphicsSettingsExtensions_SetValueAndNotify_TisComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8_mB626479C1AFB7962C3CCF8700B4021E92D0A0536_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBC95780CDF6456B947F4F35307558162AA952B63);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8** L_0 = (ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8**)(&__this->___m_DofComputeSlowTilesCS);
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_1 = ___0_value;
+		RenderPipelineGraphicsSettingsExtensions_SetValueAndNotify_TisComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8_mB626479C1AFB7962C3CCF8700B4021E92D0A0536(__this, L_0, L_1, _stringLiteralBC95780CDF6456B947F4F35307558162AA952B63, RenderPipelineGraphicsSettingsExtensions_SetValueAndNotify_TisComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8_mB626479C1AFB7962C3CCF8700B4021E92D0A0536_RuntimeMethod_var);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* HDRenderPipelineRuntimeShaders_get_dofComputeApertureShapeCS_m39FC127996718674F8503F57637A3EAEF71880DF (HDRenderPipelineRuntimeShaders_t9B4BFC2FD535842EAB0269713C07D7D3BEC46B80* __this, const RuntimeMethod* method) 
+{
+	{
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_0 = __this->___m_DofComputeApertureShapeCS;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HDRenderPipelineRuntimeShaders_set_dofComputeApertureShapeCS_mD25FF57ADF01F1298480919F3EBC17D10D1DD12C (HDRenderPipelineRuntimeShaders_t9B4BFC2FD535842EAB0269713C07D7D3BEC46B80* __this, ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RenderPipelineGraphicsSettingsExtensions_SetValueAndNotify_TisComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8_mB626479C1AFB7962C3CCF8700B4021E92D0A0536_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7A8FB85230FE852E7E59BECCC9844864B721195B);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8** L_0 = (ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8**)(&__this->___m_DofComputeApertureShapeCS);
+		ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* L_1 = ___0_value;
+		RenderPipelineGraphicsSettingsExtensions_SetValueAndNotify_TisComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8_mB626479C1AFB7962C3CCF8700B4021E92D0A0536(__this, L_0, L_1, _stringLiteral7A8FB85230FE852E7E59BECCC9844864B721195B, RenderPipelineGraphicsSettingsExtensions_SetValueAndNotify_TisComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8_mB626479C1AFB7962C3CCF8700B4021E92D0A0536_RuntimeMethod_var);
 		return;
 	}
 }

@@ -667,6 +667,7 @@ IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_
 IL2CPP_EXTERN_C RuntimeClass* Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VolumeDebugSettings_1_t431D2E1E24DDA32AEE69D39CBB86C39D2374063C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VolumeManager_tC1135CDD73B47230FE58646CB8242E6B324DA621_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43____volumeMask_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t52D74BF05A4BD9E64351FAC4ECCED878E3AC8C45____2D8C59BB59AD671363F5B874C96A9D2146DA395DDB1E07F9CB0D419A0ED9D3DF_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t52D74BF05A4BD9E64351FAC4ECCED878E3AC8C45____9AD21F8DB66F4C85FF71A1B2AA5F827BF2414779079A9AD520D8237A81A36C91_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t52D74BF05A4BD9E64351FAC4ECCED878E3AC8C45____9C8DC48751169429CACA1D1AA2D0C0A4CE1A20F0484F2B5A5EC007119CBD8D65_FieldInfo_var;
@@ -1115,6 +1116,7 @@ IL2CPP_EXTERN_C const RuntimeType* DebugViewGbuffer_t2DFF2326C95E4715491BDC11F87
 IL2CPP_EXTERN_C const RuntimeType* DebugViewProperties_tCE1EE291DDD597AF702902DC7BDBC03465ADB2D2_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* DebugViewVarying_t6AA920D4FA9F1BE9AEDD52A47AC645A368BD5BB6_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* HDRenderPipeline_t1B44562A781BC76EDE4A608B524567F5250106EC_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* MaterialSharedPropertyMappingAttribute_t4BE6864AD2878C1133020BDDC75558B6E92C11DD_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_0_0_0_var;
@@ -1661,6 +1663,8 @@ struct HDRenderPipelineRuntimeShaders_t9B4BFC2FD535842EAB0269713C07D7D3BEC46B80 
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofCoCMinMaxCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofMinMaxDilateCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofCombineCS;
+	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofComputeSlowTilesCS;
+	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofComputeApertureShapeCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurMotionVecPrepCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurGenTileCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurMergeTileCS;
@@ -8355,6 +8359,7 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____OutputVelocityMagnitudeHistory;
 	int32_t ____OutputDepthTexture;
 	int32_t ____OutputMotionVectorTexture;
+	int32_t ____OutputResolution;
 	int32_t ____TargetScale;
 	int32_t ____Params;
 	int32_t ____Params1;
@@ -8362,6 +8367,7 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____Params3;
 	int32_t ____BokehKernel;
 	int32_t ____InputCoCTexture;
+	int32_t ____DebugTileClassification;
 	int32_t ____InputHistoryCoCTexture;
 	int32_t ____OutputCoCTexture;
 	int32_t ____OutputNearCoCTexture;
@@ -8389,6 +8395,8 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____InputNearAlphaTexture;
 	int32_t ____CoCTargetScale;
 	int32_t ____DepthMinMaxAvg;
+	int32_t ____ApertureShapeTable;
+	int32_t ____ApertureShapeTableCount;
 	int32_t ____FlareOcclusionTex;
 	int32_t ____FlareSunOcclusionTex;
 	int32_t ____FlareOcclusionRemapTex;
@@ -12362,28 +12370,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3C_ctorU3Eb__32_0_m1390FEA4300D
 {
 	{
 		int32_t L_0 = ___1_idx;
-		return (bool)((((int32_t)((((int32_t)((int32_t)il2cpp_codegen_add(L_0, ((int32_t)23)))) == ((int32_t)((int32_t)33)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		return (bool)((((int32_t)((((int32_t)((int32_t)il2cpp_codegen_add(L_0, ((int32_t)23)))) == ((int32_t)((int32_t)34)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3C_ctorU3Eb__32_1_m999696B3ED50BB5B7A102591D65DC82D8CE5C123 (U3CU3Ec_tE6274636D46939E32C44EECCA114D5A45756FFB9* __this, int32_t ___0_val, int32_t ___1_idx, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = ___1_idx;
-		return (bool)((((int32_t)((((int32_t)((int32_t)il2cpp_codegen_add(L_0, ((int32_t)23)))) == ((int32_t)((int32_t)33)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		return (bool)((((int32_t)((((int32_t)((int32_t)il2cpp_codegen_add(L_0, ((int32_t)23)))) == ((int32_t)((int32_t)34)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3C_ctorU3Eb__32_2_m00A9913D3BC8EB7EF1CE5C674D13C04B9282BB0F (U3CU3Ec_tE6274636D46939E32C44EECCA114D5A45756FFB9* __this, GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2* ___0_val, int32_t ___1_idx, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = ___1_idx;
-		return (bool)((((int32_t)((((int32_t)((int32_t)il2cpp_codegen_add(L_0, ((int32_t)23)))) == ((int32_t)((int32_t)31)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		return (bool)((((int32_t)((((int32_t)((int32_t)il2cpp_codegen_add(L_0, ((int32_t)23)))) == ((int32_t)((int32_t)32)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3C_ctorU3Eb__32_3_mDD541028148CCB0B6B35F6A9635FD180201D1D9E (U3CU3Ec_tE6274636D46939E32C44EECCA114D5A45756FFB9* __this, int32_t ___0_val, int32_t ___1_idx, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = ___1_idx;
-		return (bool)((((int32_t)((((int32_t)((int32_t)il2cpp_codegen_add(L_0, ((int32_t)23)))) == ((int32_t)((int32_t)31)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		return (bool)((((int32_t)((((int32_t)((int32_t)il2cpp_codegen_add(L_0, ((int32_t)23)))) == ((int32_t)((int32_t)32)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CRegisterMaterialDebugU3Eb__86_48_m7AF1EC6C7EE0A3B4D7A84C8D1FD82BDD88773B48 (U3CU3Ec_tE6274636D46939E32C44EECCA114D5A45756FFB9* __this, const RuntimeMethod* method) 
@@ -20750,12 +20758,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DensityVolume__ctor_mDD3BF2A4FC9A96CB076
 #endif
 IL2CPP_EXTERN_C void LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_marshal_pinvoke(const LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43& unmarshaled, LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___volumeMaskException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'volumeMask' of type 'LocalVolumetricFogArtistParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43____volumeMask_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___volumeMaskException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43____volumeMask_FieldInfo_var, LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___volumeMaskException, NULL);
 }
 IL2CPP_EXTERN_C void LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_marshal_pinvoke_back(const LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_marshaled_pinvoke& marshaled, LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43& unmarshaled)
 {
-	Exception_t* ___volumeMaskException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'volumeMask' of type 'LocalVolumetricFogArtistParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43____volumeMask_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___volumeMaskException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43____volumeMask_FieldInfo_var, LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___volumeMaskException, NULL);
 }
 IL2CPP_EXTERN_C void LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_marshal_pinvoke_cleanup(LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_marshaled_pinvoke& marshaled)
@@ -20763,12 +20785,26 @@ IL2CPP_EXTERN_C void LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FF
 }
 IL2CPP_EXTERN_C void LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_marshal_com(const LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43& unmarshaled, LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_marshaled_com& marshaled)
 {
-	Exception_t* ___volumeMaskException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'volumeMask' of type 'LocalVolumetricFogArtistParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43____volumeMask_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___volumeMaskException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43____volumeMask_FieldInfo_var, LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___volumeMaskException, NULL);
 }
 IL2CPP_EXTERN_C void LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_marshal_com_back(const LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_marshaled_com& marshaled, LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43& unmarshaled)
 {
-	Exception_t* ___volumeMaskException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'volumeMask' of type 'LocalVolumetricFogArtistParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43____volumeMask_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___volumeMaskException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43____volumeMask_FieldInfo_var, LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___volumeMaskException, NULL);
 }
 IL2CPP_EXTERN_C void LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_marshal_com_cleanup(LocalVolumetricFogArtistParameters_t69054167330664E4C4ED0FFDF75608CE2C650C43_marshaled_com& marshaled)

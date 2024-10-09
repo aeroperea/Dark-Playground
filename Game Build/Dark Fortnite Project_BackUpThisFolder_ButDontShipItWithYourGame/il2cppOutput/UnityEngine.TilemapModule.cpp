@@ -78,6 +78,8 @@ IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_i
 IL2CPP_EXTERN_C RuntimeClass* TileBase_t07019BD771D35E8EA68118157D6EEE4C770CF0F9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C____m_Tile_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149____m_AnimatedSprites_FieldInfo_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MarshalledUnityObject_MarshalNotNull_TisTilemapRenderer_t1A45FD335E86172CFBB77D657E1D6705A477A6CB_m90A6BD70FCFCC009E37CFC2B6DFD690A08042489_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MarshalledUnityObject_MarshalNotNull_TisTilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751_m82D224678369601467142F86AEE1B6684056544D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MarshalledUnityObject_Marshal_TisSpriteAtlas_t7B9620FBFBE1CCB781F2ED24A3B2DD37734F66A8_m599B052593B0725CFCE967619492F19EFDA31A68_RuntimeMethod_var;
@@ -89,6 +91,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1_Dispose_mAB8B3AE6332BF29F2171
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1__ctor_m29DAD3F6139353D219E363E2C63BC183CBC778E2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1_get_IsCreated_mE992FB4B97CD24CAF70D23773821AE2687DC4A30_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TilemapRenderer_OnSpriteAtlasRegistered_m4348D78754045C8B10CEA76195A313790F412ED1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_0_0_0_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -2050,12 +2054,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tilemap_RefreshTilesNative_Injected_m1CA
 #endif
 IL2CPP_EXTERN_C void SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshal_pinvoke(const SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C& unmarshaled, SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_TileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Tile' of type 'SyncTile': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C____m_Tile_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_TileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C____m_Tile_FieldInfo_var, SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_TileException, NULL);
 }
 IL2CPP_EXTERN_C void SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshal_pinvoke_back(const SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshaled_pinvoke& marshaled, SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C& unmarshaled)
 {
-	Exception_t* ___m_TileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Tile' of type 'SyncTile': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C____m_Tile_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_TileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C____m_Tile_FieldInfo_var, SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_TileException, NULL);
 }
 IL2CPP_EXTERN_C void SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshal_pinvoke_cleanup(SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshaled_pinvoke& marshaled)
@@ -2063,12 +2081,26 @@ IL2CPP_EXTERN_C void SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshal_
 }
 IL2CPP_EXTERN_C void SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshal_com(const SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C& unmarshaled, SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshaled_com& marshaled)
 {
-	Exception_t* ___m_TileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Tile' of type 'SyncTile': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C____m_Tile_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_TileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C____m_Tile_FieldInfo_var, SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_TileException, NULL);
 }
 IL2CPP_EXTERN_C void SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshal_com_back(const SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshaled_com& marshaled, SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C& unmarshaled)
 {
-	Exception_t* ___m_TileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Tile' of type 'SyncTile': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C____m_Tile_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_TileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C____m_Tile_FieldInfo_var, SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_TileException, NULL);
 }
 IL2CPP_EXTERN_C void SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshal_com_cleanup(SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_marshaled_com& marshaled)
@@ -2553,12 +2585,26 @@ IL2CPP_EXTERN_C void TileChangeData_t6035410A63723928DB7B86A0880351354ADB635E_ma
 #endif
 IL2CPP_EXTERN_C void TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshal_pinvoke(const TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149& unmarshaled, TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_AnimatedSpritesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_AnimatedSprites' of type 'TileAnimationData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149____m_AnimatedSprites_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_AnimatedSpritesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149____m_AnimatedSprites_FieldInfo_var, TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_AnimatedSpritesException, NULL);
 }
 IL2CPP_EXTERN_C void TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshal_pinvoke_back(const TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshaled_pinvoke& marshaled, TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149& unmarshaled)
 {
-	Exception_t* ___m_AnimatedSpritesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_AnimatedSprites' of type 'TileAnimationData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149____m_AnimatedSprites_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_AnimatedSpritesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149____m_AnimatedSprites_FieldInfo_var, TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_AnimatedSpritesException, NULL);
 }
 IL2CPP_EXTERN_C void TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshal_pinvoke_cleanup(TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshaled_pinvoke& marshaled)
@@ -2566,12 +2612,26 @@ IL2CPP_EXTERN_C void TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149
 }
 IL2CPP_EXTERN_C void TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshal_com(const TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149& unmarshaled, TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshaled_com& marshaled)
 {
-	Exception_t* ___m_AnimatedSpritesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_AnimatedSprites' of type 'TileAnimationData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149____m_AnimatedSprites_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_AnimatedSpritesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149____m_AnimatedSprites_FieldInfo_var, TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_AnimatedSpritesException, NULL);
 }
 IL2CPP_EXTERN_C void TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshal_com_back(const TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshaled_com& marshaled, TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149& unmarshaled)
 {
-	Exception_t* ___m_AnimatedSpritesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_AnimatedSprites' of type 'TileAnimationData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149____m_AnimatedSprites_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_AnimatedSpritesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149____m_AnimatedSprites_FieldInfo_var, TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_AnimatedSpritesException, NULL);
 }
 IL2CPP_EXTERN_C void TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshal_com_cleanup(TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_marshaled_com& marshaled)

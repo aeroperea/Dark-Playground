@@ -20,6 +20,8 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 
 IL2CPP_EXTERN_C RuntimeClass* InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9____m_ParticleSystem_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B____m_ParticleSystem_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral4EBC86E0EACFCA522AEB82874860D0E248D782A5;
 IL2CPP_EXTERN_C String_t* _stringLiteralEC5621377AD9B4098EC3FB34AF35BAA9E6C07B64;
 IL2CPP_EXTERN_C const RuntimeMethod* GCHandle_get_Target_m481F9508DA5E384D33CD1F4450060DC56BBD4CD5_RuntimeMethod_var;
@@ -27,6 +29,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* MarshalledUnityObject_MarshalNotNull_TisPar
 IL2CPP_EXTERN_C const RuntimeMethod* MarshalledUnityObject_MarshalNotNull_TisParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1_m7A78170E3E33A80A1B66E8C5827A91794AE70589_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Unmarshal_UnmarshalUnityObject_TisParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1_mF630F86D6BDAC4FCD7C8EB9904EA5862A877DA3B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnsafeUtility_As_TisIntPtr_t_TisGCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC_mD94F597CB91662C823496DA9FA9A7CF908734A78_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_0_0_0_var;
 struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
 
@@ -1012,12 +1016,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticleSystem_EmitOld_Internal_Injected
 #endif
 IL2CPP_EXTERN_C void MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshal_pinvoke(const MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9& unmarshaled, MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_ParticleSystem' of type 'MainModule': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9____m_ParticleSystem_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9____m_ParticleSystem_FieldInfo_var, MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ParticleSystemException, NULL);
 }
 IL2CPP_EXTERN_C void MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshal_pinvoke_back(const MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshaled_pinvoke& marshaled, MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9& unmarshaled)
 {
-	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_ParticleSystem' of type 'MainModule': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9____m_ParticleSystem_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9____m_ParticleSystem_FieldInfo_var, MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ParticleSystemException, NULL);
 }
 IL2CPP_EXTERN_C void MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshal_pinvoke_cleanup(MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshaled_pinvoke& marshaled)
@@ -1025,12 +1043,26 @@ IL2CPP_EXTERN_C void MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marsha
 }
 IL2CPP_EXTERN_C void MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshal_com(const MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9& unmarshaled, MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshaled_com& marshaled)
 {
-	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_ParticleSystem' of type 'MainModule': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9____m_ParticleSystem_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9____m_ParticleSystem_FieldInfo_var, MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ParticleSystemException, NULL);
 }
 IL2CPP_EXTERN_C void MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshal_com_back(const MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshaled_com& marshaled, MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9& unmarshaled)
 {
-	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_ParticleSystem' of type 'MainModule': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9____m_ParticleSystem_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9____m_ParticleSystem_FieldInfo_var, MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ParticleSystemException, NULL);
 }
 IL2CPP_EXTERN_C void MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshal_com_cleanup(MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshaled_com& marshaled)
@@ -1098,12 +1130,26 @@ IL2CPP_EXTERN_C  bool MainModule_get_loop_m4F75CD377C0555635995F7C1F8D580517473E
 #endif
 IL2CPP_EXTERN_C void SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshal_pinvoke(const SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B& unmarshaled, SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_ParticleSystem' of type 'SubEmittersModule': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B____m_ParticleSystem_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B____m_ParticleSystem_FieldInfo_var, SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ParticleSystemException, NULL);
 }
 IL2CPP_EXTERN_C void SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshal_pinvoke_back(const SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshaled_pinvoke& marshaled, SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B& unmarshaled)
 {
-	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_ParticleSystem' of type 'SubEmittersModule': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B____m_ParticleSystem_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B____m_ParticleSystem_FieldInfo_var, SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ParticleSystemException, NULL);
 }
 IL2CPP_EXTERN_C void SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshal_pinvoke_cleanup(SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshaled_pinvoke& marshaled)
@@ -1111,12 +1157,26 @@ IL2CPP_EXTERN_C void SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B
 }
 IL2CPP_EXTERN_C void SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshal_com(const SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B& unmarshaled, SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshaled_com& marshaled)
 {
-	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_ParticleSystem' of type 'SubEmittersModule': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B____m_ParticleSystem_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B____m_ParticleSystem_FieldInfo_var, SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ParticleSystemException, NULL);
 }
 IL2CPP_EXTERN_C void SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshal_com_back(const SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshaled_com& marshaled, SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B& unmarshaled)
 {
-	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_ParticleSystem' of type 'SubEmittersModule': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B____m_ParticleSystem_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ParticleSystemException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B____m_ParticleSystem_FieldInfo_var, SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ParticleSystemException, NULL);
 }
 IL2CPP_EXTERN_C void SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshal_com_cleanup(SubEmittersModule_t94F5AD231EAFB50A16E697186A630B07BF8B949B_marshaled_com& marshaled)

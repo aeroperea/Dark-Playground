@@ -357,6 +357,8 @@ IL2CPP_EXTERN_C RuntimeClass* ValueTuple_t91D0A108CBFF9751D740C4FFABA381B6E46B07
 IL2CPP_EXTERN_C RuntimeClass* Vector_1_t566D05A9DE75BCD8F12F1E09AC3F8A4BC01BF92A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector_1_tACF5C606E327928B31CCD8E09C9224DCA7065489_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_____args_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral009A5235DB722B842116C44501E872B31F8D5CB8;
 IL2CPP_EXTERN_C String_t* _stringLiteral00BA133FF3D84EAB4FB7DB5FB38F235C4E108ED9;
 IL2CPP_EXTERN_C String_t* _stringLiteral042B880B3413F6EA94DF04CBEBE55D46B560D17C;
@@ -776,6 +778,8 @@ IL2CPP_EXTERN_C const RuntimeType* ContextBoundObject_t06DF41701A02DD412D357DE4F
 IL2CPP_EXTERN_C const RuntimeType* Delegate_t_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* OrdinalComparer_tBB06915E213A5D4C8C617ED5478E8BF30C2B2170_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_com;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_pinvoke;
 struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com;
@@ -4374,12 +4378,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParamArrayAttribute__ctor_m765BD4C1754C6
 #endif
 IL2CPP_EXTERN_C void ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshal_pinvoke(const ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C& unmarshaled, ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ____argsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_args' of type 'ParamsArray'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_____args_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____argsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_____args_FieldInfo_var, ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____argsException, NULL);
 }
 IL2CPP_EXTERN_C void ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshal_pinvoke_back(const ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshaled_pinvoke& marshaled, ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C& unmarshaled)
 {
-	Exception_t* ____argsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_args' of type 'ParamsArray'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_____args_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____argsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_____args_FieldInfo_var, ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____argsException, NULL);
 }
 IL2CPP_EXTERN_C void ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshal_pinvoke_cleanup(ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshaled_pinvoke& marshaled)
@@ -4387,12 +4405,26 @@ IL2CPP_EXTERN_C void ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marsh
 }
 IL2CPP_EXTERN_C void ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshal_com(const ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C& unmarshaled, ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshaled_com& marshaled)
 {
-	Exception_t* ____argsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_args' of type 'ParamsArray'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_____args_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____argsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_____args_FieldInfo_var, ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____argsException, NULL);
 }
 IL2CPP_EXTERN_C void ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshal_com_back(const ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshaled_com& marshaled, ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C& unmarshaled)
 {
-	Exception_t* ____argsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_args' of type 'ParamsArray'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_____args_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____argsException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_____args_FieldInfo_var, ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____argsException, NULL);
 }
 IL2CPP_EXTERN_C void ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshal_com_cleanup(ParamsArray_t2AE19F401652F4CBAB7A3CD4B0F195679FC16F1C_marshaled_com& marshaled)
@@ -30543,12 +30575,26 @@ IL2CPP_EXTERN_C void RawData_t37CAF2D3F74B7723974ED7CEEE9B297D8FA64ED0_marshal_c
 #endif
 IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshal_pinvoke(const SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305& unmarshaled, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'keys' of type 'SorterObjectArray'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___keysException, NULL);
 }
 IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshal_pinvoke_back(const SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshaled_pinvoke& marshaled, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305& unmarshaled)
 {
-	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'keys' of type 'SorterObjectArray'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___keysException, NULL);
 }
 IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshal_pinvoke_cleanup(SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshaled_pinvoke& marshaled)
@@ -30556,12 +30602,26 @@ IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305
 }
 IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshal_com(const SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305& unmarshaled, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshaled_com& marshaled)
 {
-	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'keys' of type 'SorterObjectArray'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___keysException, NULL);
 }
 IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshal_com_back(const SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshaled_com& marshaled, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305& unmarshaled)
 {
-	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'keys' of type 'SorterObjectArray'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___keysException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305____keys_FieldInfo_var, SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___keysException, NULL);
 }
 IL2CPP_EXTERN_C void SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshal_com_cleanup(SorterObjectArray_t27D45F724041652AE2FD9645BE40292F8E343305_marshaled_com& marshaled)

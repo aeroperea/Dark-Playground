@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class CreditScene : MonoBehaviour
 {
+    float startTime = 0;
+    float progress = 0;
     public Transform creditsTransform;  // Transform containing the credits
-    public float scrollSpeed = 50f;     // Speed at which credits scroll
+    public float duration = 50f;     // Speed at which credits scroll
     public Transform startPosition;     // Start position for credits
     public Transform endPosition;       // End position for credits
     public AudioSource backgroundMusic; // Audio source for the background music
@@ -20,6 +22,7 @@ public class CreditScene : MonoBehaviour
     // Public function to start the credits
     public void StartCredits()
     {
+        startTime = Time.time;
         // Ensure the background music is playing
         if (backgroundMusic != null)
         {
@@ -35,6 +38,8 @@ public class CreditScene : MonoBehaviour
     // Public function to stop the credits and reset
     public void ExitCredits()
     {
+        progress = 0;
+    
         // Stop the background music
         if (backgroundMusic != null)
         {
@@ -51,8 +56,8 @@ public class CreditScene : MonoBehaviour
         // Handle scrolling of the credits
         if (isScrolling)
         {
-            // Move the credits up over time
-            creditsTransform.position += Vector3.up * scrollSpeed * Time.deltaTime;
+            progress += Time.deltaTime / duration;
+            creditsTransform.position = Vector3.Lerp(startPosition.position, endPosition.position, progress);
 
             // Check if the credits have reached the end position
             if (Vector3.Distance(creditsTransform.position, endPosition.position) < 0.1f)
@@ -67,7 +72,7 @@ public class CreditScene : MonoBehaviour
         if (isResetting)
         {
             // Move the credits back to the start position
-            creditsTransform.position = Vector3.Lerp(creditsTransform.position, startPosition.position, Time.deltaTime * scrollSpeed);
+            creditsTransform.position = Vector3.Lerp(creditsTransform.position, startPosition.position, Time.deltaTime * duration);
 
             // Check if credits are back to the start position
             if (Vector3.Distance(creditsTransform.position, startPosition.position) < 0.1f)

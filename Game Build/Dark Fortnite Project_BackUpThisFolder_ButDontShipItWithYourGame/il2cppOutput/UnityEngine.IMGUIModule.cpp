@@ -312,6 +312,9 @@ IL2CPP_EXTERN_C RuntimeClass* TextHandleTuple_t0CFBF92DB45281CC684373BE4A40C825E
 IL2CPP_EXTERN_C RuntimeClass* TextHandle_tA1D5C98B154F1F73CBD35E42EB4E9CCB02280EF8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2____m_Image_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95____m_SourceStyle_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580____m_Normal_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD;
 IL2CPP_EXTERN_C String_t* _stringLiteral010AFEFEB861AC9FACA8EBF9C6C9CC1C80C4A78A;
 IL2CPP_EXTERN_C String_t* _stringLiteral0150AFA3D0411ED67D7C3CBAC0A989FC1A7CEAE3;
@@ -507,6 +510,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* ScriptableObject_CreateInstance_TisRuntimeT
 IL2CPP_EXTERN_C const RuntimeMethod* Unmarshal_UnmarshalUnityObject_TisFont_tC95270EA3198038970422D78B74A7F2E218A96B6_m97441E0B7E81EF096A8750A57E7667CB52D38ADE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnsafeUtility_As_TisIntPtr_t_TisGCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC_mD94F597CB91662C823496DA9FA9A7CF908734A78_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueCollection_GetEnumerator_m88DC4BD4D4952C7D4B15BE9CC164DF1EAA69A197_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* GUITargetAttribute_t3F08CE7E00D79CB555B94AA7FA1BCB4B144B922B_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* KeyCode_t75B9ECCC26D858F55040DDFF9523681E996D17E9_0_0_0_var;
 struct Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B;
@@ -2558,6 +2564,7 @@ struct IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields
 	Dictionary_2_t7031B396E7D168860EBBB005B70ECA2A0436BA28* ___textHandles;
 	LinkedList_1_t7EE8D522D208DA75C308C552A78356300EE9351E* ___textHandlesTuple;
 	float ___lastCleanupTime;
+	int32_t ___newHandlesSinceCleanup;
 };
 struct RuntimeTextSettings_tAD653990258C757806DC9F1263C7526323CFDFD7_StaticFields
 {
@@ -3467,7 +3474,7 @@ inline TextHandleTuple_t0CFBF92DB45281CC684373BE4A40C825E1EAF436* Enumerable_Fir
 {
 	return ((  TextHandleTuple_t0CFBF92DB45281CC684373BE4A40C825E1EAF436* (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_First_TisRuntimeObject_mEFECF1B8C3201589C5AF34176DCBF8DD926642D6_gshared)(___0_source, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IMGUITextHandle_ShouldCleanup_mB1CC2BB982B313C9269322BD8AE5965218B717B8 (float ___0_currentTime, float ___1_lastTime, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IMGUITextHandle_ShouldCleanup_mB7AB830F4456EB705C6A0E4A4E799EE24A8AE6D2 (float ___0_currentTime, float ___1_lastTime, float ___2_cleanupThreshold, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIStyle_Internal_DestroyTextGenerator_m887FC7292D8B991D2674805E1FF63667CF56EBDF (int32_t ___0_meshInfoId, const RuntimeMethod* method) ;
 inline bool Dictionary_2_TryGetValue_mF6EB4987D7805FB6AEBA0F8EB4220E2BDA1AA591 (Dictionary_2_t7031B396E7D168860EBBB005B70ECA2A0436BA28* __this, int32_t ___0_key, IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554** ___1_value, const RuntimeMethod* method)
 {
@@ -10009,12 +10016,26 @@ IL2CPP_EXTERN_C  void ParentClipScope_Dispose_m39F5E11A8E9346D5ADE850A5A600A6755
 #endif
 IL2CPP_EXTERN_C void GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshal_pinvoke(const GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2& unmarshaled, GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_ImageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Image' of type 'GUIContent': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2____m_Image_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ImageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2____m_Image_FieldInfo_var, GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ImageException, NULL);
 }
 IL2CPP_EXTERN_C void GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshal_pinvoke_back(const GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshaled_pinvoke& marshaled, GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2& unmarshaled)
 {
-	Exception_t* ___m_ImageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Image' of type 'GUIContent': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2____m_Image_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ImageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2____m_Image_FieldInfo_var, GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ImageException, NULL);
 }
 IL2CPP_EXTERN_C void GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshal_pinvoke_cleanup(GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshaled_pinvoke& marshaled)
@@ -10022,12 +10043,26 @@ IL2CPP_EXTERN_C void GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marsha
 }
 IL2CPP_EXTERN_C void GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshal_com(const GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2& unmarshaled, GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshaled_com& marshaled)
 {
-	Exception_t* ___m_ImageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Image' of type 'GUIContent': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2____m_Image_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ImageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2____m_Image_FieldInfo_var, GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ImageException, NULL);
 }
 IL2CPP_EXTERN_C void GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshal_com_back(const GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshaled_com& marshaled, GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2& unmarshaled)
 {
-	Exception_t* ___m_ImageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Image' of type 'GUIContent': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2____m_Image_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_ImageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2____m_Image_FieldInfo_var, GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_ImageException, NULL);
 }
 IL2CPP_EXTERN_C void GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshal_com_cleanup(GUIContent_t15E48D4BEB1E6B6044F7DEB5E350800F511C2ED2_marshaled_com& marshaled)
@@ -13730,12 +13765,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkinChangedDelegate_Invoke_mD14214487F9A
 
 IL2CPP_EXTERN_C void GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshal_pinvoke(const GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95& unmarshaled, GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_SourceStyleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_SourceStyle' of type 'GUIStyleState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95____m_SourceStyle_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_SourceStyleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95____m_SourceStyle_FieldInfo_var, GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_SourceStyleException, NULL);
 }
 IL2CPP_EXTERN_C void GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshal_pinvoke_back(const GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshaled_pinvoke& marshaled, GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95& unmarshaled)
 {
-	Exception_t* ___m_SourceStyleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_SourceStyle' of type 'GUIStyleState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95____m_SourceStyle_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_SourceStyleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95____m_SourceStyle_FieldInfo_var, GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_SourceStyleException, NULL);
 }
 IL2CPP_EXTERN_C void GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshal_pinvoke_cleanup(GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshaled_pinvoke& marshaled)
@@ -13745,12 +13794,26 @@ IL2CPP_EXTERN_C void GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_mar
 
 IL2CPP_EXTERN_C void GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshal_com(const GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95& unmarshaled, GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshaled_com& marshaled)
 {
-	Exception_t* ___m_SourceStyleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_SourceStyle' of type 'GUIStyleState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95____m_SourceStyle_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_SourceStyleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95____m_SourceStyle_FieldInfo_var, GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_SourceStyleException, NULL);
 }
 IL2CPP_EXTERN_C void GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshal_com_back(const GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshaled_com& marshaled, GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95& unmarshaled)
 {
-	Exception_t* ___m_SourceStyleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_SourceStyle' of type 'GUIStyleState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95____m_SourceStyle_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_SourceStyleException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95____m_SourceStyle_FieldInfo_var, GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_SourceStyleException, NULL);
 }
 IL2CPP_EXTERN_C void GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshal_com_cleanup(GUIStyleState_t7A948723D9DCDFD8EE4F418B6EC909C18E023F95_marshaled_com& marshaled)
@@ -13984,12 +14047,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t BindingsMarshaller_ConvertToNative_m
 
 IL2CPP_EXTERN_C void GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshal_pinvoke(const GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580& unmarshaled, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_NormalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Normal' of type 'GUIStyle': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580____m_Normal_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_NormalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580____m_Normal_FieldInfo_var, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_NormalException, NULL);
 }
 IL2CPP_EXTERN_C void GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshal_pinvoke_back(const GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshaled_pinvoke& marshaled, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580& unmarshaled)
 {
-	Exception_t* ___m_NormalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Normal' of type 'GUIStyle': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580____m_Normal_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_NormalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580____m_Normal_FieldInfo_var, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_NormalException, NULL);
 }
 IL2CPP_EXTERN_C void GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshal_pinvoke_cleanup(GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshaled_pinvoke& marshaled)
@@ -14021,12 +14098,26 @@ IL2CPP_EXTERN_C void GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshal_
 
 IL2CPP_EXTERN_C void GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshal_com(const GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580& unmarshaled, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshaled_com& marshaled)
 {
-	Exception_t* ___m_NormalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Normal' of type 'GUIStyle': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580____m_Normal_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_NormalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580____m_Normal_FieldInfo_var, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_NormalException, NULL);
 }
 IL2CPP_EXTERN_C void GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshal_com_back(const GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshaled_com& marshaled, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580& unmarshaled)
 {
-	Exception_t* ___m_NormalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Normal' of type 'GUIStyle': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580____m_Normal_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_NormalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580____m_Normal_FieldInfo_var, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_NormalException, NULL);
 }
 IL2CPP_EXTERN_C void GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshal_com_cleanup(GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580_marshaled_com& marshaled)
@@ -18083,7 +18174,7 @@ IL_0025:
 		return L_9;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IMGUITextHandle_ShouldCleanup_mB1CC2BB982B313C9269322BD8AE5965218B717B8 (float ___0_currentTime, float ___1_lastTime, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IMGUITextHandle_ShouldCleanup_mB7AB830F4456EB705C6A0E4A4E799EE24A8AE6D2 (float ___0_currentTime, float ___1_lastTime, float ___2_cleanupThreshold, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
 	bool V_1 = false;
@@ -18093,32 +18184,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IMGUITextHandle_ShouldCleanup_mB1CC2BB98
 		float L_1 = ___1_lastTime;
 		V_0 = ((float)il2cpp_codegen_subtract(L_0, L_1));
 		float L_2 = V_0;
-		if ((((float)L_2) > ((float)(1.0f))))
+		float L_3 = ___2_cleanupThreshold;
+		if ((((float)L_2) > ((float)L_3)))
 		{
-			goto IL_0017;
+			goto IL_0013;
 		}
 	}
 	{
-		float L_3 = V_0;
-		G_B3_0 = ((((float)L_3) < ((float)(0.0f)))? 1 : 0);
-		goto IL_0018;
+		float L_4 = V_0;
+		G_B3_0 = ((((float)L_4) < ((float)(0.0f)))? 1 : 0);
+		goto IL_0014;
 	}
 
-IL_0017:
+IL_0013:
 	{
 		G_B3_0 = 1;
 	}
 
-IL_0018:
+IL_0014:
 	{
 		V_1 = (bool)G_B3_0;
-		goto IL_001b;
+		goto IL_0017;
 	}
 
-IL_001b:
+IL_0017:
 	{
-		bool L_4 = V_1;
-		return L_4;
+		bool L_5 = V_1;
+		return L_5;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IMGUITextHandle_ClearUnusedTextHandles_m35270F73AD0FE1AE63D765A80CA83C01A7C0D5B3 (const RuntimeMethod* method) 
@@ -18145,7 +18237,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IMGUITextHandle_ClearUnusedTextHandles_m
 		float L_0;
 		L_0 = Time_get_realtimeSinceStartup_m73B3CB73175D79A44333D59BB70F9EDE55EC9510(NULL);
 		V_0 = L_0;
-		goto IL_0075;
+		goto IL_007a;
 	}
 
 IL_0009:
@@ -18160,12 +18252,12 @@ IL_0009:
 		NullCheck(L_4);
 		float L_5 = L_4->___lastTimeUsed;
 		bool L_6;
-		L_6 = IMGUITextHandle_ShouldCleanup_mB1CC2BB982B313C9269322BD8AE5965218B717B8(L_3, L_5, NULL);
+		L_6 = IMGUITextHandle_ShouldCleanup_mB7AB830F4456EB705C6A0E4A4E799EE24A8AE6D2(L_3, L_5, (5.0f), NULL);
 		V_2 = L_6;
 		bool L_7 = V_2;
 		if (!L_7)
 		{
-			goto IL_0072;
+			goto IL_0077;
 		}
 	}
 	{
@@ -18186,7 +18278,7 @@ IL_0009:
 		bool L_14 = V_4;
 		if (!L_14)
 		{
-			goto IL_0053;
+			goto IL_0058;
 		}
 	}
 	{
@@ -18195,7 +18287,7 @@ IL_0009:
 		TextHandle_RemoveTextInfoFromPermanentCache_mB6AE8BE8E9180FD0539472F63B53648C19CEF484(L_15, NULL);
 	}
 
-IL_0053:
+IL_0058:
 	{
 		il2cpp_codegen_runtime_class_init_inline(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var);
 		Dictionary_2_t7031B396E7D168860EBBB005B70ECA2A0436BA28* L_16 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandles;
@@ -18208,19 +18300,19 @@ IL_0053:
 		LinkedList_1_t7EE8D522D208DA75C308C552A78356300EE9351E* L_20 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandlesTuple;
 		NullCheck(L_20);
 		LinkedList_1_RemoveFirst_m166B50F25822CF84B5648770A4829763FFBD0888(L_20, LinkedList_1_RemoveFirst_m166B50F25822CF84B5648770A4829763FFBD0888_RuntimeMethod_var);
-		goto IL_0074;
+		goto IL_0079;
 	}
 
-IL_0072:
+IL_0077:
 	{
-		goto IL_0088;
+		goto IL_0090;
 	}
 
-IL_0074:
+IL_0079:
 	{
 	}
 
-IL_0075:
+IL_007a:
 	{
 		il2cpp_codegen_runtime_class_init_inline(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var);
 		LinkedList_1_t7EE8D522D208DA75C308C552A78356300EE9351E* L_21 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandlesTuple;
@@ -18235,7 +18327,7 @@ IL_0075:
 		}
 	}
 
-IL_0088:
+IL_0090:
 	{
 		return;
 	}
@@ -18265,10 +18357,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84
 	bool V_7 = false;
 	bool V_8 = false;
 	IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* V_9 = NULL;
-	bool* G_B5_0 = NULL;
-	bool* G_B4_0 = NULL;
-	int32_t G_B6_0 = 0;
-	bool* G_B6_1 = NULL;
+	int32_t G_B3_0 = 0;
+	bool* G_B8_0 = NULL;
+	bool* G_B7_0 = NULL;
+	int32_t G_B9_0 = 0;
+	bool* G_B9_1 = NULL;
 	{
 		bool* L_0 = ___2_isCached;
 		*((int8_t*)L_0) = (int8_t)0;
@@ -18279,164 +18372,186 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84
 		il2cpp_codegen_runtime_class_init_inline(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var);
 		float L_3 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___lastCleanupTime;
 		bool L_4;
-		L_4 = IMGUITextHandle_ShouldCleanup_mB1CC2BB982B313C9269322BD8AE5965218B717B8(L_2, L_3, NULL);
-		V_6 = L_4;
-		bool L_5 = V_6;
-		if (!L_5)
+		L_4 = IMGUITextHandle_ShouldCleanup_mB7AB830F4456EB705C6A0E4A4E799EE24A8AE6D2(L_2, L_3, (30.0f), NULL);
+		if (L_4)
 		{
-			goto IL_0029;
+			goto IL_002a;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var);
+		int32_t L_5 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___newHandlesSinceCleanup;
+		G_B3_0 = ((((int32_t)L_5) > ((int32_t)((int32_t)500)))? 1 : 0);
+		goto IL_002b;
+	}
+
+IL_002a:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_002b:
+	{
+		V_6 = (bool)G_B3_0;
+		bool L_6 = V_6;
+		if (!L_6)
+		{
+			goto IL_0045;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var);
 		IMGUITextHandle_ClearUnusedTextHandles_m35270F73AD0FE1AE63D765A80CA83C01A7C0D5B3(NULL);
-		float L_6 = V_0;
-		((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___lastCleanupTime = L_6;
+		float L_7 = V_0;
+		((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___lastCleanupTime = L_7;
+		((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___newHandlesSinceCleanup = 0;
 	}
 
-IL_0029:
+IL_0045:
 	{
-		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_7 = ___0_settings;
-		NullCheck(L_7);
-		int32_t L_8;
-		L_8 = VirtualFuncInvoker0< int32_t >::Invoke(2, L_7);
-		V_1 = L_8;
+		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_8 = ___0_settings;
+		NullCheck(L_8);
+		int32_t L_9;
+		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(2, L_8);
+		V_1 = L_9;
 		il2cpp_codegen_runtime_class_init_inline(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var);
-		Dictionary_2_t7031B396E7D168860EBBB005B70ECA2A0436BA28* L_9 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandles;
-		int32_t L_10 = V_1;
-		NullCheck(L_9);
-		bool L_11;
-		L_11 = Dictionary_2_TryGetValue_mF6EB4987D7805FB6AEBA0F8EB4220E2BDA1AA591(L_9, L_10, (&V_2), Dictionary_2_TryGetValue_mF6EB4987D7805FB6AEBA0F8EB4220E2BDA1AA591_RuntimeMethod_var);
-		V_7 = L_11;
-		bool L_12 = V_7;
-		if (!L_12)
+		Dictionary_2_t7031B396E7D168860EBBB005B70ECA2A0436BA28* L_10 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandles;
+		int32_t L_11 = V_1;
+		NullCheck(L_10);
+		bool L_12;
+		L_12 = Dictionary_2_TryGetValue_mF6EB4987D7805FB6AEBA0F8EB4220E2BDA1AA591(L_10, L_11, (&V_2), Dictionary_2_TryGetValue_mF6EB4987D7805FB6AEBA0F8EB4220E2BDA1AA591_RuntimeMethod_var);
+		V_7 = L_12;
+		bool L_13 = V_7;
+		if (!L_13)
 		{
-			goto IL_00a2;
+			goto IL_00be;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var);
-		LinkedList_1_t7EE8D522D208DA75C308C552A78356300EE9351E* L_13 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandlesTuple;
-		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_14 = V_2;
+		LinkedList_1_t7EE8D522D208DA75C308C552A78356300EE9351E* L_14 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandlesTuple;
+		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_15 = V_2;
+		NullCheck(L_15);
+		LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC* L_16 = L_15->___tuple;
 		NullCheck(L_14);
-		LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC* L_15 = L_14->___tuple;
-		NullCheck(L_13);
-		LinkedList_1_Remove_m45F0CA56AC2AC847FD74C80C415FC5FC26D5F9EC(L_13, L_15, LinkedList_1_Remove_m45F0CA56AC2AC847FD74C80C415FC5FC26D5F9EC_RuntimeMethod_var);
-		LinkedList_1_t7EE8D522D208DA75C308C552A78356300EE9351E* L_16 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandlesTuple;
-		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_17 = V_2;
+		LinkedList_1_Remove_m45F0CA56AC2AC847FD74C80C415FC5FC26D5F9EC(L_14, L_16, LinkedList_1_Remove_m45F0CA56AC2AC847FD74C80C415FC5FC26D5F9EC_RuntimeMethod_var);
+		LinkedList_1_t7EE8D522D208DA75C308C552A78356300EE9351E* L_17 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandlesTuple;
+		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_18 = V_2;
+		NullCheck(L_18);
+		LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC* L_19 = L_18->___tuple;
 		NullCheck(L_17);
-		LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC* L_18 = L_17->___tuple;
-		NullCheck(L_16);
-		LinkedList_1_AddLast_m8C426D6A9C1B2E3E9DF24F09C2957C479B2C4717(L_16, L_18, LinkedList_1_AddLast_m8C426D6A9C1B2E3E9DF24F09C2957C479B2C4717_RuntimeMethod_var);
-		bool* L_19 = ___2_isCached;
-		bool L_20 = ___1_isCalledFromNative;
-		if (L_20)
+		LinkedList_1_AddLast_m8C426D6A9C1B2E3E9DF24F09C2957C479B2C4717(L_17, L_19, LinkedList_1_AddLast_m8C426D6A9C1B2E3E9DF24F09C2957C479B2C4717_RuntimeMethod_var);
+		bool* L_20 = ___2_isCached;
+		bool L_21 = ___1_isCalledFromNative;
+		if (L_21)
 		{
-			G_B5_0 = L_19;
-			goto IL_006d;
+			G_B8_0 = L_20;
+			goto IL_0089;
 		}
-		G_B4_0 = L_19;
+		G_B7_0 = L_20;
 	}
 	{
-		G_B6_0 = 1;
-		G_B6_1 = G_B4_0;
-		goto IL_0073;
-	}
-
-IL_006d:
-	{
-		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_21 = V_2;
-		NullCheck(L_21);
-		bool L_22 = L_21->___isCachedOnNative;
-		G_B6_0 = ((int32_t)(L_22));
-		G_B6_1 = G_B5_0;
+		G_B9_0 = 1;
+		G_B9_1 = G_B7_0;
+		goto IL_008f;
 	}
 
-IL_0073:
+IL_0089:
 	{
-		*((int8_t*)G_B6_1) = (int8_t)G_B6_0;
-		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_23 = V_2;
-		NullCheck(L_23);
-		bool L_24 = L_23->___isCachedOnNative;
-		bool L_25 = ___1_isCalledFromNative;
-		V_8 = (bool)((int32_t)(((((int32_t)L_24) == ((int32_t)0))? 1 : 0)&(int32_t)L_25));
-		bool L_26 = V_8;
-		if (!L_26)
+		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_22 = V_2;
+		NullCheck(L_22);
+		bool L_23 = L_22->___isCachedOnNative;
+		G_B9_0 = ((int32_t)(L_23));
+		G_B9_1 = G_B8_0;
+	}
+
+IL_008f:
+	{
+		*((int8_t*)G_B9_1) = (int8_t)G_B9_0;
+		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_24 = V_2;
+		NullCheck(L_24);
+		bool L_25 = L_24->___isCachedOnNative;
+		bool L_26 = ___1_isCalledFromNative;
+		V_8 = (bool)((int32_t)(((((int32_t)L_25) == ((int32_t)0))? 1 : 0)&(int32_t)L_26));
+		bool L_27 = V_8;
+		if (!L_27)
 		{
-			goto IL_009d;
+			goto IL_00b9;
 		}
 	}
 	{
-		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_27 = V_2;
-		int32_t L_28 = V_1;
-		NullCheck(L_27);
-		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_29;
-		L_29 = TextHandle_UpdateWithHash_mC4F89BB34B092BE7F5E2219531A4541454BB97BA(L_27, L_28, NULL);
-		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_30 = V_2;
-		NullCheck(L_30);
-		TextHandle_UpdatePreferredSize_m10613CD9F9F36B26EF2045DC196CC8BA9F4919A3(L_30, NULL);
+		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_28 = V_2;
+		int32_t L_29 = V_1;
+		NullCheck(L_28);
+		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_30;
+		L_30 = TextHandle_UpdateWithHash_mC4F89BB34B092BE7F5E2219531A4541454BB97BA(L_28, L_29, NULL);
 		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_31 = V_2;
 		NullCheck(L_31);
-		L_31->___isCachedOnNative = (bool)1;
-	}
-
-IL_009d:
-	{
+		TextHandle_UpdatePreferredSize_m10613CD9F9F36B26EF2045DC196CC8BA9F4919A3(L_31, NULL);
 		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_32 = V_2;
-		V_9 = L_32;
-		goto IL_00f7;
+		NullCheck(L_32);
+		L_32->___isCachedOnNative = (bool)1;
 	}
 
-IL_00a2:
+IL_00b9:
 	{
-		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_33 = (IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554*)il2cpp_codegen_object_new(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var);
-		IMGUITextHandle__ctor_m0812B91A7679E17A351E3F3C010AA4DB0057AB4E(L_33, NULL);
-		V_3 = L_33;
-		float L_34 = V_0;
-		int32_t L_35 = V_1;
-		TextHandleTuple_t0CFBF92DB45281CC684373BE4A40C825E1EAF436* L_36 = (TextHandleTuple_t0CFBF92DB45281CC684373BE4A40C825E1EAF436*)il2cpp_codegen_object_new(TextHandleTuple_t0CFBF92DB45281CC684373BE4A40C825E1EAF436_il2cpp_TypeInfo_var);
-		TextHandleTuple__ctor_m709BE4E88D85ACC314D665A81ECB76A9614E8786(L_36, L_34, L_35, NULL);
-		V_4 = L_36;
-		TextHandleTuple_t0CFBF92DB45281CC684373BE4A40C825E1EAF436* L_37 = V_4;
-		LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC* L_38 = (LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC*)il2cpp_codegen_object_new(LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC_il2cpp_TypeInfo_var);
-		LinkedListNode_1__ctor_mD4F6863C0E4E67AD2F62F748F34DFDFB36FEC3F5(L_38, L_37, LinkedListNode_1__ctor_mD4F6863C0E4E67AD2F62F748F34DFDFB36FEC3F5_RuntimeMethod_var);
-		V_5 = L_38;
-		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_39 = V_3;
-		LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC* L_40 = V_5;
-		NullCheck(L_39);
-		L_39->___tuple = L_40;
-		Il2CppCodeGenWriteBarrier((void**)(&L_39->___tuple), (void*)L_40);
+		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_33 = V_2;
+		V_9 = L_33;
+		goto IL_011f;
+	}
+
+IL_00be:
+	{
+		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_34 = (IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554*)il2cpp_codegen_object_new(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var);
+		IMGUITextHandle__ctor_m0812B91A7679E17A351E3F3C010AA4DB0057AB4E(L_34, NULL);
+		V_3 = L_34;
+		float L_35 = V_0;
+		int32_t L_36 = V_1;
+		TextHandleTuple_t0CFBF92DB45281CC684373BE4A40C825E1EAF436* L_37 = (TextHandleTuple_t0CFBF92DB45281CC684373BE4A40C825E1EAF436*)il2cpp_codegen_object_new(TextHandleTuple_t0CFBF92DB45281CC684373BE4A40C825E1EAF436_il2cpp_TypeInfo_var);
+		TextHandleTuple__ctor_m709BE4E88D85ACC314D665A81ECB76A9614E8786(L_37, L_35, L_36, NULL);
+		V_4 = L_37;
+		TextHandleTuple_t0CFBF92DB45281CC684373BE4A40C825E1EAF436* L_38 = V_4;
+		LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC* L_39 = (LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC*)il2cpp_codegen_object_new(LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC_il2cpp_TypeInfo_var);
+		LinkedListNode_1__ctor_mD4F6863C0E4E67AD2F62F748F34DFDFB36FEC3F5(L_39, L_38, LinkedListNode_1__ctor_mD4F6863C0E4E67AD2F62F748F34DFDFB36FEC3F5_RuntimeMethod_var);
+		V_5 = L_39;
+		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_40 = V_3;
+		LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC* L_41 = V_5;
+		NullCheck(L_40);
+		L_40->___tuple = L_41;
+		Il2CppCodeGenWriteBarrier((void**)(&L_40->___tuple), (void*)L_41);
 		il2cpp_codegen_runtime_class_init_inline(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var);
-		Dictionary_2_t7031B396E7D168860EBBB005B70ECA2A0436BA28* L_41 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandles;
-		int32_t L_42 = V_1;
-		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_43 = V_3;
-		NullCheck(L_41);
-		Dictionary_2_set_Item_m4971B242EBD019CAC272BC8A4E44DA30CD13EA0C(L_41, L_42, L_43, Dictionary_2_set_Item_m4971B242EBD019CAC272BC8A4E44DA30CD13EA0C_RuntimeMethod_var);
+		Dictionary_2_t7031B396E7D168860EBBB005B70ECA2A0436BA28* L_42 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandles;
+		int32_t L_43 = V_1;
 		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_44 = V_3;
-		int32_t L_45 = V_1;
-		NullCheck(L_44);
-		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_46;
-		L_46 = TextHandle_UpdateWithHash_mC4F89BB34B092BE7F5E2219531A4541454BB97BA(L_44, L_45, NULL);
-		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_47 = V_3;
-		NullCheck(L_47);
-		TextHandle_UpdatePreferredSize_m10613CD9F9F36B26EF2045DC196CC8BA9F4919A3(L_47, NULL);
-		LinkedList_1_t7EE8D522D208DA75C308C552A78356300EE9351E* L_48 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandlesTuple;
-		LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC* L_49 = V_5;
+		NullCheck(L_42);
+		Dictionary_2_set_Item_m4971B242EBD019CAC272BC8A4E44DA30CD13EA0C(L_42, L_43, L_44, Dictionary_2_set_Item_m4971B242EBD019CAC272BC8A4E44DA30CD13EA0C_RuntimeMethod_var);
+		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_45 = V_3;
+		int32_t L_46 = V_1;
+		NullCheck(L_45);
+		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_47;
+		L_47 = TextHandle_UpdateWithHash_mC4F89BB34B092BE7F5E2219531A4541454BB97BA(L_45, L_46, NULL);
+		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_48 = V_3;
 		NullCheck(L_48);
-		LinkedList_1_AddLast_m8C426D6A9C1B2E3E9DF24F09C2957C479B2C4717(L_48, L_49, LinkedList_1_AddLast_m8C426D6A9C1B2E3E9DF24F09C2957C479B2C4717_RuntimeMethod_var);
-		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_50 = V_3;
-		bool L_51 = ___1_isCalledFromNative;
-		NullCheck(L_50);
-		L_50->___isCachedOnNative = L_51;
-		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_52 = V_3;
-		V_9 = L_52;
-		goto IL_00f7;
+		TextHandle_UpdatePreferredSize_m10613CD9F9F36B26EF2045DC196CC8BA9F4919A3(L_48, NULL);
+		LinkedList_1_t7EE8D522D208DA75C308C552A78356300EE9351E* L_49 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandlesTuple;
+		LinkedListNode_1_t67AA808C6EEDC28845F1C5C35E85001EB6262AAC* L_50 = V_5;
+		NullCheck(L_49);
+		LinkedList_1_AddLast_m8C426D6A9C1B2E3E9DF24F09C2957C479B2C4717(L_49, L_50, LinkedList_1_AddLast_m8C426D6A9C1B2E3E9DF24F09C2957C479B2C4717_RuntimeMethod_var);
+		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_51 = V_3;
+		bool L_52 = ___1_isCalledFromNative;
+		NullCheck(L_51);
+		L_51->___isCachedOnNative = L_52;
+		int32_t L_53 = ((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___newHandlesSinceCleanup;
+		((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___newHandlesSinceCleanup = ((int32_t)il2cpp_codegen_add(L_53, 1));
+		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_54 = V_3;
+		V_9 = L_54;
+		goto IL_011f;
 	}
 
-IL_00f7:
+IL_011f:
 	{
-		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_53 = V_9;
-		return L_53;
+		IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554* L_55 = V_9;
+		return L_55;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float IMGUITextHandle_GetLineHeight_m984EAED8831A40A4CD43CBE700513FB3A9852726 (GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* ___0_style, const RuntimeMethod* method) 
@@ -18990,6 +19105,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IMGUITextHandle__cctor_m2D991A3AD827F1B2
 		LinkedList_1__ctor_m85A3DB8F45CE2961024B036CE704E8422582FB07(L_1, LinkedList_1__ctor_m85A3DB8F45CE2961024B036CE704E8422582FB07_RuntimeMethod_var);
 		((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandlesTuple = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___textHandlesTuple), (void*)L_1);
+		((IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_StaticFields*)il2cpp_codegen_static_fields_for(IMGUITextHandle_tDB6B0680AA30FA9B6B81CEBADE84C77B47A0C554_il2cpp_TypeInfo_var))->___newHandlesSinceCleanup = 0;
 		return;
 	}
 }

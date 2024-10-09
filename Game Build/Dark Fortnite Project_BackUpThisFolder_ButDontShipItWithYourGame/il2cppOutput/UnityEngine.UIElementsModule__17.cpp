@@ -335,6 +335,7 @@ IL2CPP_EXTERN_C RuntimeClass* UIRVEShaderInfoAllocator_t7A9BCF1924EA027462B8DBBA
 IL2CPP_EXTERN_C RuntimeClass* UIRenderDevice_t59628CBA89B4617E832C2B270E1C1A3931D01302_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WeakReference_1_t98CA18D87609D950A64C7F21D5A8E0114F57E871_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73____m_Pages_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral014F0BCC26F75121FB244E8DCC1FD7F1829E8C98;
 IL2CPP_EXTERN_C String_t* _stringLiteral02E5935143502AD21AEC381A3556CB491D937C59;
 IL2CPP_EXTERN_C String_t* _stringLiteral043A534C9930725FAD7B100C29631E7981AB1D45;
@@ -768,6 +769,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* UnsafeUtility_SizeOf_TisComponentDataStore_
 IL2CPP_EXTERN_C const RuntimeMethod* UnsafeUtility_SizeOf_TisData_t43E3238277579E631EA4E8016E61966D79F5B62E_m6B4521E807D5DADC574C8FAC2342353BDC1BB6AE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* WeakReference_1_TryGetTarget_mCDEDA651B2694FEE2FFB3F6C640107DBB2916D4D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* WeakReference_1__ctor_mBE715086665D541F8FC4AB14439DB07C73428B08_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_0_0_0_var;
 struct ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_marshaled_com;
 struct ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_marshaled_pinvoke;
 struct Delegate_t_marshaled_com;
@@ -4346,12 +4348,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProfilerUnsafeUtility_BeginSample_mB5106
 #endif
 IL2CPP_EXTERN_C void BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshal_pinvoke(const BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73& unmarshaled, BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___m_PagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Pages' of type 'BitmapAllocator32'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73____m_Pages_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_PagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73____m_Pages_FieldInfo_var, BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_PagesException, NULL);
 }
 IL2CPP_EXTERN_C void BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshal_pinvoke_back(const BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshaled_pinvoke& marshaled, BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73& unmarshaled)
 {
-	Exception_t* ___m_PagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Pages' of type 'BitmapAllocator32'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73____m_Pages_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_PagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73____m_Pages_FieldInfo_var, BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_PagesException, NULL);
 }
 IL2CPP_EXTERN_C void BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshal_pinvoke_cleanup(BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshaled_pinvoke& marshaled)
@@ -4359,12 +4375,26 @@ IL2CPP_EXTERN_C void BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73
 }
 IL2CPP_EXTERN_C void BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshal_com(const BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73& unmarshaled, BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshaled_com& marshaled)
 {
-	Exception_t* ___m_PagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Pages' of type 'BitmapAllocator32'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73____m_Pages_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_PagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73____m_Pages_FieldInfo_var, BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_PagesException, NULL);
 }
 IL2CPP_EXTERN_C void BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshal_com_back(const BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshaled_com& marshaled, BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73& unmarshaled)
 {
-	Exception_t* ___m_PagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Pages' of type 'BitmapAllocator32'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73____m_Pages_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___m_PagesException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73____m_Pages_FieldInfo_var, BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_PagesException, NULL);
 }
 IL2CPP_EXTERN_C void BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshal_com_cleanup(BitmapAllocator32_t87110600670688D0E149D61E1BDA8F45ADC59C73_marshaled_com& marshaled)

@@ -460,6 +460,7 @@ IL2CPP_EXTERN_C RuntimeClass* X509ChainElementCollection_t543DE35924C12A624ADA51
 IL2CPP_EXTERN_C RuntimeClass* X509ChainPolicy_t34F49B4067492A1E5F91DD91FA7C934B68D880EC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* X509Extension_tEDB806DCCB5A652375D9CC60A7A75AE8A2F4B7E5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* X509PalImpl_tF6062DC7B58B15FE20029E03CB3642384FB80E86_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1____Issuer_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t56F624E1051A2E261613B6A81CA2333397F49CB3____07FEA8B695D401E2B3BBDA6126C123DAA87153BB12384B21272ACC90823AC9A3_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t56F624E1051A2E261613B6A81CA2333397F49CB3____2EF83B43314F8CD03190EEE30ECCF048DA37791237F27C62A579F23EACE9FD70_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t56F624E1051A2E261613B6A81CA2333397F49CB3____684312AFB7719E57993D2826FFBAF7EA965614F20F91D999FB19B01E21AA62E6_FieldInfo_var;
@@ -947,6 +948,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* ValueCollection_GetEnumerator_mC426FB8CAAA0
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_mF5D8FB18DBF2C4B2F879F8E8E12D8FB8FCDB5477_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* X509CertificateImplBtls_GetDSAPrivateKey_m23B3F54E2CD14841ABFFC18F39D7C3279819F4FA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* X509CertificateImplBtls__ctor_mF19371D8B0AB5381EF0D30574D126293018CA24D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_0_0_0_var;
 struct AlgorithmIdentifier_tCF880F72315F1725C33F59BB2F5D213BB22275A8;;
 struct AlgorithmIdentifier_tCF880F72315F1725C33F59BB2F5D213BB22275A8_marshaled_com;
 struct AlgorithmIdentifier_tCF880F72315F1725C33F59BB2F5D213BB22275A8_marshaled_com;;
@@ -16329,12 +16331,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3C_cctorU3Eb__10_1_m7F8644
 
 IL2CPP_EXTERN_C void CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshal_pinvoke(const CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1& unmarshaled, CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___IssuerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'Issuer' of type 'CertificateData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1____Issuer_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___IssuerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1____Issuer_FieldInfo_var, CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___IssuerException, NULL);
 }
 IL2CPP_EXTERN_C void CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshal_pinvoke_back(const CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshaled_pinvoke& marshaled, CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1& unmarshaled)
 {
-	Exception_t* ___IssuerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'Issuer' of type 'CertificateData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1____Issuer_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___IssuerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1____Issuer_FieldInfo_var, CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___IssuerException, NULL);
 }
 IL2CPP_EXTERN_C void CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshal_pinvoke_cleanup(CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshaled_pinvoke& marshaled)
@@ -16348,12 +16364,26 @@ IL2CPP_EXTERN_C void CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_m
 
 IL2CPP_EXTERN_C void CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshal_com(const CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1& unmarshaled, CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshaled_com& marshaled)
 {
-	Exception_t* ___IssuerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'Issuer' of type 'CertificateData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1____Issuer_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___IssuerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1____Issuer_FieldInfo_var, CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___IssuerException, NULL);
 }
 IL2CPP_EXTERN_C void CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshal_com_back(const CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshaled_com& marshaled, CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1& unmarshaled)
 {
-	Exception_t* ___IssuerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'Issuer' of type 'CertificateData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1____Issuer_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___IssuerException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1____Issuer_FieldInfo_var, CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___IssuerException, NULL);
 }
 IL2CPP_EXTERN_C void CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshal_com_cleanup(CertificateData_t40A99242A632202B3115D05913ED12CAA78F65B1_marshaled_com& marshaled)

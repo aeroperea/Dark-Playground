@@ -382,6 +382,8 @@ IL2CPP_EXTERN_C RuntimeClass* TextInfo_tD3BAFCFD77418851E7D5CB8D2588F47019E414B4
 IL2CPP_EXTERN_C RuntimeClass* ValueCollection_tC43990EDD17B7EDE8FCE3674B9537163DCDA557F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ValueList_t9DF653525F9B5641C9B6143901F62A7BF447D331_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* bucketU5BU5D_t59F1C7BC4EBFE874CA0B3F391EA65717E3C8D587_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0____numInfo_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443____methodBase_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t9FFB0BEB067161CE52A63D5857FEA61F74F17A50____1199C3B39A2FA058EFF5B3829616AE81EE2B59A51D89C107A5FA4B6FEF95DD16_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t9FFB0BEB067161CE52A63D5857FEA61F74F17A50____1C4B3A80ED7AEC83916479BCE280E1258D5785D07F0EA22A5E27592ACCAE692B_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t9FFB0BEB067161CE52A63D5857FEA61F74F17A50____1F38DEB3F70291588D06D3830D0D4241CE0570C9F4EE8B00F606C4753EB016E2_FieldInfo_var;
@@ -842,6 +844,7 @@ IL2CPP_EXTERN_C const RuntimeType* IEqualityComparer_tEF8F1EC76B9C8E76695BE848D4
 IL2CPP_EXTERN_C const RuntimeType* IHashCodeProvider_t666BBC3F1EA6821F808B7D2D7B98808A5863D139_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* StackTraceHiddenAttribute_t3F439CC8592D5293ED0702E4184028F76FB7C7A2_0_0_0_var;
 struct CalendarData_t4A54E28AB4470E0B835605CAEE9BEB25EBF9B6A9_marshaled_com;
 struct CalendarData_t4A54E28AB4470E0B835605CAEE9BEB25EBF9B6A9_marshaled_pinvoke;
@@ -3341,12 +3344,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextInfoToLowerData__cctor_mB84EA54ABBE5
 
 IL2CPP_EXTERN_C void CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshal_pinvoke(const CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0& unmarshaled, CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___numInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'numInfo' of type 'CultureInfo'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0____numInfo_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___numInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0____numInfo_FieldInfo_var, CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___numInfoException, NULL);
 }
 IL2CPP_EXTERN_C void CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshal_pinvoke_back(const CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_pinvoke& marshaled, CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0& unmarshaled)
 {
-	Exception_t* ___numInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'numInfo' of type 'CultureInfo'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0____numInfo_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___numInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0____numInfo_FieldInfo_var, CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___numInfoException, NULL);
 }
 IL2CPP_EXTERN_C void CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshal_pinvoke_cleanup(CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_pinvoke& marshaled)
@@ -3358,12 +3375,26 @@ IL2CPP_EXTERN_C void CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marsh
 
 IL2CPP_EXTERN_C void CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshal_com(const CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0& unmarshaled, CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com& marshaled)
 {
-	Exception_t* ___numInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'numInfo' of type 'CultureInfo'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0____numInfo_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___numInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0____numInfo_FieldInfo_var, CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___numInfoException, NULL);
 }
 IL2CPP_EXTERN_C void CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshal_com_back(const CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com& marshaled, CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0& unmarshaled)
 {
-	Exception_t* ___numInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'numInfo' of type 'CultureInfo'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0____numInfo_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___numInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0____numInfo_FieldInfo_var, CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___numInfoException, NULL);
 }
 IL2CPP_EXTERN_C void CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshal_com_cleanup(CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com& marshaled)
@@ -13869,12 +13900,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debugger__cctor_m4284657C52B9C3934A2CFFB
 #endif
 IL2CPP_EXTERN_C void StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_marshal_pinvoke(const StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443& unmarshaled, StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___methodBaseException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'methodBase' of type 'StackFrame': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443____methodBase_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___methodBaseException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443____methodBase_FieldInfo_var, StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___methodBaseException, NULL);
 }
 IL2CPP_EXTERN_C void StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_marshal_pinvoke_back(const StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_marshaled_pinvoke& marshaled, StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443& unmarshaled)
 {
-	Exception_t* ___methodBaseException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'methodBase' of type 'StackFrame': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443____methodBase_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___methodBaseException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443____methodBase_FieldInfo_var, StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___methodBaseException, NULL);
 }
 IL2CPP_EXTERN_C void StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_marshal_pinvoke_cleanup(StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_marshaled_pinvoke& marshaled)
@@ -13882,12 +13927,26 @@ IL2CPP_EXTERN_C void StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_marsha
 }
 IL2CPP_EXTERN_C void StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_marshal_com(const StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443& unmarshaled, StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_marshaled_com& marshaled)
 {
-	Exception_t* ___methodBaseException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'methodBase' of type 'StackFrame': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443____methodBase_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___methodBaseException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443____methodBase_FieldInfo_var, StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___methodBaseException, NULL);
 }
 IL2CPP_EXTERN_C void StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_marshal_com_back(const StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_marshaled_com& marshaled, StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443& unmarshaled)
 {
-	Exception_t* ___methodBaseException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'methodBase' of type 'StackFrame': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443____methodBase_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___methodBaseException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443____methodBase_FieldInfo_var, StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___methodBaseException, NULL);
 }
 IL2CPP_EXTERN_C void StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_marshal_com_cleanup(StackFrame_tB901270D6679ED5D24D872C25D4AD053F22F3443_marshaled_com& marshaled)

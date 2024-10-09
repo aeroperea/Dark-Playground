@@ -412,6 +412,9 @@ IL2CPP_EXTERN_C RuntimeClass* Vector2IntU5BU5D_tF9E2BDAC11B246DF7EEB9137B826A0CB
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B____renderPipeline_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5____shadowResolutionDirectional_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17____blitMaterial_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t52D74BF05A4BD9E64351FAC4ECCED878E3AC8C45____22F2452BB6CE0D012256DAF29E4FDED8053CC274BEEA72D83C0F15A9EF709B2F_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t52D74BF05A4BD9E64351FAC4ECCED878E3AC8C45____352D9643A3EC2882FD69CA81DE3F9135BA4103F567C8CF012CB27CF38FAD4486_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t52D74BF05A4BD9E64351FAC4ECCED878E3AC8C45____5F89EB4413058BFFE2BDD6D2F4ED16BD436C1AEF3A4B6880249B7E546764F48A_FieldInfo_var;
@@ -591,6 +594,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_mF5D8FB18DBF2C4B2F879F8E
 IL2CPP_EXTERN_C const RuntimeMethod* Vector3_set_Item_m79136861DEC5862CE7EC20AB3B0EF10A3957CEC3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VolumeParameter_1__ctor_m4201E61E6C00A5CED355FF7B245AD06F120526FF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VolumeParameter_1__ctor_mCF046710D780C54D8F87F91D9C9FCCDE85044AD7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_0_0_0_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -858,6 +864,8 @@ struct HDRenderPipelineRuntimeShaders_t9B4BFC2FD535842EAB0269713C07D7D3BEC46B80 
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofCoCMinMaxCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofMinMaxDilateCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofCombineCS;
+	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofComputeSlowTilesCS;
+	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_DofComputeApertureShapeCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurMotionVecPrepCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurGenTileCS;
 	ComputeShader_tA7BDD0F6EE879D149480F5890BA2E665C50CFBF8* ___m_MotionBlurMergeTileCS;
@@ -7031,6 +7039,7 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____OutputVelocityMagnitudeHistory;
 	int32_t ____OutputDepthTexture;
 	int32_t ____OutputMotionVectorTexture;
+	int32_t ____OutputResolution;
 	int32_t ____TargetScale;
 	int32_t ____Params;
 	int32_t ____Params1;
@@ -7038,6 +7047,7 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____Params3;
 	int32_t ____BokehKernel;
 	int32_t ____InputCoCTexture;
+	int32_t ____DebugTileClassification;
 	int32_t ____InputHistoryCoCTexture;
 	int32_t ____OutputCoCTexture;
 	int32_t ____OutputNearCoCTexture;
@@ -7065,6 +7075,8 @@ struct HDShaderIDs_tBCDBC0E151E3D70E7703C62A7F114EA45147B1BC_StaticFields
 	int32_t ____InputNearAlphaTexture;
 	int32_t ____CoCTargetScale;
 	int32_t ____DepthMinMaxAvg;
+	int32_t ____ApertureShapeTable;
+	int32_t ____ApertureShapeTableCount;
 	int32_t ____FlareOcclusionTex;
 	int32_t ____FlareSunOcclusionTex;
 	int32_t ____FlareOcclusionRemapTex;
@@ -17939,12 +17951,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlitCachedShadowPassData__ctor_mF846676C
 #endif
 IL2CPP_EXTERN_C void ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_marshal_pinvoke(const ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17& unmarshaled, ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___blitMaterialException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'blitMaterial' of type 'ShadowBlitParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17____blitMaterial_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___blitMaterialException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17____blitMaterial_FieldInfo_var, ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___blitMaterialException, NULL);
 }
 IL2CPP_EXTERN_C void ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_marshal_pinvoke_back(const ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_marshaled_pinvoke& marshaled, ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17& unmarshaled)
 {
-	Exception_t* ___blitMaterialException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'blitMaterial' of type 'ShadowBlitParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17____blitMaterial_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___blitMaterialException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17____blitMaterial_FieldInfo_var, ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___blitMaterialException, NULL);
 }
 IL2CPP_EXTERN_C void ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_marshal_pinvoke_cleanup(ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_marshaled_pinvoke& marshaled)
@@ -17952,12 +17978,26 @@ IL2CPP_EXTERN_C void ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0
 }
 IL2CPP_EXTERN_C void ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_marshal_com(const ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17& unmarshaled, ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_marshaled_com& marshaled)
 {
-	Exception_t* ___blitMaterialException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'blitMaterial' of type 'ShadowBlitParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17____blitMaterial_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___blitMaterialException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17____blitMaterial_FieldInfo_var, ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___blitMaterialException, NULL);
 }
 IL2CPP_EXTERN_C void ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_marshal_com_back(const ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_marshaled_com& marshaled, ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17& unmarshaled)
 {
-	Exception_t* ___blitMaterialException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'blitMaterial' of type 'ShadowBlitParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17____blitMaterial_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___blitMaterialException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17____blitMaterial_FieldInfo_var, ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___blitMaterialException, NULL);
 }
 IL2CPP_EXTERN_C void ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_marshal_com_cleanup(ShadowBlitParameters_tB933523CF6F41048E93B486C56DAEA2FAC2C0F17_marshaled_com& marshaled)
@@ -20367,12 +20407,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RTHandle_t135537761C47BC929F032B3C8F4D55EA111
 
 IL2CPP_EXTERN_C void HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_marshal_pinvoke(const HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B& unmarshaled, HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___renderPipelineException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'renderPipeline' of type 'HDShadowAtlasInitParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B____renderPipeline_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___renderPipelineException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B____renderPipeline_FieldInfo_var, HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___renderPipelineException, NULL);
 }
 IL2CPP_EXTERN_C void HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_marshal_pinvoke_back(const HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_marshaled_pinvoke& marshaled, HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B& unmarshaled)
 {
-	Exception_t* ___renderPipelineException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'renderPipeline' of type 'HDShadowAtlasInitParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B____renderPipeline_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___renderPipelineException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B____renderPipeline_FieldInfo_var, HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___renderPipelineException, NULL);
 }
 IL2CPP_EXTERN_C void HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_marshal_pinvoke_cleanup(HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_marshaled_pinvoke& marshaled)
@@ -20382,12 +20436,26 @@ IL2CPP_EXTERN_C void HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60
 
 IL2CPP_EXTERN_C void HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_marshal_com(const HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B& unmarshaled, HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_marshaled_com& marshaled)
 {
-	Exception_t* ___renderPipelineException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'renderPipeline' of type 'HDShadowAtlasInitParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B____renderPipeline_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___renderPipelineException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B____renderPipeline_FieldInfo_var, HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___renderPipelineException, NULL);
 }
 IL2CPP_EXTERN_C void HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_marshal_com_back(const HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_marshaled_com& marshaled, HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B& unmarshaled)
 {
-	Exception_t* ___renderPipelineException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'renderPipeline' of type 'HDShadowAtlasInitParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B____renderPipeline_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___renderPipelineException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B____renderPipeline_FieldInfo_var, HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___renderPipelineException, NULL);
 }
 IL2CPP_EXTERN_C void HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_marshal_com_cleanup(HDShadowAtlasInitParameters_t64B332FC97C9FA29BBB05B10B73A60DA11BCA96B_marshaled_com& marshaled)
@@ -26236,12 +26304,26 @@ IL2CPP_EXTERN_C  void HDShadowRequest_InitDefault_m940CF2057F63B8BD7AE2F02B17674
 
 IL2CPP_EXTERN_C void HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_marshal_pinvoke(const HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5& unmarshaled, HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___shadowResolutionDirectionalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'shadowResolutionDirectional' of type 'HDShadowInitParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5____shadowResolutionDirectional_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___shadowResolutionDirectionalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5____shadowResolutionDirectional_FieldInfo_var, HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___shadowResolutionDirectionalException, NULL);
 }
 IL2CPP_EXTERN_C void HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_marshal_pinvoke_back(const HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_marshaled_pinvoke& marshaled, HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5& unmarshaled)
 {
-	Exception_t* ___shadowResolutionDirectionalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'shadowResolutionDirectional' of type 'HDShadowInitParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5____shadowResolutionDirectional_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___shadowResolutionDirectionalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5____shadowResolutionDirectional_FieldInfo_var, HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___shadowResolutionDirectionalException, NULL);
 }
 IL2CPP_EXTERN_C void HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_marshal_pinvoke_cleanup(HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_marshaled_pinvoke& marshaled)
@@ -26253,12 +26335,26 @@ IL2CPP_EXTERN_C void HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829
 
 IL2CPP_EXTERN_C void HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_marshal_com(const HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5& unmarshaled, HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_marshaled_com& marshaled)
 {
-	Exception_t* ___shadowResolutionDirectionalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'shadowResolutionDirectional' of type 'HDShadowInitParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5____shadowResolutionDirectional_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___shadowResolutionDirectionalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5____shadowResolutionDirectional_FieldInfo_var, HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___shadowResolutionDirectionalException, NULL);
 }
 IL2CPP_EXTERN_C void HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_marshal_com_back(const HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_marshaled_com& marshaled, HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5& unmarshaled)
 {
-	Exception_t* ___shadowResolutionDirectionalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'shadowResolutionDirectional' of type 'HDShadowInitParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5____shadowResolutionDirectional_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___shadowResolutionDirectionalException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5____shadowResolutionDirectional_FieldInfo_var, HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___shadowResolutionDirectionalException, NULL);
 }
 IL2CPP_EXTERN_C void HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_marshal_com_cleanup(HDShadowInitParameters_t39904E16678C7BE5B194763626AB1BA1829E82D5_marshaled_com& marshaled)

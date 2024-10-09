@@ -556,6 +556,7 @@ IL2CPP_EXTERN_C RuntimeClass* WebReadStream_tA0E8969A97C6FE537A2DDF2040A64AFE63F
 IL2CPP_EXTERN_C RuntimeClass* WebRequest_t89050438AE9A5AA9221ECAE223584127F7C1294B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WebResponse_t7CDE1F20895C8D5AD392425F9AD4BE8E8696B682_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* X509CertificateCollection_t2900D71D188EDCA7DEB5077D36103EE5DA6805CE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32____request_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t56F624E1051A2E261613B6A81CA2333397F49CB3____9F58F1261D211553DE8FBC1AFA477C84EA3974B9BFF38223D771D0CDA787E15A_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t56F624E1051A2E261613B6A81CA2333397F49CB3____DFA7289CF8D8029ACEE90F30530C6926950E8DD20285772458F271AFD015BAD5_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral009CD778B9CB8CEFADF6517ECF6B8C675D6507B5;
@@ -868,6 +869,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* WebCompletionSource_1_get_Task_mCBE8895EAB5
 IL2CPP_EXTERN_C const RuntimeMethod* WebProxy_GetProxy_mB7D36975267535555BCB1BF449098DB35D01BC8E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* WebProxy_IsBypassed_m4919E244B263600121FECB9F693AECBDBA30AE38_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* CookieCollection_tB62B610A8E70C48DC8854F3D27BA916AF21D6608_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_0_0_0_var;
@@ -26493,12 +26495,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpWebRequest__ctor_m1AF72A90B1265EE525
 #endif
 IL2CPP_EXTERN_C void AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshal_pinvoke(const AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32& unmarshaled, AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___requestException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'request' of type 'AuthorizationState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32____request_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___requestException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32____request_FieldInfo_var, AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___requestException, NULL);
 }
 IL2CPP_EXTERN_C void AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshal_pinvoke_back(const AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshaled_pinvoke& marshaled, AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32& unmarshaled)
 {
-	Exception_t* ___requestException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'request' of type 'AuthorizationState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32____request_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___requestException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32____request_FieldInfo_var, AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___requestException, NULL);
 }
 IL2CPP_EXTERN_C void AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshal_pinvoke_cleanup(AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshaled_pinvoke& marshaled)
@@ -26506,12 +26522,26 @@ IL2CPP_EXTERN_C void AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA3
 }
 IL2CPP_EXTERN_C void AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshal_com(const AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32& unmarshaled, AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshaled_com& marshaled)
 {
-	Exception_t* ___requestException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'request' of type 'AuthorizationState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32____request_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___requestException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32____request_FieldInfo_var, AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___requestException, NULL);
 }
 IL2CPP_EXTERN_C void AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshal_com_back(const AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshaled_com& marshaled, AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32& unmarshaled)
 {
-	Exception_t* ___requestException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'request' of type 'AuthorizationState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32____request_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___requestException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32____request_FieldInfo_var, AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___requestException, NULL);
 }
 IL2CPP_EXTERN_C void AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshal_com_cleanup(AuthorizationState_t79311A9A938E608B506F10F92C0789E46C8FCA32_marshaled_com& marshaled)

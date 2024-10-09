@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 public class Animegirlcutscene : MonoBehaviour
 {
@@ -45,6 +46,8 @@ public class Animegirlcutscene : MonoBehaviour
     
     [SerializeField] private Transform wideAnglePlacement; // The position for the wide-angle camera placement
     [SerializeField] private Transform wideAnglePan; // The target for wide-angle camera pan
+
+    public UnityEvent endCutsceneEvent;
 
     void Awake()
     {
@@ -141,5 +144,7 @@ public class Animegirlcutscene : MonoBehaviour
 
         // Add quest
         QuestManager.Instance.AddQuest(grandmaPictureQuest);
+
+        endCutsceneEvent.Invoke();
     }
 }

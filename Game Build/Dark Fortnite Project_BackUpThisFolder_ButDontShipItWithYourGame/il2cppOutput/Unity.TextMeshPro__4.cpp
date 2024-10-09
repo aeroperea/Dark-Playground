@@ -435,6 +435,7 @@ IL2CPP_EXTERN_C RuntimeClass* UnityAction_1_tAEFA3C1C529F0E1AD7C7C7AFC88822D359E
 IL2CPP_EXTERN_C RuntimeClass* UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E____regularTypeface_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t04635BCB4D7C7C21D10547072BD307E80F347DD3____1C3635C112D556F4C11A4FE6BDE6ED3F126C4B2B546811BDB64DE7BDED3A05CB_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral1489F923C4DCA729178B3E3233458550D8DDDF29;
 IL2CPP_EXTERN_C String_t* _stringLiteral22BE618ADF9DAFBF84F27DD4CA2D8D34F67B1103;
@@ -545,6 +546,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_Invoke_mA633B48B5D287DA856FB95
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_RemoveListener_m6F51818308066F0E5EA7B37AC25ABDF12FADAEA9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_3_Invoke_mA9B8756BF3A597179581D20E1EDC4ECAAC73F0F6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* TMP_SelectionCaret_tCDD93BB06825C506A7D3E06648FB33E3D61981EB_0_0_0_var;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_com;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_pinvoke;
@@ -5278,12 +5280,26 @@ IL2CPP_EXTERN_C  void FontAssetCreationSettings__ctor_m9A07F1B7C85235E9BDA86E750
 #endif
 IL2CPP_EXTERN_C void TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_marshal_pinvoke(const TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E& unmarshaled, TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___regularTypefaceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'regularTypeface' of type 'TMP_FontWeightPair': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E____regularTypeface_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___regularTypefaceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E____regularTypeface_FieldInfo_var, TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___regularTypefaceException, NULL);
 }
 IL2CPP_EXTERN_C void TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_marshal_pinvoke_back(const TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_marshaled_pinvoke& marshaled, TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E& unmarshaled)
 {
-	Exception_t* ___regularTypefaceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'regularTypeface' of type 'TMP_FontWeightPair': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E____regularTypeface_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___regularTypefaceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E____regularTypeface_FieldInfo_var, TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___regularTypefaceException, NULL);
 }
 IL2CPP_EXTERN_C void TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_marshal_pinvoke_cleanup(TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_marshaled_pinvoke& marshaled)
@@ -5291,12 +5307,26 @@ IL2CPP_EXTERN_C void TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703
 }
 IL2CPP_EXTERN_C void TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_marshal_com(const TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E& unmarshaled, TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_marshaled_com& marshaled)
 {
-	Exception_t* ___regularTypefaceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'regularTypeface' of type 'TMP_FontWeightPair': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E____regularTypeface_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___regularTypefaceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E____regularTypeface_FieldInfo_var, TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___regularTypefaceException, NULL);
 }
 IL2CPP_EXTERN_C void TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_marshal_com_back(const TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_marshaled_com& marshaled, TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E& unmarshaled)
 {
-	Exception_t* ___regularTypefaceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'regularTypeface' of type 'TMP_FontWeightPair': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E____regularTypeface_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___regularTypefaceException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E____regularTypeface_FieldInfo_var, TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___regularTypefaceException, NULL);
 }
 IL2CPP_EXTERN_C void TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_marshal_com_cleanup(TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_marshaled_com& marshaled)

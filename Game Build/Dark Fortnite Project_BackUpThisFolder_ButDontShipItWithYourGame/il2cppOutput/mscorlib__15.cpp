@@ -622,6 +622,8 @@ IL2CPP_EXTERN_C RuntimeClass* ValueTypeFixupInfo_tFCB5358BA456D87217278A090D1CB8
 IL2CPP_EXTERN_C RuntimeClass* WaitCallback_tFB2C7FD58D024BBC2B0333DC7A4CB63B8DEBD5D3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* __BinaryParser_tE382865BF0321CE908A1DB1929A8148FB63FD059_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* __BinaryWriter_t030DAE49A9AEB83F8C5E758B355C7F0D21A117BE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601____method_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_____type_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t9FFB0BEB067161CE52A63D5857FEA61F74F17A50____0C496C9AE05419BD25256D0EF4F31AFD291119F14B8BD683BF1774F91E08659D_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral01FA4BD3437F2D89B8DCCA1C1030EB2F8BA7D3EC;
 IL2CPP_EXTERN_C String_t* _stringLiteral02993DDF5D87FBA804D3C06F06C5AE21DA7872CF;
@@ -832,6 +834,7 @@ IL2CPP_EXTERN_C const RuntimeType* Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97
 IL2CPP_EXTERN_C const RuntimeType* List_1_t16E569268FB544B034B23E986BFCACC3E0C04878_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* ObjRef_t4E22D31BD764E833A74F63D99F39E3238B243396_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* OnDeserializedAttribute_tF81908B7A3821F6D47998A3E6578578F06EE19B2_0_0_0_var;
@@ -841,6 +844,7 @@ IL2CPP_EXTERN_C const RuntimeType* OnSerializingAttribute_t0418F6CE6DBA1D87BC534
 IL2CPP_EXTERN_C const RuntimeType* RuntimeType_tB1A69257E7A00D07AB0CABD8D5BA7D83E0DC9EC1_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* SerializationEventHandler_t0A09DB90E1E5E0B2CCCB82D3380E02F4ACE8995F_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_0_0_0_var;
@@ -5866,12 +5870,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MethodReturnDictionary__cctor_m33DF793B1
 
 IL2CPP_EXTERN_C void MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshal_pinvoke(const MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601& unmarshaled, MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___methodException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'method' of type 'MonoMethodMessage': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601____method_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___methodException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601____method_FieldInfo_var, MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___methodException, NULL);
 }
 IL2CPP_EXTERN_C void MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshal_pinvoke_back(const MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshaled_pinvoke& marshaled, MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601& unmarshaled)
 {
-	Exception_t* ___methodException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'method' of type 'MonoMethodMessage': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601____method_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___methodException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601____method_FieldInfo_var, MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___methodException, NULL);
 }
 IL2CPP_EXTERN_C void MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshal_pinvoke_cleanup(MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshaled_pinvoke& marshaled)
@@ -5883,12 +5901,26 @@ IL2CPP_EXTERN_C void MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601
 
 IL2CPP_EXTERN_C void MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshal_com(const MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601& unmarshaled, MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshaled_com& marshaled)
 {
-	Exception_t* ___methodException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'method' of type 'MonoMethodMessage': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601____method_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___methodException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601____method_FieldInfo_var, MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___methodException, NULL);
 }
 IL2CPP_EXTERN_C void MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshal_com_back(const MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshaled_com& marshaled, MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601& unmarshaled)
 {
-	Exception_t* ___methodException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'method' of type 'MonoMethodMessage': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601____method_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___methodException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601____method_FieldInfo_var, MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___methodException, NULL);
 }
 IL2CPP_EXTERN_C void MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshal_com_cleanup(MonoMethodMessage_t0A062C5351332ED078EDDF6FA38A87B0A7B5A601_marshaled_com& marshaled)
@@ -8254,12 +8286,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializationException__cctor_m10700F208
 #endif
 IL2CPP_EXTERN_C void SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshal_pinvoke(const SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74& unmarshaled, SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ____typeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_type' of type 'SerializationEntry': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_____type_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____typeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_____type_FieldInfo_var, SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____typeException, NULL);
 }
 IL2CPP_EXTERN_C void SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshal_pinvoke_back(const SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshaled_pinvoke& marshaled, SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74& unmarshaled)
 {
-	Exception_t* ____typeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_type' of type 'SerializationEntry': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_____type_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____typeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_____type_FieldInfo_var, SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____typeException, NULL);
 }
 IL2CPP_EXTERN_C void SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshal_pinvoke_cleanup(SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshaled_pinvoke& marshaled)
@@ -8267,12 +8313,26 @@ IL2CPP_EXTERN_C void SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF7
 }
 IL2CPP_EXTERN_C void SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshal_com(const SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74& unmarshaled, SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshaled_com& marshaled)
 {
-	Exception_t* ____typeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_type' of type 'SerializationEntry': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_____type_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____typeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_____type_FieldInfo_var, SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____typeException, NULL);
 }
 IL2CPP_EXTERN_C void SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshal_com_back(const SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshaled_com& marshaled, SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74& unmarshaled)
 {
-	Exception_t* ____typeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_type' of type 'SerializationEntry': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_____type_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____typeException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_____type_FieldInfo_var, SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____typeException, NULL);
 }
 IL2CPP_EXTERN_C void SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshal_com_cleanup(SerializationEntry_t6A03B35039769EF0EDD14BE879E68F1C104FFF74_marshaled_com& marshaled)
